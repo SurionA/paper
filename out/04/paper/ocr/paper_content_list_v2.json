@@ -1,0 +1,4236 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4.3.4. Progress"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                97,
+                247,
+                114
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A guard that defers a provider's withdrawal until its dependents are gone delivers Theorem 70 only if it eventually releases. One relation on the fibers of a registry carries the argument."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                126,
+                884,
+                160
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Definition 72. The precedence relation on the names of a registry is"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                172,
+                652,
+                189
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "n \\prec m : = p _ { n } \\cap d _ { m } \\neq \\emptyset\\tag{59}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/e3af362ca4617a9dc7325b6d9475b7d8a90544f66dc61decbe12984893d98aae.jpg"
+                }
+            },
+            "bbox": [
+                403,
+                197,
+                593,
+                215
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "so that n may provide a key m declares. It reads d and p alone, which by Lemma 59(5) come into existence with a fiber's entry and are never written again."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                224,
+                882,
+                258
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Theorem 73 and Theorem 80 are established on the hypothesis that < is acyclic, which is an assumption and not something the definition delivers, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n \\prec n"
+                    },
+                    {
+                        "type": "text",
+                        "content": "holding of a component that declares a key it provides itself. What < orders is the two fibers' activations and not their lifetimes: "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n \\prec"
+                    },
+                    {
+                        "type": "text",
+                        "content": "m says that n has to become Active before m can, whereas that a provider outlives its consumer is Theorem "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "7 0 ( 2 )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", a theorem about the guarded calculus."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                269,
+                885,
+                351
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A fiber's target view answers to the fiber that created it as well as to its providers. What a creator writes is "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\tau _ { n } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "through the primitive of Definition 52, and τ is monotone by Lemma 59(5). A creator can therefore turn its child's target view at most once over that child's whole existence."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                359,
+                884,
+                409
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Progress is a claim that some rule applies, so it is formulated over the rules a host must offer: L-Begin, L-Leave, L-Unload, the landing rules L-Iter and L-Finish, and L-Divert. It appeals to the aborting alternative of L-Divert nowhere, which Section 4.4 puts to use."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                416,
+                885,
+                466
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Theorem 73. (Progress.) Assume < acyclic, len "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( e _ { n } ) \\leq K"
+                    },
+                    {
+                        "type": "text",
+                        "content": "for every "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and the set N of names the sequence ever holds (Definition 65) finite; and let every step apply a lifecycle rule. Write "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "S ( n )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "for the number of steps acting on n and"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                478,
+                884,
+                526
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "V ( n ) : = \\left| \\left\\{ t : \\mathrm { t a r g e t } _ { n } ^ { t } \\neq \\mathrm { t a r g e t } _ { n } ^ { t + 1 } \\right\\} \\right|\\tag{60}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/a5ef67bb579cc276a2be56c87ba4658987141af094f7731c1f39c5a6e5239068.jpg"
+                }
+            },
+            "bbox": [
+                356,
+                535,
+                640,
+                554
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "for the number of times its target view turns. Then"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                565,
+                534,
+                581
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( N o d e a d l o c k . ) \\neg \\mathrm { q u i e t } ^ { t }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "implies that some lifecycle rule applies at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ^ { t } ;"
+                    }
+                ]
+            },
+            "bbox": [
+                139,
+                581,
+                715,
+                596
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2. (Termination.) "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "S ( n ) \\leq ( K + 3 ) ( V ( n ) + 1 )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and both "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V ( n )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\textstyle \\sum _ { n } S ( n )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "are finite. Consequently every maximal sequence of lifecycle steps ends in a quiescent state."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                596,
+                818,
+                632
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Proof. No deadlock. Let "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\neg \\mathrm { q u i e t } ^ { t } ."
+                    },
+                    {
+                        "type": "text",
+                        "content": ", so some fiber n satisfies neither clause of the quiet of Definition 53. Reading Table 1 against the four kinds it can then be:"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                643,
+                885,
+                675
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "• θ = Inactive with target ≠ ⊥: L-Begin applies;"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                676,
+                557,
+                692
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "\\theta _ { n } ^ { t } = \\mathsf { R e l o a d i n g } ( - , - , \\omega _ { n } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "with tal "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm {  { ~ \\cdot ~ } } \\mathrm {  { g e t } } _ { n } ^ { t } = \\omega _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ": whichever of L-Iter and L-Finish the value of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "i _ { n } ^ { t } ( \\gamma ^ { t } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "selects applies;"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                692,
+                882,
+                724
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "\\theta _ { n } ^ { t } = \\mathsf { R e l o a d i n g } ( - , - , \\omega _ { n } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "with targe "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { t } _ { n } ^ { t } \\neq \\omega _ { n } \\mathrm { : }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "L-Divert applies, landing that iteration rather than aborting it;"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                724,
+                882,
+                756
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "\\theta _ { n } ^ { t } = \\mathsf { A c t i v e } ( - , \\omega _ { n } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "with targe "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { t } _ { n } ^ { t } \\neq \\omega _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ": L-Leave applies."
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                756,
+                610,
+                774
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Let no fiber be of any of these kinds, leaving some "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m _ { 0 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\theta _ { m _ { \\mathsf { n } } } ^ { t } = \\mathsf { U n l o a d i n g } ( - , - )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Construct "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m _ { 0 } , m _ { 1 } , \\ldots"
+                    },
+                    {
+                        "type": "text",
+                        "content": "as follows: given "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m _ { j }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "in Unloading, either ¬ relied, in which case L-Unload applies to "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m _ { j }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and the construction stops, or there are "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m _ { j + 1 } \\neq m _ { j }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k _ { j }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "with installed "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathsf { l } _ { m _ { j + 1 } } ^ { t }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega _ { m _ { j + 1 } } ^ { t } ( k _ { j } ) = m _ { j }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". In the latter case"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                772,
+                884,
+                845
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "k _ { j } \\in d _ { m _ { j + 1 } } \\cap \\mathrm { d o m } \\Big ( \\sigma _ { m _ { j } } ^ { t } \\Big ) \\subseteq d _ { m _ { j + 1 } } \\cap p _ { m _ { j } }",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/e23ae5d03a8ab681c41fb9ee48c6139afb603d0d615e2be601999377ce7f3728.jpg"
+                }
+            },
+            "bbox": [
+                341,
+                854,
+                653,
+                876
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "49"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                510,
+                940
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "the second membership being Theorem "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "7 0 ( 3 )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "at the episode of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m _ { j + 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "that t lies in, so that "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m _ { j } \\prec"
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m _ { j + 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Moreover targe "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\bar { \\mathsf { t } } _ { m _ { j + 1 } } ^ { \\bar { t } } \\neq \\omega _ { m _ { j + 1 } } ^ { t }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ": an Unloading fiber is outside the union defining "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma _ { \\gamma } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "SO "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k _ { j }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ^ { t }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is unprovided or provided by a fiber other than "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m _ { j }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Were "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m _ { j + 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "in Active or Reloading it would then be of one of the four kinds excluded, so it is in Unloading and the construction continues. The "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m _ { j }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "are <-increasing, hence distinct by acyclicity, and dom "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\left( F ^ { t } \\right)"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is finite, so the construction stops."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                97,
+                884,
+                198
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Termination. Two claims bound "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "S ( n )"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                205,
+                415,
+                221
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "(A) Over a maximal interval on which target "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { \\omega } _ { ^ { \\mathrm { ~ n ~ } } } ^ { \\mathrm { ~ t ~ } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is constant at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega ^ { * }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", at most "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "K + 3"
+                    },
+                    {
+                        "type": "text",
+                        "content": "steps act on n. Reading the "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\theta _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "columns of Table 1, from "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathsf { A c t i v e } ( - , \\omega )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "with ω ≠ ω* the fiber takes an L-Leave and an L-Unload and then, if "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega ^ { * } \\neq \\perp"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", an L-Begin and at most len "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( e _ { n } ) \\leq K"
+                    },
+                    {
+                        "type": "text",
+                        "content": "landings; from Reloading against an "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega \\neq \\omega ^ { * }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "it takes an L-Divert in place of the L-Leave, and from any other state a suffix of that sequence. No further L-Divert or L-Leave falls in the interval, the ω that the L-Begin writes being "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { t a r g e t } _ { n } ^ { t } = \\omega ^ { * }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "itself, and at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathsf { A c t i v e ( - , } \\omega ^ { \\ast } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and at Inactive with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega ^ { * } = \\bot"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". no rule applies at all."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                229,
+                885,
+                342
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "(B) If tar "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { g e t } _ { n } ^ { t } \\neq"
+                    },
+                    {
+                        "type": "text",
+                        "content": "tar "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { g e t } _ { n } ^ { t + 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and step t acts on "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "then either "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m \\prec n"
+                    },
+                    {
+                        "type": "text",
+                        "content": "or step t writes "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\tau _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". By Definition 53 the value of target "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathsf { \\Delta } [ _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is a function of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\tau _ { n } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", of the lifecycle states, and of the domains of the providers' tables, never of a bound value; a provider satisfies "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k \\in"
+                    },
+                    {
+                        "type": "text",
+                        "content": "dom "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\sigma _ { m } ) \\cap d _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and hence "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m \\prec n ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and a table's domain changes only at a step acting on its own fiber by Lemma "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5 9 ( 1 )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Acyclicity gives m "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\neq"
+                    },
+                    {
+                        "type": "text",
+                        "content": "n in the first case, and the monotonicity of Lemma "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5 9 ( 5 )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "admits the second at one t per fiber."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                350,
+                884,
+                449
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "By (A) the interval count bounds "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "S ( n )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "as "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "S ( n ) \\leq ( K + 3 ) ( V ( n ) + 1 )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and by (B) each turn of targ "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\operatorname { e t } _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "either consumes a step of a fiber strictly <-below n or is the one turn "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\tau _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "affords, so "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\begin{array} { r } { V ( n ) \\leq 1 + \\sum _ { m \\prec n } S ( m ) } \\end{array}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Since < is acyclic and N is finite, the recursion"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                456,
+                884,
+                508
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "B ( n ) : = ( K + 3 ) \\left( 2 + \\sum _ { m \\prec n } B ( m ) \\right)",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/351841bbcdc525318d76a001f336f4b9aad8d2e534dab25b8ce8e29da6241506.jpg"
+                }
+            },
+            "bbox": [
+                357,
+                516,
+                636,
+                557
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "is well founded and defines B with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "S ( n ) \\leq B ( n )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "; hence "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V ( n )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is finite and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\begin{array} { r } { \\sum _ { n } S ( n ) \\le \\sum _ { n } B ( n ) } \\end{array}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "By (1) a sequence that cannot be extended is quiescent □"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                568,
+                882,
+                604
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Finiteness of N is assumed rather than derived, and one condition on the components delivers it. The components a host holds are finitely many programs given before anything runs, so if no component can instantiate, however indirectly, a fiber of a component that instantiates one of its own, the instantiations form a tree of bounded depth, and len "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( e _ { n } ) \\leq K"
+                    },
+                    {
+                        "type": "text",
+                        "content": "bounds its branching. What the assumption rules out is a component that instantiates itself without bound."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                619,
+                884,
+                717
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The target records the providing fiber rather than a boolean, and under the single-source discipline of O-Insert the two drive the same transitions, a key having one possible provider there. The view supplies the vocabulary of the results above, Theorem 70 and Theorem 71 both speaking of the resolution a fiber activated against, and it is what makes those results survive the scoped resolution of Section 3.2.3, under which one key resolves to different providers in different realms and the provisions no longer force the view. The implementation carries that scoping and holds the view in fiber. committed (Section 5.1.3)."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                725,
+                885,
+                840
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "50"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                510,
+                940
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4.3.5. Confluence"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                97,
+                265,
+                114
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The results so far are about individual fibers. The property that characterizes the system as a whole is that its dynamic history leaves no trace: whatever sequence of activations and deactivations a running system has been through, the state it quiesces at is the one the same insertions and retirements would have produced had each component that ends up active been loaded once, in dependency order, and none ever unloaded. The lifecycle relation is confluent, and the normal form it converges on is the statically assembled one. This is the analogue, for dynamic composition, of the consistency with a from-scratch evaluation that change propagation establishes for incremental computation [47]."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                127,
+                887,
+                258
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The claim is about — alone. Orchestration steps are inputs, and two sequences given different inputs land in different places for no interesting reason; what is at issue is whether the lifecycle rules, which are nondeterministic in which fiber steps next and in which exit a Reloading fiber takes, can be made to disagree. Which fiber provides a key is not among the choices, a key having one possible provider (Definition 50), so the schedule picks orders and exits and nothing else."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                265,
+                885,
+                363
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Three lemmas are needed first. The first fixes the set of fibers that end up Active without reference to any sequence of steps, which is what makes it a function of the input rather than of the schedule."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                370,
+                885,
+                419
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Definition 74. A fiber is supported at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": "when it is not retired, the fiber instantiating it is supported, and every key it declares is provided by a supported fiber. The support relation on dom "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\left( F _ { \\gamma } \\right)"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is the union of the two relations those clauses read,"
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                431,
+                884,
+                481
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "m \\triangleleft n : = m \\prec n \\vee \\pi _ { n } = m\\tag{61}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/f88017d7334717244f1449a2d4cc9fb509bbbdc1cf8c611e2fe1ab40e68a1dda.jpg"
+                }
+            },
+            "bbox": [
+                388,
+                489,
+                610,
+                505
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "and where it is well founded (Lemma 75) we write A for the support set, the fibers supported at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma \\colon"
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                516,
+                882,
+                549
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "n \\in A : = \\lnot _ { T _ { n } } \\land ( \\pi _ { n } = \\lnot \\mathrm { o o t } \\lor \\pi _ { n } \\in A ) \\land \\forall k \\in d _ { n } . \\ \\exists m \\in A . \\ k \\in p _ { m }\\tag{62}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/1566a8a0bb091d9eb7125c5eda02c3e7de21dedb0cb7250c6e925343013364b2.jpg"
+                }
+            },
+            "bbox": [
+                233,
+                558,
+                761,
+                575
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pi _ { n } = \\mathfrak { r o o t }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "marks a fiber the orchestrator inserted and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pi _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "otherwise the fiber whose activation instantiates n. The clauses read no field but "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\tau , \\pi , d , p"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Both halves relate a fiber to one immediately below it, a parent rather than an ancestor and a direct provider rather than a transitive one, since that is what the clauses read; where the results below want an order they take the transitive closure, whose minimal elements, maximal elements, and linearizations are those of ."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                585,
+                885,
+                683
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The clauses refer to A itself, so the definition is a recursion along , and it is the following that makes it one with a solution."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                695,
+                884,
+                728
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Lemma 75. (Support is well founded.) Let < be acyclic and let "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": "be reached by a sequence of steps. Then  is well founded, and A is the one solution of Definition 74, a function of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\tau , \\pi , d ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and p alone."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                740,
+                887,
+                789
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Proof. Order the names of dom "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\left( F _ { \\gamma } \\right)"
+                    },
+                    {
+                        "type": "text",
+                        "content": "by the index of the O-Insert that introduced each, which Definition 58 supplies by starting the sequence at an empty registry. The parent half of  descends in that index: an O-Insert has "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pi \\in \\mathop { \\mathrm { d o m } } _ { \\gamma } ( F _ { \\gamma } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "as a premise, so a parent pointer names a fiber introduced earlier, and iterating it reaches the whole ancestry of a name in finitely many steps. A cycle therefore has to use "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\prec ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and since < is acyclic it has to mix the two, which needs some m to declare a key that a fiber of m's own subtree may provide. Such a fiber is instantiated by an activation of m or of one of m's descendants, hence at a step after the L-Begin of m; that L-Begin has "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma \\models d _ { m }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "as a premise, so a fiber providing the key is Active already before it, and clause (2) of Definition 63 leaves the key no second possible provider. The fiber that would close the cycle is therefore never introduced, and the edge is absent from dom "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\left( F _ { \\gamma } \\right)"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". A wellfounded recursion has one solution, and the clauses read the four fields alone. □"
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                801,
+                885,
+                901
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "51"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                509,
+                940
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                112,
+                97,
+                885,
+                179
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The last clause reads "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "p ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "the keys a component may provide, whereas the target reads dom "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\left( \\sigma _ { \\gamma } \\right)"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the keys its fibers have installed, and Definition 48 relates the two by dom "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\sigma _ { n } ) \\subseteq"
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "p _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "alone. The support set therefore over-approximates the Active fibers in general, and the condition that closes the gap is the following."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                196,
+                884,
+                261
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Definition 76. A component "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( d , p , e )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is total on its provision when an activation of it that finishes has installed every key of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "p ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "so that dom "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\sigma _ { n } ) = p _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "at every Active fiber instantiating it."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                273,
+                882,
+                307
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This is a condition on the components alone, mentioning no lifecycle state and no step, and independence (Lemma 66) already bounds how far it can fail: were a component to install a key only at context states another component's effects reach, its forward map would not commute with that component's, so the keys a fiber installs are fixed by its component rather than by the schedule. What totality adds is that the fixed set is all of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "p"
+                    },
+                    {
+                        "type": "text",
+                        "content": "rather than a proper subset of it."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                318,
+                884,
+                401
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Lemma 77. (Support at quiescence.) Let < be acyclic, let quiet "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\gamma )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and let every component of γ be total on its provision (Definition 76). Then the support set is the set of Active fibers:"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                412,
+                884,
+                447
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "A = \\{ n : \\theta _ { n } = \\mathsf { A c t i v e } ( - , - ) \\}\\tag{63}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/c96ba12683a8bcfeb15beffe265ff5cc3f5b9b353a4d883efd9cbeb7b00b90f4.jpg"
+                }
+            },
+            "bbox": [
+                381,
+                454,
+                615,
+                472
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Proof. Write "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A ^ { \\prime }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "for the right-hand side. The quiet of Definition 53 leaves Inactive and Active as the only states and reads"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                485,
+                882,
+                518
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "n \\in A ^ { \\prime } \\Longleftrightarrow \\mathrm { t a r g e t } _ { n } ( \\gamma ) \\neq \\bot",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/3b73272dc1c0d88f6bba5be181ef1eaff27531c61f4d04dfffd6016977f43554.jpg"
+                }
+            },
+            "bbox": [
+                386,
+                527,
+                610,
+                544
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "By Definition 53 the right side holds exactly when "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\neg \\tau _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and every "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k \\in d _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "lies in dom "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\left( \\sigma _ { \\gamma } \\right)"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and dom "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\textstyle ( \\sigma _ { \\gamma } ) = \\bigcup _ { m \\in A ^ { \\prime } } p _ { m }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "by Definition 76. The middle clause is the one the target no longer carries, and instantiation supplies it: a fiber with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pi _ { n } \\neq"
+                    },
+                    {
+                        "type": "text",
+                        "content": "root is instantiated only by an activation of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pi _ { n } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and if "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pi _ { n } \\notin A ^ { \\prime }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "then "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pi _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is not Active, so its accumulator has run and retired n by Definition 52, giving "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\tau _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Hence A'satisfies the clauses of Definition 74, and Lemma 75 gives them one solution, so "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A = A ^ { \\prime }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "□"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                554,
+                885,
+                653
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Lemma 78. (Transposition.) Let "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F ^ { t }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "be well formed and let steps t and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "t + 1"
+                    },
+                    {
+                        "type": "text",
+                        "content": "act on distinct fibers m and n."
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                675,
+                882,
+                707
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1. If both apply an activation rule, namely L-Begin, L-Iter, or L-Finish, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e _ { m }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "are independent (Definition 65), and step t + 1 is applicable at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ^ { t }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", then step t is applicable at the state step "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "t + 1"
+                    },
+                    {
+                        "type": "text",
+                        "content": "produces from "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\bar { \\gamma } ^ { t }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and the two orders reach the same "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ^ { t + \\dot { 2 } }"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                708,
+                882,
+                756
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2. If step t applies an activation rule at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m _ { \\ell }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", step t + 1 an orchestration rule at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and step t does not instantiate "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "then the same holds of the two."
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                757,
+                884,
+                789
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Proof. For (1), by Table 1 the step of m writes "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\theta _ { m }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and, within "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Psi ^ { t } \\in \\mathfrak { M } ( e _ { m } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the tables at keys of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d _ { m } \\cup p _ { m }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". It therefore leaves "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\theta _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "i _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "alone, and by clause (2) of Definition 42 leaves the inverse and the continuation that "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "i _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "yields alone as well, so only the premises of step "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "t + 1"
+                    },
+                    {
+                        "type": "text",
+                        "content": "that mention targe "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { t } _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "remain to be checked. Its retirement half cannot fall, no activation rule writing a τ. Its resolution half cannot move either: targe "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { t } _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "reads lifecycle states and table domains, of which "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Psi ^ { t }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "moves dom "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\sigma _ { m } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "alone (Lemma "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5 9 ( 1 ) )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "; step "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "t + 1"
+                    },
+                    {
+                        "type": "text",
+                        "content": "being applicable at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ^ { t }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "puts every "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k \\in d _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "in dom "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\scriptstyle ( \\sigma ^ { t } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and clause (2) of Definition 63 makes the fiber providing such a k the only one that can, so "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k \\notin p _ { m }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and no domain at a key of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "moves. The same argument in the other direction leaves step t applicable. Finally "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Psi ^ { t } \\in \\mathfrak { M } ( e _ { m } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Psi ^ { t + 1 } \\in \\mathfrak { M } ( e _ { n } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "commute by clause (1) of Definition "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "4 2 ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and the two edits write control fields of distinct fibers, so the composite is the same in either order."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                793,
+                884,
+                892
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "52"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                510,
+                940
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                112,
+                97,
+                884,
+                179
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "For (2), the orchestration step has "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Psi ^ { t + 1 } = \\mathrm { i d } _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "by Table 1, so the two state maps commute outright, and its editt+1 writes "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\tau _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "or dom "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\left( F _ { \\gamma } \\right)"
+                    },
+                    {
+                        "type": "text",
+                        "content": "at n alone, which the activation step neither reads nor writes: the premises of the latter read "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\theta _ { m } , i _ { m } , \\tau _ { m } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and target "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { i } _ { m } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and an O-Insert of a fresh n moves no target, a fresh fiber providing nothing, whereas an O-Retire or O-Remove of n leaves "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma _ { \\gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "where it was, n being Inactive in the one case and unaffected in its table in the other. So step t remains applicable. Conversely each premise of the orchestration step is either read at n, which step t does not write, or is one of the two premises of O-Insert that a smaller registry only relaxes, whence its applicability at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ^ { t + 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "gives its applicability at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ^ { t } ;"
+                    },
+                    {
+                        "type": "text",
+                        "content": "here step t not instantiating n is what keeps n present at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ^ { t }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "where O-Retire and O-Remove require it. □"
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                186,
+                885,
+                334
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Lemma 79. (Deletion.) Let every component be total on its provision (Definition "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "7 6 )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", let the sequence of steps reach a quiescent "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ^ { T }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", let "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "[ b , u ]"
+                    },
+                    {
+                        "type": "text",
+                        "content": "be an episode of n that closes, let no episode of any m with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n \\prec m"
+                    },
+                    {
+                        "type": "text",
+                        "content": "close in the sequence, and let no fiber n instantiates during [b, u] have an episode. Write R for the names those instantiations draw. Then deleting the steps that act on n in [b, u], together with every step acting on a name of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "leaves a sequence of steps reaching a state "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq _ { K } { \\tt - e q u a l }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "to "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ^ { T }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and ≈-equal to it outside R."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                354,
+                884,
+                454
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Proof. The deleted steps leave the state where they found it. Let "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "t _ { 1 } < \\dots < t _ { l }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "be the steps of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "[ b , u ]"
+                    },
+                    {
+                        "type": "text",
+                        "content": "that act on fibers other than n. Corollary 69 reads"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                463,
+                882,
+                497
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\gamma ^ { u + 1 } \\simeq _ { K } \\left( \\Psi ^ { t _ { l } } \\circ \\cdots \\circ \\Psi ^ { t _ { 1 } } \\right) \\left( \\gamma ^ { b } \\right)",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/04637f4b744355a47250cd546fb3e5ede949f958982845d13fea42b78047d413.jpg"
+                }
+            },
+            "bbox": [
+                379,
+                505,
+                615,
+                525
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "whose right side is what the surviving steps of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "[ b , u ]"
+                    },
+                    {
+                        "type": "text",
+                        "content": "produce on their own, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\cdot \\gamma ^ { b - 1 } \\simeq _ { K } \\gamma ^ { b }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and their edits writing control fields of fibers other than n that the deletion does not touch. By Table 1 the deleted steps of n edit no field but "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\theta _ { n } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "which Lemma "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5 9 ( 4 )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "restores to Inactive at u and which it held at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ^ { \\overset { \\bullet } { b } - 1 }"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                535,
+                884,
+                601
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "An invariant carries the "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "s u f f i x ."
+                    },
+                    {
+                        "type": "text",
+                        "content": "Write "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ^ { \\prime t }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "for the state the surviving steps reach at the point corresponding to t. We claim, for every "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "t > u ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "that "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ^ { t } \\simeq _ { K } \\gamma ^ { \\prime t }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", that every name of R is vestigial at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ^ { t }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and absent from "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ^ { \\prime t }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and that the two states agree on every field of every name outside R. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { A t } ~ t = u + 1"
+                    },
+                    {
+                        "type": "text",
+                        "content": "this is the paragraph above together with Definition 52, which leaves each name of R retired by the accumulator that ran at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "u ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Inactive and holding an empty table, the fibers of R having no episode by hypothesis. The induction step is Lemma "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "6 2 ( 1 )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "applied at each name of R in turn: a step acting outside R has the same premises at the two states, reaches states again "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq _ { K } { \\tt { e q u a l } } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and leaves the entries of R vestigial. A step acting on a name of R is one of the deleted ones, and Lemma "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "6 2 ( 2 )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is why it has to be deleted rather than kept, an O-Retire or O-Remove of an absent name having no fiber to act on; by (1) again such a step moves no field outside "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "so dropping it preserves the invariant. Hence the final states are "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq _ { K }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-equal, and equal outside R."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                608,
+                885,
+                804
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "No surviving step loses a premise. A step acting on m "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\not \\in R \\cup \\{ n \\}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "reads n only through ta "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { { r g e t } } _ { m } ( \\gamma )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "or relied "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "_ m ( \\gamma )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The first depends on n when m declares a key n provides, hence "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n \\prec m ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and when n instantiated "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "which puts "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m \\in R"
+                    },
+                    {
+                        "type": "text",
+                        "content": "In the first case m's episode does not close, by hypothesis, so it is open at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ^ { T }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", where quiet gives "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega _ { m } = \\mathrm { t a r g e t } _ { m } ^ { T }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and Lemma "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "7 7"
+                    },
+                    {
+                        "type": "text",
+                        "content": "puts its values among the Active fibers, which n is not; since a key has at most one possible provider, n provided no key of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d _ { m }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "at m's L-Begin either. The second reads n only through the values of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega _ { n } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and deleting the episode can only make relied false, which relaxes the guard on L-Unload rather than blocking it. What such a step reads of a name of R is covered by the invariant. □"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                812,
+                885,
+                895
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "53"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                510,
+                940
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                112,
+                97,
+                884,
+                147
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Theorem 80. (Confluence.) Let a sequence of steps reach a quiescent "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ^ { T }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", let every component be total on its provision (Definition 76), and let A be as in Definition 74. Then"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                167,
+                884,
+                199
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1. (Canonical form.) "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ^ { T }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is reached, up to the names whose entries the reduction withdraws, from "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ^ { 0 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "by a sequence that takes the same orchestration steps in their original order, those at a fiber the orchestrator inserted preceding every lifecycle step and each of the rest following the step that instantiated the fiber it acts on, and that takes, for an enumeration "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n _ { 1 } , . . . , n _ { k }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "of A linearizing "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\triangleleft ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "one episode of each "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n _ { i }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "in that order."
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                199,
+                885,
+                281
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2. (Confluence.) Any two such sequences from "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ^ { 0 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "taking the same orchestration steps reach states related, after a renaming as in Lemma 61, by the ≈ of Definition 58 and hence by "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq _ { K }"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                281,
+                884,
+                331
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Proof. For (1), the episodes of the sequence are of two kinds: those that close and those still open at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ^ { T }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", which by quietT and Lemma 77 are one episode of each fiber of A."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                332,
+                882,
+                367
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Closing episodes go first, by induction on their number. At each stage pick a closing episode of a fiber n that is -maximal among the fibers whose episodes still close; one exists by Lemma 75 and the finiteness of N. The three hypotheses of Lemma 79 are then met. No m with n < m has a closing episode, by maximality. And no fiber n instantiates during [b, u] has an episode: such a fiber is retired by the accumulator that ran at u (Definition 52) and by Lemma 59(5) stays retired, so its target view is ⊥ and Lemma 77 puts it outside A, whence it has no episode open at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ^ { T } ;"
+                    },
+                    {
+                        "type": "text",
+                        "content": "; and  relates it to n through its parent pointer, so by maximality it has no closing one either. The lemma removes the episode, together with the steps of the names it instantiated, leaving "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ^ { T }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "where it was up to those names. The measure drops by one, so no closing episode remains."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                374,
+                885,
+                537
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A fiber outside A takes no lifecycle step. It has no open episode at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ^ { T }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", by Lemma 77 and quietT, and no closing one now remains, so it has no episode at all and is Inactive throughout; L-Begin is the only rule that applies there, and applying it would open an episode."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                544,
+                885,
+                595
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Orchestration steps go next. An orchestration step at a fiber the orchestrator inserted moves one place earlier past a lifecycle step of a different fiber by Lemma 78(2), which applies because a step of a fiber of A instantiates no such name: instantiations draw fresh names, whereas the name here is one an O-Insert of the original sequence introduced. With a lifecycle step of the same fiber there is nothing to exchange, an O-Insert of n already preceding every step of n and an O-Retire or O-Remove of n applying only outside "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "which takes no lifecycle step. Moving each to the front in turn preserves their relative order. An orchestration step at a fiber some activation instantiated cannot go to the front, its premises requiring that fiber to be present, so it stays where the instantiation put it; it acts outside A by the paragraph above and therefore commutes with everything between it and the instantiation by the same clause of Lemma 78."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                601,
+                885,
+                765
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Episodes are sorted and made contiguous, by induction on "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "| A |"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Let "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n _ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "be -minimal in A. Then "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d _ { n _ { 1 } } ="
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\emptyset"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pi _ { n _ { 1 } } = \\mathsf { r o o t } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": " since Definition 74 puts a provider of a key of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d _ { n _ { 1 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and the fiber instantiating "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n _ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "in A while  puts both below "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n _ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". So ta "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { r g e t } _ { n _ { 1 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "reads no field of another fiber and, no orchestration step remaining to write "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\tau _ { n _ { 1 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and no fiber below "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n _ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "remaining to retire it, is constant. Every step acting on "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n _ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is an activation step, no episode closing, and its remaining premises read "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\theta _ { n _ { 1 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "i _ { n _ { 1 } } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "which by Table 1 only "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n _ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "writes; each is therefore applicable at every earlier state, and Lemma 78 moves it one place earlier without moving the endpoint. Its independence hypothesis is met because no fiber entangled with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n _ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "takes a step in the region crossed — "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d _ { n _ { 1 } } ="
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\emptyset"
+                    },
+                    {
+                        "type": "text",
+                        "content": "leaves "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n _ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "no provider, and a fiber declaring a key of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ { p } _ { { { n } _ { 1 } } } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "has target ⊥ until "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n _ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is Active, so its steps all follow the last step of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n _ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "— and Lemma 66 makes every other pair independent. The number of steps of other fibers preceding a step of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n _ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "drops by one at each application, so the episode of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n _ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "becomes an initial contiguous block. The argument repeats on "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A \\setminus \\{ n _ { 1 } \\}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "over the suffix that follows the block, where "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n _ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is Active throughout and takes no further step, so it too contributes a constant target; the providers a later "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n _ { j }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "declares lie in earlier blocks and take no step in the suffix, so the entanglement argument above holds at every stage. The enumeration this produces linearizes  by construction."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                772,
+                885,
+                890
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "54"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                510,
+                940
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                112,
+                97,
+                884,
+                246
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "For (2), both sequences reduce by (1) to a canonical one, and the two reductions run over the same A up to a renaming. Definition 74 reads "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\tau , \\pi , d ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "p ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "of which the last three are written once with a fiber's entry (Lemma 59(5)), so what has to be seen is that the same names come into existence carrying the same "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d , p ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pi ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and that the same names are retired. Insertions the two sequences share by hypothesis. Instantiations they share as well: an activation of a fiber of A instantiates, at each of its iterations, the component the iterator names there, which the interleaved steps hold fixed — clause (2) of Definition 42 for a fiber not entangled with the activating one (Lemma 66), and Lemma "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "6 7 ( 3 )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "leaving an entangled fiber no "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Psi \\neq \\mathrm { i d } _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "while the activation runs — so the tree of instantiations below an A-fiber is a function of that fiber's component; the names those instantiations draw are not shared, and it is here that Lemma 61 is applied, matching the two trees by a bijection. And a retirement is either an orchestration step, shared, or the O-Retire an accumulator takes, which retires exactly the names the same activation instantiated. Two enumerations linearizing "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\vartriangleleft"
+                    },
+                    {
+                        "type": "text",
+                        "content": "differ by transpositions of incomparable episodes; Lemma 78 leaves each endpoint unchanged up to the ≈ of Definition 58, and Lemma 60 carries the steps that follow across that relation, so the two canonical sequences agree. With the termination of Theorem 73, the lifecycle relation therefore has unique normal forms. □"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                252,
+                885,
+                530
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The theorem is what licenses reasoning about a Cordis application as though it were statically assembled. An orchestrator that adds a component, removes it, replaces a provider, and undoes the replacement is guaranteed to arrive at the state it would have obtained by writing the final composition down at the outset, and a component author reasoning about which coeffects are in scope may reason about the quiescent state alone. It also delimits the guarantee: it speaks of the state, not of the emissions the system produced along the way, which is the distinction Section 6.1 draws between an acquisition, tracked inside the boundary, and an emission, which crosses it."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                545,
+                885,
+                676
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4.4. Extensions"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                702,
+                253,
+                718
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "We give four extensions of the calculus, each realized by the implementation of Section 5 and each leaving the results of Section 4.3 intact."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                732,
+                882,
+                764
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Asynchrony. The rules are synchronous: the state map "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Psi ^ { t }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "of a step (Definition 58) is applied whole at that step, and the environment moves only between one map and the next. In an asynchronous host the iterations and the inverses yield futures, so a map in flight runs to completion whether or not it is still wanted, and the aborting alternative of L-Divert is not one such a host can offer. Such a host is inertial: of L-Divert it takes the landing alternative alone, and a fiber whose target view turns during an iteration deactivates after that iteration lands, from Unloading, holding the inverse it produced. Inertia is therefore a restriction on which alternative of L-Divert a host may take; every result of Section 4.3 quantifies over all sequences of steps and so covers the inertial ones, and Theorem 73 appeals to the aborting alternative nowhere, so a host bound by inertia still quiesces. An inverse in flight calls for no counterpart of inertia: the rules never decline a deactivation, Unloading being left by L-Unload alone with no premise on the target view, and a step of another fiber falling within the accumulator's application commutes with the inverses not yet applied, by the arguments Theorem 68 rests on (Definition 65, Lemma "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "6 7 ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Lemma 66), so an application spread over an interval reaches the state the one-step application reaches, up to "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq _ { K }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". A deactivation may also chain straight back into an activation: the accumulator runs whatever the target view has become, and from Inactive an L-Begin may immediately follow, which is the mutual chaining of reload and unload in the implementation (Section 5.1.3)."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                772,
+                887,
+                903
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "55"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                510,
+                940
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                110,
+                97,
+                885,
+                261
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Failure. The effects a component installs reach outside the context that tracks them, and a location they reach may refuse: a port already bound, a file that is not there, a peer that does not answer. Refine the iterator so that an iteration may raise an error in place of yielding a triple, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Gamma  \\mathsf { E i t h e r } ( \\Xi , \\Gamma \\times ( \\Gamma  \\Gamma ) \\times \\mathsf { M a y b e } ( \\Im ) )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "for a set Ξ of errors, the witness constraining the Right case alone, a raise having nothing to undo. A raise exits Reloading by the route of an aborting L-Divert whose premise on the target view is dropped, the iteration rather than the environment choosing the abort: the fiber routes into Unloading with the accumulator built up to the failing iteration, arrives at Inactive having installed nothing (Corollary 69), and the exit writes the error as an outcome on the fiber. The outcome withholds re-entry: L-Begin is read as requiring an error-free fiber, so an effect function that raised is not retried against an unchanged environment, and quiet admits a failed fiber whatever its target view; the failure likewise stays on the fiber rather than propagating to its parent, leaving siblings running. A retry is a revision: the reinserted fiber of the Configuration paragraph starts without an outcome. Preservation and recovery hold unchanged, a raise leaving by the same Unloading route every deactivation takes. Confluence excludes failed fibers, and has to: whether an iteration raises depends on the state it meets, so one schedule may fail a fiber where another completes it, and the two quiescent states then differ in that fiber's lifecycle state and, by Corollary 69, in nothing else. The FAILED state of the implementation carries this outcome (Section 5.1.3)."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                268,
+                885,
+                562
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Isolation. Section 4.1 reads every key at one shared realm and names the relaxation a calculus carrying realms would make: provisions disjoint within a realm rather than outright, each declared key resolved against the realm of the fiber declaring it. For realms fixed at a fiber's insertion, the relaxed calculus is the present one read at a larger key set. Take the key set to be "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "K \\times R ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "each pair "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( k , r )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "carrying the value set "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu _ { k }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and the operations "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\boldsymbol { A } _ { k }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "of its underlying key, so that "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq _ { ( k , r ) } \\mathrm { i s } \\simeq _ { k } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "a key commutative in the sense of Definition 44 is commutative at every realm, and the coeffect at a pair inherits the witness of its underlying key (Definition 46). A fiber inserted under a realm table "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\rho"
+                    },
+                    {
+                        "type": "text",
+                        "content": "then declares and provides pairs, a key k of its interface standing for "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( k , \\rho ( k ) )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "; the last premise of O-Insert, read at pairs, is disjointness within a realm, two fibers providing one key in different realms provide different pairs, and the one shared realm is the diagonal "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( k , k )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", a key outside dom "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\rho )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "resolving to its own realm (Definition 24). Keys are as atomic to the rules as names: no rule computes one, inspects its structure, or relates two of them by anything but equality, so the rules and the results of Section 4.3 apply at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "K \\times R"
+                    },
+                    {
+                        "type": "text",
+                        "content": "as they stand. The reading stops at isolate itself (Definition 25), which reassigns "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\rho"
+                    },
+                    {
+                        "type": "text",
+                        "content": "on a running context: under the pairing a reassignment moves a declaration from one pair to another, and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "p _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "are written once with a fiber's entry (Lemma 59(5)), so a fiber whose realm turns at runtime is one whose interface has changed, a revision the Configuration paragraph carries. Interception (Definition 26) calls for no extension: metadata adjusts how a binding is used rather than what a key resolves to, is consulted when the binding is accessed, and is discarded with the context that carries it, so no premise reads it and no field of a fiber holds it."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                568,
+                889,
+                895
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "56"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                510,
+                940
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Configuration. A component of the implementation takes a configuration, and instantiation binds the payload into the effect function the fiber runs (Section 5.1.3). The calculus therefore carries configuration inside e: one such component bound to two payloads is two components of Definition 48, differing in their effect functions. The declarative layer of Section 5.2.1 further lets the orchestrator revise a running fiber, replacing its configuration, reassigning its realms, or disabling and later re-enabling it. Each revision is a composite of the rules: disabling is an O-Retire, and every other revision retires the fiber, lets the lifecycle rules deactivate it, removes the entry, children before parent as O-Remove requires, and reinserts the fiber at the same name, with the new effect function, the new realm pairs, or, at a re-enablement, the component unchanged; the name may be reissued, no stale committed view naming a removed fiber (Section 4.3.1). Dependents follow unprompted: the guard on L-Unload orders the withdrawal after the deactivations it causes, and the target-view comparison reactivates each dependent once the reinserted fiber provides the keys again. Re-enablement takes the composite rather than a rule writing τ back to ⊥, for two reasons: Theorem 80 rests on a fiber an accumulator retires staying retired (Lemma 59(5)), and Definition 53 reads no parent pointer, so a fiber unretired after the accumulator of the fiber that instantiated it has run would activate with its creator gone. The implementation keeps the same division: re-enabling an entry instantiates a fresh fiber, the entry being the identity that survives revision and the fiber the identity of one enablement. The composite is held to its endpoint rather than to its steps: by Theorem 80 the system quiesces where a load of the revised configuration from scratch would have left it, and that endpoint is what the loader's shorter routes answer to, a new payload handed to a component that reloads only on a material change, a realm moved without reloading its provider (Section 5.2.1)."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                97,
+                887,
+                474
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "5. Implementation and Case Study"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                505,
+                475,
+                524
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This section presents Cordis, which realizes the formal models of Section 3 as a practical programming abstraction. Cordis is a meta-framework of spatiotemporal composability: unlike application frameworks that target a specific domain (e.g., web routing, ORM, UI rendering), it prescribes no concrete scenario; its sole responsibility is to supply universal dynamic composition semantics. The implementation is layered into three tiers: (1) the core library (Section 5.1) implements the effect and coeffect systems directly; (2) the component loader (Section 5.2) extends the core with configuration reconciliation and hot module replacement; and (3) application frameworks such as Koishi (Section 5.3) build domain-specific functionality on top of the former two tiers."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                541,
+                887,
+                687
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "5.1. Core Library"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                713,
+                272,
+                730
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Table 2 summarizes the correspondence between theoretical constructs and their runtime counterparts. In particular, we use the runtime names introduced below throughout this section, reserving the theoretical symbols for the formal correspondence. We also write @@name for a framework-internal symbol key, so the brackets in ctx[@@store] denote symbol-keyed access to an opaque slot on the context, rather than indexing into a string-keyed map."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                743,
+                885,
+                826
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "57"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                510,
+                941
+            ]
+        }
+    ],
+    [
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/174f4e41cb9829c2a01e67172076da964591f65809082a5abec8e477b9c57798.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 2 | Theory-to-implementation correspondence"
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>Theory (Section 3, Section 4)</td><td>Implementation</td></tr><tr><td> $\\Gamma _ { \\infty }$ </td><td>ctx, the first-class context</td></tr><tr><td> $\\gamma \\in \\Gamma$ </td><td>the context tree together with everything the running system</td></tr><tr><td> $\\mathfrak { E } _ { \\Gamma } , \\mathfrak { I } _ { \\Gamma }$ </td><td>has touched Effect callback returning / yielding inverses</td></tr><tr><td> $\\mathrm { e f f e c t } _ { \\Gamma } ( e )$ </td><td>ctx.effect(callback)</td></tr><tr><td> $\\Sigma , \\Sigma ^ { \\mathrm { i s o } } , \\Sigma ^ { \\mathrm { i n t e r } }$ </td><td>ctx[@@store], ctx[@@isolate], ctx[@@intercept]</td></tr><tr><td> $\\operatorname* { g e t } ( k ) , \\operatorname* { s e t } ( k , v )$ </td><td>ctx.get(key),ctx.set(key, value)</td></tr><tr><td> $\\mathrm { i s o l a t e } ( k , r )$ </td><td>ctx.isolate(key, realm)</td></tr><tr><td>intercept(k, ν)</td><td>ctx.intercept(key, metadata)</td></tr><tr><td> $\\langle d , p , e , \\pi , \\sigma , \\tau , \\theta \\rangle$ </td><td>fiber, the instantiation of a component in  $\\mathfrak { C } _ { \\Gamma }$ </td></tr><tr><td> $\\mathrm { d o m } \\big ( F _ { \\gamma } \\big )$ </td><td>enumerated through ctx.registry</td></tr><tr><td> $n : \\mathfrak { N }$ </td><td>fiber.uid</td></tr><tr><td> $d : { \\mathfrak { D } } _ { \\Gamma }$ </td><td>fiber.inject</td></tr><tr><td> $p : \\mathfrak { P } _ { \\Gamma }$ </td><td>the component&#x27;s provide</td></tr><tr><td> $e : \\Im _ { \\Gamma } ^ { d \\cup p }$ </td><td>fiber.apply</td></tr><tr><td> $\\pi : \\mathfrak { N }$ </td><td>fiber.parent.fiber.uid, the fiber owning the context it was</td></tr><tr><td rowspan=\"3\">derived realization (Definition 23) θ (Definition 49)</td><td>instantiated on fiber. ctx, the child context the fiber runs in</td></tr><tr><td>fiber. state, the lifecycle state, whose L0ADING is Reloading and</td></tr><tr><td>whose FAILED carries the error outcome of Section 4.4</td></tr><tr><td>recover, accumulator g ω (Definition 49)</td><td>fiber.dispose, the accumulator</td></tr><tr><td></td><td>fiber.committed, the committed view</td></tr><tr><td>provide  $\\mathrm { r } _ { k } ( \\gamma )$ </td><td>an Impl whose provider fiber is ACTIVE</td></tr><tr><td>target  $( \\gamma , n )$ </td><td>fiber.target, recomputed by refresh (Algorithm 5), where</td></tr><tr><td>Future, inertia (Section 4.4)</td><td>⊥ is INACTIVE fiber. inertia, the handle of the transition in flight</td></tr><tr><td>O-Insert, O-Retire (Definition 52)</td><td>ctx.use and the inverse of its callback (Algorithm 4)</td></tr><tr><td>O-Remove</td><td>the fiber dropped from its runtime, with uid cleared</td></tr><tr><td>L-Begin, L-Iter, L-Finish</td><td>execute&#x27;s iteration loop (Algorithm 1)</td></tr><tr><td>L-Divert</td><td>the guard failing at an iteration boundary (Algorithm 1), or reload chaining into unload</td></tr><tr><td>L-Leave</td><td>refresh marking the fiber UNL0ADING (Line 10)</td></tr><tr><td>L-Unload</td><td>unload and its inertial chaining (Algorithm 5)</td></tr><tr><td>guard on L-Unload</td><td>unload awaiting the notified dependents (Line 25)</td></tr><tr><td>failure (Section 4.4)</td><td>the error recorded on the fiber, with its target set to ⊥</td></tr></table>",
+                "table_type": "complex_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                115,
+                98,
+                882,
+                743
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The remainder of this section builds the core library from the bottom up. Section 5.1.1 realizes revertible effects, the sole primitive through which a context is mutated; Section 5.1.2 realizes reactive coeffects over "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { i t } ;"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Section 5.1.3 composes both into the component lifecycle; and Section 5.1.4 exposes the context-level operations built on them."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                774,
+                884,
+                840
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "58"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                510,
+                940
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "5.1.1. Effect Tracking"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                97,
+                299,
+                115
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This section realizes revertible effects (Section 3.1). Every context mutation in Cordis flows through a single primitive, ctx. effect: coeffect provision, component instantiation, and every other context-mutating operation reduces to a ctx.effect call, so any operation performed through the context is automatically tracked and reverted upon component unloading. Operationally, ctx.effect is the realization of effectiter (Definition 18): it takes a callback of type "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Im _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and lifts it to "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathfrak { I } } _ { \\partial \\Gamma } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "yielding a dispose closure that, when invoked, reverts the effect. Cordis accepts both "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { E } _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Im _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "through this one operation (ad-hoc polymorphism); we take the iterator form as representative, since a plain effect function is the degenerate iterator that yields a single inverse. What the operation does not check is the witness that "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathfrak { E } } _ { \\Gamma } ^ { * }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "carries: the callback supplies an inverse, and that the inverse reverts the effect it accompanies is an obligation on the component author rather than a property the runtime verifies. Theorem 68 is where the calculus appeals to it, and Section 6.1 is where the obligation is delimited. The witness of a coeffect (Definition 46) is unchecked in the same way: that the operations published at a key commute is an obligation on the component providing it, discharged by the representation choice of Section 3.4.2."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                126,
+                887,
+                372
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Algorithm 1 shows the construction of ctx. ef fect. We write f  g for the disposer that runs f after "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathit { g } } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and id for the no-op; prepending each new inverse therefore yields LIFO recovery."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                378,
+                884,
+                413
+            ]
+        },
+        {
+            "type": "algorithm",
+            "content": {
+                "algorithm_caption": [],
+                "algorithm_content": [
+                    {
+                        "type": "text",
+                        "content": "Algorithm 1 Effect tracking 1 async function execute(callback, guard) 2 iter ← callback() 3 inverse ← id 4 while guard() 5 (value, done) ← await iter.next() 6 if value then inverse ← value o inverse 7 if done then break 8 return inverse 9 function effect(ctx, callback) 10 armed ← true 11 task ← execute(callback, ()→ armed) 12 async function dispose() 13 if not armed then return 14 armed ← false 15 recover ← await task 16 recover() 17 ctx.dispose ← dispose o ctx.dispose 18 return dispose"
+                    }
+                ],
+                "algorithm_footnote": []
+            },
+            "bbox": [
+                117,
+                420,
+                882,
+                756
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The engine execute drives the callback as an effect iterator "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\Im _ { \\Gamma } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", Definition 17) and folds the inverse yielded at each step into a single composite. Before each step it consults a callersupplied guard; once the guard trips, iteration stops and only the inverses accumulated so far remain. This is the step-boundary interruption of Section 4.2.2: the Maybe(3) continuation is realized by the iterator's done flag together with guard."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                768,
+                887,
+                851
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "ctx.effect is a thin wrapper over execute that adds two things. First, self-disposal: the guard reports the armed flag, and the returned dispose flips armed to false, which simultaneously halts any in-flight iteration and makes recovery fire at most once. Firing twice would apply an inverse at a state no application of the effect produced, where nothing holds it to reverting anything. Second, parent composition: dispose is prepended to the enclosing context's accumulated inverse ctx. dispose, so a child effect's inverse is itself an effect on the parent, which is the recursive structure of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\partial ^ { 2 } \\Gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The component level (Section 5.1.3) reuses the same execute with a guard that tests the stability of fiber. target instead of armed."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                857,
+                885,
+                891
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "59"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                510,
+                940
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                110,
+                97,
+                887,
+                196
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "5.1.2. Coeffect Operations"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                112,
+                218,
+                339,
+                236
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This section realizes reactive coeffects (Section 3.2). All coeffect operations act on three symbolkeyed slots that each context carries:"
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                248,
+                887,
+                279
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "• @@store: the value store "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma : ( r : R ) \\mathop {  } \\nu _ { r }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "from realm symbols to typed values;"
+                    }
+                ]
+            },
+            "bbox": [
+                139,
+                280,
+                796,
+                297
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "• @@isolate: the realm table "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\rho : \\operatorname { M a p } ( K , R )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "from coeffect keys to realm symbols;"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                297,
+                803,
+                312
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "• @intercept: the interception table "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\iota : ( k : K ) \\to { \\mathcal { M } } _ { k }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "assigning each key its metadata."
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                313,
+                857,
+                329
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The first two compose into the two-layer resolution "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k \\to \\rho ( k ) \\to \\sigma ( \\rho ( k ) )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ": ctx.get(key) (Algorithm 2) reads the realm symbol "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\rho ( k )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "from @@isolate, then the bound value "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma ( \\rho ( k ) )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "from @@store. The "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\rho"
+                    },
+                    {
+                        "type": "text",
+                        "content": "indirection lets isolation redirect a key to an independent binding, whereas @intercept is consulted only when a binding is accessed, adjusting how it is used rather than what it resolves to. We realize these operations in two parts: (1) provision and notification, which install or withdraw bindings and propagate the change to dependents; and (2) isolation and interception, which reshape how a key resolves."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                337,
+                884,
+                453
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Provision and notification. Since set "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( k , v )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "has type "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { E } _ { \\Sigma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "(Section 3.1), coeffect provision is a ctx.effect call and inherits its automatic tracking and recovery. Algorithm 2 implements ctx.set(key, value), the concrete set "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( k , v )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ": the callback binds a value into the store under the realm symbol "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\rho ( k )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and the returned dispose function removes it. Both installation and removal invoke notify to propagate the change to dependent components."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                458,
+                885,
+                542
+            ]
+        },
+        {
+            "type": "algorithm",
+            "content": {
+                "algorithm_caption": [],
+                "algorithm_content": [
+                    {
+                        "type": "text",
+                        "content": "Algorithm 2 Coeffect operations 1 function get(ctx, key) 2 realm ← ctx[@@isolate][key]  ρ(k) 3 return ctx[@@store][realm] "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "| \\triangleright \\sigma ( \\rho ( k ) )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "4 function set(ctx, key, value) 5 function callback() 6 realm ← ctx[@@isolate][key]  ρ(k) 7 ctx[@@store][realm] ← value  σ[ρ(k) → v] 8 notify(ctx, [key]) 9 return function() 10 delete ctx[@@store][realm] "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\triangleright \\sigma \\setminus \\rho ( k )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "11 notify(ctx, [key]) 12 return ctx.effect(callback)"
+                    }
+                ],
+                "algorithm_footnote": []
+            },
+            "bbox": [
+                117,
+                549,
+                882,
+                782
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Algorithm 3 propagates each binding change to dependents by testing, for each live fiber, whether a changed key appears in its fiber. inject and resolves to the same realm; if so, it calls refresh (Section 5.1.3) to re-evaluate that fiber against the new state, and it returns the fibers it re-evaluated so that a caller can wait for them. This is the reactive classification of Definition 22: a change that flips satisfaction activates or deactivates the fiber, and refresh's idempotence renders a neutral change harmless. The interaction of this re-evaluation with diverse control flows is developed in Section 5.1.3."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                794,
+                887,
+                878
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "60"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                510,
+                941
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                112,
+                96,
+                882,
+                130
+            ]
+        },
+        {
+            "type": "algorithm",
+            "content": {
+                "algorithm_caption": [],
+                "algorithm_content": [
+                    {
+                        "type": "text",
+                        "content": "Algorithm 3 Reactive notification 1 function notify(ctx, keys) 2 affected ←∅ 3 for fiber in all_fibers do 4 for key in keys do 5 if key ∈ fiber.inject and fiber.ctx[@@isolate][key] = ctx[@@isolate][key] then 6 refresh(fiber) 7 affected ← affected ∪ {fiber} 8 break 9 return affected"
+                    }
+                ],
+                "algorithm_footnote": []
+            },
+            "bbox": [
+                117,
+                141,
+                880,
+                321
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A binding counts as available to a dependent only while the fiber that installed it is ACTIvE, so refresh resolves each declared key against an active provider rather than against the store alone. This is the provided by relation of Definition 53, and it is what makes a withdrawal visible to dependents one step before it happens: a provider that has entered uNLoADING has stopped providing, so its dependents recompute an unsatisfied target view and begin their own teardown while its bindings are all still in place."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                332,
+                885,
+                431
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Isolation and interception. The two operations do structurally the same thing: each derives a child context that adjusts one inherited table for key, leaving the parent untouched, so recovery is implicit: discarding the child context suffices, with no explicit inverse to run. ctx.isolate(key, realm) overrides the realm mapping ρ with realm, or a freshly generated symbol by default (realizing isolate, Definition 25), so two contexts that assign different symbols to the same key resolve to independent bindings. ctx.intercept(key, metadata) merges metadata into the interception table  (realizing intercept, Definition 27): following that definition, the new metadata is combined with whatever the context already carries for key and takes priority over it."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                438,
+                885,
+                587
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "5.1.3. Component Lifecycle"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                607,
+                347,
+                625
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A component is instantiated as a fber by ctx.use. This section gives the fiber (introduced in Section 5.1) operational meaning as the inertial state machine of Section 4.4. Two fields drive the algorithm below: fiber. parent, the parent context of fiber. ctx that forms the component hierarchy (the recursive structure of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Gamma _ { \\infty } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Section 3.3.1), and fiber. inertia, a handle to the inflight asynchronous transition (or null if idle)."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                638,
+                885,
+                720
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Algorithm 4 shows component instantiation. A component pairs a coeffect specification component.inject (d) with an effect function component.apply; instantiation binds the component's config into fiber.apply (Line 9), the config-applied effect function (e) that the lifecycle then runs. The callback function (Line 2) is the effect tracked in the parent fiber: when executed, it initiates the child's lifecycle by calling refresh (Algorithm 5); when reverted, it forces the child's target to ⊥ and triggers unload. This is the instantiation primitive of Definition 52, with callback as its O-Insert and the closure callback returns as its O-Retire: an instantiation is an ordinary tracked effect of the parent, so unloading a parent cascades to its children."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                727,
+                887,
+                873
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "61"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                928,
+                509,
+                941
+            ]
+        }
+    ]
+]

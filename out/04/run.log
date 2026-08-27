@@ -1,0 +1,146 @@
+2026-08-27 23:15:11.908 | INFO     | mineru.cli.client:run_orchestrated_cli:953 - Started local mineru-api at http://127.0.0.1:54671
+2026-08-27 23:15:13.709 | INFO     | __main__:create_app:236 - Request concurrency limited to 3
+INFO:     Started server process [4957]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:54671 (Press CTRL+C to quit)
+2026-08-27 23:15:13.918 | INFO     | mineru.cli.client:run_planned_task:832 - Submitting batch 1/1 | 1 document, 13 pages in this batch | 13 pages total | task#1 [paper]
+2026-08-27 23:15:15.448 | INFO     | mineru.backend.pipeline.pipeline_analyze:doc_analyze_streaming:209 - Pipeline processing-window multi-file run. doc_count=1, total_pages=13, window_size=64, total_batches=1
+Start MinerU FastAPI Service: http://127.0.0.1:54671
+API documentation: http://127.0.0.1:54671/docs
+2026-08-27 23:15:17.828 | INFO     | mineru.backend.pipeline.pipeline_analyze:doc_analyze_streaming:264 - Pipeline processing window batch 1/1: 13/13 pages, batch_pages=13, doc_slices=doc0:1-13
+2026-08-27 23:15:17.848 | INFO     | mineru.backend.pipeline.pipeline_analyze:batch_image_analyze:364 - GPU Memory: 12 GB, Batch Ratio: 4. 
+2026-08-27 23:15:17.848 | INFO     | mineru.backend.pipeline.model_init:__init__:239 - DocAnalysis init, this may take some times......
+2026-08-27 23:15:18.933 | INFO     | mineru.backend.pipeline.model_init:__init__:291 - DocAnalysis init done!
+2026-08-27 23:15:18.933 | INFO     | mineru.backend.pipeline.pipeline_analyze:custom_model_init:83 - model init cost: 1.0847227573394775
+2026-08-27 23:15:29.042 | INFO     | mineru.cli.client:run_planned_task:883 - Completed batch 1/1 | Processed 13/13 pages | 1 of 1 batch finished | task#1 [paper]
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [4957]
+Object 10325 0 not defined.
+Object 10325 0 not defined.
+Overwriting cache for 0 10325
+Object 10318 0 not defined.
+Object 10318 0 not defined.
+Overwriting cache for 0 10318
+Object 10313 0 not defined.
+Object 10313 0 not defined.
+Overwriting cache for 0 10313
+Object 10318 0 not defined.
+Overwriting cache for 0 10318
+Object 10313 0 not defined.
+Overwriting cache for 0 10313
+Object 10322 0 not defined.
+Object 10322 0 not defined.
+Overwriting cache for 0 10322
+Object 10321 0 not defined.
+Object 10321 0 not defined.
+Overwriting cache for 0 10321
+Object 10305 0 not defined.
+Object 10305 0 not defined.
+Overwriting cache for 0 10305
+Object 10320 0 not defined.
+Object 10320 0 not defined.
+Overwriting cache for 0 10320
+Object 10317 0 not defined.
+Object 10317 0 not defined.
+Overwriting cache for 0 10317
+Object 10322 0 not defined.
+Overwriting cache for 0 10322
+Object 10320 0 not defined.
+Overwriting cache for 0 10320
+Object 10323 0 not defined.
+Object 10323 0 not defined.
+Overwriting cache for 0 10323
+Object 10324 0 not defined.
+Object 10324 0 not defined.
+Overwriting cache for 0 10324
+Object 10309 0 not defined.
+Object 10309 0 not defined.
+Overwriting cache for 0 10309
+Object 10332 0 not defined.
+Object 10332 0 not defined.
+Overwriting cache for 0 10332
+Object 10310 0 not defined.
+Object 10310 0 not defined.
+Overwriting cache for 0 10310
+Object 10337 0 not defined.
+Object 10337 0 not defined.
+Overwriting cache for 0 10337
+Object 10340 0 not defined.
+Object 10340 0 not defined.
+Overwriting cache for 0 10340
+Object 10324 0 not defined.
+Overwriting cache for 0 10324
+Object 10307 0 not defined.
+Object 10307 0 not defined.
+Overwriting cache for 0 10307
+Object 10297 0 not defined.
+Object 10297 0 not defined.
+Overwriting cache for 0 10297
+Object 10340 0 not defined.
+Overwriting cache for 0 10340
+Object 10325 0 not defined.
+Object 10325 0 not defined.
+Overwriting cache for 0 10325
+Object 10318 0 not defined.
+Object 10318 0 not defined.
+Overwriting cache for 0 10318
+Object 10313 0 not defined.
+Object 10313 0 not defined.
+Overwriting cache for 0 10313
+Object 10318 0 not defined.
+Overwriting cache for 0 10318
+Object 10313 0 not defined.
+Overwriting cache for 0 10313
+Object 10322 0 not defined.
+Object 10322 0 not defined.
+Overwriting cache for 0 10322
+Object 10321 0 not defined.
+Object 10321 0 not defined.
+Overwriting cache for 0 10321
+Object 10305 0 not defined.
+Object 10305 0 not defined.
+Overwriting cache for 0 10305
+Object 10320 0 not defined.
+Object 10320 0 not defined.
+Overwriting cache for 0 10320
+Object 10317 0 not defined.
+Object 10317 0 not defined.
+Overwriting cache for 0 10317
+Object 10322 0 not defined.
+Overwriting cache for 0 10322
+Object 10320 0 not defined.
+Overwriting cache for 0 10320
+Object 10323 0 not defined.
+Object 10323 0 not defined.
+Overwriting cache for 0 10323
+Object 10324 0 not defined.
+Object 10324 0 not defined.
+Overwriting cache for 0 10324
+Object 10309 0 not defined.
+Object 10309 0 not defined.
+Overwriting cache for 0 10309
+Object 10332 0 not defined.
+Object 10332 0 not defined.
+Overwriting cache for 0 10332
+Object 10310 0 not defined.
+Object 10310 0 not defined.
+Overwriting cache for 0 10310
+Object 10337 0 not defined.
+Object 10337 0 not defined.
+Overwriting cache for 0 10337
+Object 10340 0 not defined.
+Object 10340 0 not defined.
+Overwriting cache for 0 10340
+Object 10324 0 not defined.
+Overwriting cache for 0 10324
+Object 10307 0 not defined.
+Object 10307 0 not defined.
+Overwriting cache for 0 10307
+Object 10297 0 not defined.
+Object 10297 0 not defined.
+Overwriting cache for 0 10297
+Object 10340 0 not defined.
+Overwriting cache for 0 10340

@@ -1,0 +1,4338 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "A Programming Paradigm for Spatiotemporal Composability"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                122,
+                133,
+                875,
+                158
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Yifan Shi1,2, Wei Zhang1, Tianyi Cui²"
+                    }
+                ]
+            },
+            "bbox": [
+                347,
+                189,
+                648,
+                206
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1Peking University 2DeepSeek-AI"
+                    }
+                ]
+            },
+            "bbox": [
+                347,
+                214,
+                650,
+                231
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Abstract"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                448,
+                278,
+                551,
+                297
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Modern software—from plugin systems to self-evolving agent harnesses—increasingly requires dynamic composition, yet its formal foundations remain underdeveloped. We identify two orthogonal dimensions of the problem: temporal composability, the ability to completely revert a component's side effects upon removal, and spatial composability, the ability to declare and reactively manage inter-component dependencies. We address the two dimensions by lifting classical effect and coeffect concepts to runtime mechanisms. In particular, we formalize revertible effects, in which every context transformation carries an inverse that the runtime holds, establishing temporal composability local to one component. We formalize reactive coeffects, in which every context change is classified against a component's coeffect specification to drive its activation and deactivation, establishing spatial composability local to one component. We then unify the effect context and the coeffect context into a single context type and mediate every effect and coeffect through it, yielding a discipline we call the context paradigm; the mediation induces an observational equivalence up to which the effects of distinct components interleave without disturbing one another. Combining these mechanisms into the notion of a component, we give a calculus of dynamic composition whose metatheory carries spatiotemporal composability from a single component to a whole system of interleaved components. We implement these ideas in Cordis, a meta-framework of spatiotemporal composability that provides a core library with effect tracking and coeffect resolution, as well as a declarative component loader with configuration reconciliation and hot module replacement."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                337,
+                887,
+                649
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "deepseek"
+                    }
+                ]
+            },
+            "bbox": [
+                117,
+                39,
+                329,
+                72
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "1"
+                    }
+                ]
+            },
+            "bbox": [
+                492,
+                927,
+                504,
+                940
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Contents"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                114,
+                213,
+                134
+            ]
+        },
+        {
+            "type": "index",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "1. Introduction ........"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "1.1. Dimensions of Composability . …..4"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "1.2. Motivating Examples .. .4"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "1.2.1. Plugin Systems .... … .4"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "1.2.2. Self-Evolving Agent Harnesses  ..5"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "1.2.3. The Coarse-Grained Workaround ...... ..5"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "1.3. Contributions ........ ..6"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "2.1. Effects .."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "2.2. Coeffects ......... ………7"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "2.3. Relationship to Dynamic Composability ........................ …8"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "3. Revertible Effects and Reactive Coeffects 9"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "3.1. Revertible Effects ... … ..9"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "3.1.1. Effect Context ..... ….9"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "3.1.2. Effect Functions ....12"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "3.1.3. Effect Iterators ....15"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "3.2. Reactive Coeffects ...... ……………………………………………… ...16"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "3.2.1. Coeffect Context ..... .. . ...17"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "3.2.2. Specification and Notification  ...18"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "3.2.3. Isolation and Interception ............................... ...19"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "3.3. The Context Paradigm ...21"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "3.3.1. Unified Context ...... ...21"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "3.3.2. Observational Equivalence.23"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "3.4. Attaining Independence  ...26"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "3.4.1. Effect Independence ...26"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "3.4.2. Coeffect Commutativity ...28"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "4. A Calculus of Dynamic Composition 31"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "4.1. Components and Fibers ............ ...31"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "4.2. The Calculus ....... ...34"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "..34"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "4.2.2. Lifecycle ...... ...35"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "4.2.3. Confinement .38"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "4.3. Metatheory ........ ..39"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "4.3.1. Preservation ... ..43"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "4.3.2. Temporal Composability44"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "4.3.3. Spatial Composability  …..47"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "4.3.4. Progress .. ..49"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "4.3.5. Confluence51"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "4.4. Extensions .... ...55"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "5. Implementation and Case Study …57"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "5.1. Core Library .... … ....57"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "5.1.1. Effect Tracking… ...59"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "5.1.2. Coeffect Operations  ….60"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "5.1.3. Component Lifecycle 61"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "5.1.4. Context Access  ....64"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "5.2. Component Loader ..... ... 64"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "5.2.1. Declarative Configuration. …65"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "5.2.2. Hot Module Replacement ...67"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "5.3. Case Study: Koishi ... . ...69"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "6. Discussion ........... …70"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "6.1. System Boundary ....70"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "6.2. Service Multiplexing .......... .....71"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "6.3. Access Control and Sandboxing . ....72"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "6.4. Language Independence and Selection ....... ...73"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "6.5. Mutual Dependencies and Component Granularity ........................ 74"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "6.6. Dependency Typing and Versioning . .. . .. ….75"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "6.7. Co-Design with Languages and Operating Systems ............ 76"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "7. Related Work ............."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "7.1. Effect and Coeffect Systems . ...77"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "7.2. Programming Paradigms ... ....78"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "7.3. Temporal Composability ... ...79"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "7.4. Spatial Composability … ...81"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "8. Conclusion …82"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "References ........ ….83"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                164,
+                885,
+                898
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "2"
+                    }
+                ]
+            },
+            "bbox": [
+                492,
+                927,
+                505,
+                940
+            ]
+        }
+    ],
+    [
+        {
+            "type": "index",
+            "content": {
+                "list_type": "text_list",
+                "list_items": []
+            },
+            "bbox": [
+                112,
+                93,
+                887,
+                813
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "3"
+                    }
+                ]
+            },
+            "bbox": [
+                492,
+                927,
+                505,
+                941
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1. Introduction"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                116,
+                280,
+                133
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Composition—assembling complex systems from simpler parts—is a foundational principle of software engineering [1]. Traditionally, composition is static: function calls, module imports, and class inheritance are resolved at compile time and remain fixed throughout execution. However, modern software increasingly demands dynamic composition, where components are loaded, unloaded, and reconfigured at runtime. Plugin architectures [2] and self-evolving agent harnesses both require systems that can safely add and remove functionality on the fly, yet current practice defers to coarse-grained mechanisms [3] that reconfigure only by restarting, discarding runtime state. Despite the growing practical importance of dynamic composition, its theoretical foundations remain underdeveloped, compared to the rich formal frameworks available for static composition."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                151,
+                887,
+                313
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1.1. Dimensions of Composability"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                340,
+                416,
+                356
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "To characterize the requirements of dynamic composition, we identify two orthogonal dimensions beyond the well-studied algebraic aspects of composition:"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                369,
+                887,
+                403
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "• Temporal composability addresses the time dimension: upon removal of a component, the modifications the component made to the shared environment must be completely and safely reversed. This requires tracking every resource allocation, event registration, and state mutation the component performs, and guaranteeing their orderly reclamation upon removal."
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                410,
+                887,
+                489
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "• Spatial composability addresses the space dimension: components must be able to declare, discover, and resolve their dependencies on one another in a structured and verifiable manner. This requires managing dependency topology and coordinating component lifecycles in response to dependency changes"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                491,
+                887,
+                557
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In the static setting, temporal composability reduces to lexical scoping (e.g., RAII [4], bracket patterns [5]), and spatial composability reduces to module import resolution [6]. In the dynamic setting, where components arrive and depart at runtime, both dimensions become significantly harder: temporal composability must handle long-lived, stateful effects whose scope is not lexically bounded; and spatial composability must handle dependencies that appear, disappear, or change identity during execution."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                563,
+                887,
+                664
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1.2. Motivating Examples"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                688,
+                342,
+                705
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1.2.1. Plugin Systems"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                738,
+                302,
+                755
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Plugin systems are a canonical instance of dynamic composition. We use Visual Studio Code (VSCode), one of the most widely-used extensible IDEs, as a representative example."
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                768,
+                884,
+                801
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Temporal limitation. VSCode runs all extensions in a shared process called the extension host. Although extensions can be installed dynamically, this host provides no mechanism to unload an individual extension's code at runtime. Once an extension's activate function has executed, disabling or uninstalling it requires restarting the entire host, affecting all loaded extensions. Purely declarative extensions such as themes, keybindings, and snippets carry no code and can be removed freely. Among the top 100 extensions by install count, however, 87 contain executable code¹ and will therefore require such a restart upon removal. Although VSCode provides a deactivate hook, it serves only as a graceful shutdown callback during the host process' termination, and thus does not enable live removal. Moreover, the hook separates effect disposal from effect creation (in activate), violating locality of concern and making complete cleanup difficult to verify."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                808,
+                885,
+                891
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "4"
+                    }
+                ]
+            },
+            "bbox": [
+                492,
+                928,
+                505,
+                940
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                110,
+                97,
+                885,
+                196
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Spatial limitation. VSCode does provide extensionDependencies for declaring dependencies between extensions, but it sees little use: among the top 100 extensions by install count, only 7 declare extensionDependencies on non-built-in extensions. This scarcity reflects the shape of the extension API, which exposes fixed, surface-level extension points such as commands, views, and language features. Extensions contribute to the host through these points rather than depending on one another, so inter-extension dependencies rarely arise. Moreover, VSCode's mechanism for inter-extension interaction provides no structural contract: it exposes an extension's functionality to others through vscode.extensions.getExtension(...) .exports, but the returned value is untyped (any by default), so the dependent cannot rely on a checked interface. In short, VSCode steers extensions toward a fixed set of host-provided extension points, and offers no safe, structured way for them to depend on one another."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                203,
+                889,
+                384
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "These two limitations are not unique to VSCode; they recur across plugin systems generally [2, 7], differing only in degree."
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                390,
+                884,
+                424
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1.2.2. Self-Evolving Agent Harnesses"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                445,
+                426,
+                463
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Modern AI agents rely on runtime agent harnesses [8–10]. These systems may compose diverse tool suites [11] and execution environments, govern permissions and sandboxing, maintain session state and persistence, provide context management and memory systems [12], orchestrate subagents and multi-agent workflows [13], and expose interfaces to users and automation. A future harness may generate and deploy modifications to its own components while continuously serving requests. Model-synthesized reusable tools provide a narrower precursor to component-level self-modification [14]. Each such modification is itself an instance of dynamic composition."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                475,
+                887,
+                606
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Because these modifications occur continuously and with limited or no human oversight, dynamic composability becomes indispensable. Without temporal composability, each selfmodification forces a full restart that discards all process-local accumulated state; at such frequency the cumulative unavailability becomes substantial, and in-flight tasks are disrupted repeatedly; even worse, a faulty self-modification can disable the very process needed to recover. Without spatial composability, each module must itself detect and adapt to changes in the modules it depends on as they appear, disappear, or change identity, and can do so only by ad hoc means; even worse, a naive code-replacement strategy may silently break dependents or introduce circular dependencies that surface only at reload time."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                613,
+                887,
+                760
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1.2.3. The Coarse-Grained Workaround"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                783,
+                450,
+                799
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "One reason dynamic composability has received limited formal attention is that operating systems and container orchestrators already provide a coarse-grained substitute. Operating systems yield temporal composability at the granularity of a process; container orchestrators [3] yield spatial composability at the granularity of a service. In practice, most software tolerates the lack of fine-grained composability by deferring to these coarse-grained mechanisms: a misbehaving module is handled by restarting the process, and a service dependency is managed by the container orchestrator."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                813,
+                885,
+                864
+            ]
+        },
+        {
+            "type": "page_footnote",
+            "content": {
+                "page_footnote_content": [
+                    {
+                        "type": "text",
+                        "content": "1Data retrieved from the Visual Studio Code Marketplace on June 9, 2026."
+                    }
+                ]
+            },
+            "bbox": [
+                129,
+                888,
+                626,
+                903
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "5"
+                    }
+                ]
+            },
+            "bbox": [
+                492,
+                927,
+                505,
+                940
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                112,
+                97,
+                887,
+                164
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "However, this workaround imposes substantial costs. Temporally, each restart discards all process-local accumulated state (e.g., caches, connections, partial computations), and rebuilding it takes seconds to minutes [15]; maintaining availability in the interim requires redundant replicas, incurring resource overhead to compensate for the inability to recover a single component. Spatially, container-level orchestration cannot express dependencies between components sharing an address space, and introduces network overhead for interactions that could be local function calls. Both mechanisms operate at the boundary of processes and containers, yet modern systems increasingly compose at a finer level. This granularity mismatch demands a compositional abstraction that manages effects and dependencies at the same level as the components themselves."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                171,
+                887,
+                335
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1.3. Contributions"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                360,
+                282,
+                375
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The two dimensions of dynamic composability concern, respectively, how computations modify and how they depend on their environment. These two directions are what effect systems [16, 17] and coeffect systems [18, 19] formalize: effects provide the formal vocabulary for reasoning about environmental modifications, and coeffects for reasoning about environmental requirements. However, existing formulations restrict reasoning to compile-time analysis over lexically fixed scopes, and do not extend to dynamic scenarios where components arrive and depart at runtime. By lifting effects to a revertible runtime model and coeffects to a reactive dependency resolution mechanism, we obtain a unified formal foundation for dynamic composability, one that is language-agnostic and applicable to any software architecture requiring dynamic composition. We make the following contributions:"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                390,
+                887,
+                552
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1. We formalize revertible effects (Section 3.1): every context transformation carries an explicit inverse that the runtime holds, and both tracking and recovery preserve composition, so the context is recovered upon component removal. This establishes local temporal composability."
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                560,
+                887,
+                624
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2. We formalize reactive coeffects (Section 3.2): a component declares the coeffects it requires as a specification, and each change of the context is classified against that specification as activating, deactivating, or neutral, driving the component's activation and deactivation. This establishes local spatial composability."
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                625,
+                887,
+                689
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "3. We introduce the context paradigm (Section 3.3): the effect context and the coeffect context are unified into a single context type, every effect and coeffect is mediated through it, and the mediation induces an observational equivalence up to which the effects of distinct components attain independence."
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                690,
+                887,
+                755
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "4. We develop a calculus of dynamic composition (Section 4), which combines the two mechanisms into the notion of a component and gives them an operational semantics. The metatheory then carries spatiotemporal composability from a single component to a whole system of interleaved components."
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                755,
+                885,
+                819
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "5. We implement these ideas in Cordis (Section 5), a meta-framework of spatiotemporal composability that provides a core library realizing the formal model with effect tracking and coeffect resolution, as well as a declarative component loader with configuration reconciliation and hot module replacement."
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                820,
+                885,
+                885
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "6"
+                    }
+                ]
+            },
+            "bbox": [
+                492,
+                928,
+                505,
+                941
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2. Preliminaries"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                97,
+                289,
+                114
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This section provides a concise overview of effect and coeffect systems—the two theoretical pillars underlying our work. We assume familiarity with basic type theory and category theory; the goal here is to fix notation and introduce the key abstractions that Section 3 will operationalize as runtime mechanisms."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                131,
+                885,
+                198
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2.1. Effects"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                223,
+                220,
+                239
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In the simply typed lambda calculus (STLC) [20, 21], a typing judgment "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Gamma \\vdash t : T"
+                    },
+                    {
+                        "type": "text",
+                        "content": "states that term t has type "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "_ T"
+                    },
+                    {
+                        "type": "text",
+                        "content": "under context Γ. An effect system refines the type to describe what side effects a computation may produce, yielding judgments of the form"
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                252,
+                884,
+                303
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\Gamma \\vdash t : T _ { \\mathrm { e f f e c t } }\\tag{1}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/ce814072118734366648feec016a908c0dafb8e45cc97206d270f5e6c94a8691.jpg"
+                }
+            },
+            "bbox": [
+                445,
+                309,
+                549,
+                326
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Here, the result type is annotated with an element of an effect algebra that describes which side effects the computation may produce, enabling compositional reasoning about stateful computations. This approach originates with Lucassen and Gifford [22], who introduced a kinded type system distinguishing types, effects, and regions to discover scheduling constraints in parallel programs."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                337,
+                885,
+                420
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Monadic effects. Moggi [16] first modeled computational effects categorically via monads; Wadler [23] popularized the approach in Haskell. A monad "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( T , \\eta , \\mu )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "on a category C encapsulates an effectful computation as a value of type "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "T ( A )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\eta : A  T ( A )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "lifting pure values and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mu : T ( T ( A ) ) \\to T ( A )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "sequencing nested computations. Classic instances include the Maybe monad (for partiality), State monad (for mutable state), and IO monad (for external interaction)."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                426,
+                887,
+                525
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Algebraic effects. Plotkin and Power [17, 24] showed that algebraic operations determine monads, establishing a framework in which effect interfaces are decoupled from their implementations. An effect signature Σ declares a set of operations "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\mathrm { e . g . , g e t : } ( ) \\to S , \\mathrm { p u t : } S \\to ( )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "for state); programs invoke operations freely without committing to a particular interpretation. Plotkin and Pretnar [25] subsequently introduced effect handlers, which interpret operations by providing continuation semantics:"
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                531,
+                887,
+                631
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\mathrm { h a n d l e } e \\mathrm { w i t h } \\left\\{ \\mathrm { o p } ( v , \\kappa ) \\mapsto \\dots \\right\\}\\tag{2}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/c7c3b196fcc01373b333b837312416b018d806f4029c9ccd86d562e4bf05c4f1.jpg"
+                }
+            },
+            "bbox": [
+                369,
+                638,
+                625,
+                656
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The handler receives the operation argument v and the delimited continuation "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\kappa ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "which it may invoke zero, one, or multiple times, enabling exceptions, coroutines, and non-determinism within a uniform framework [26]. Languages such as Koka [27, 28], Eff [29], and OCaml 5 [30] have adopted algebraic effects with varying design trade-offs."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                665,
+                884,
+                733
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2.2. Coeffects"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                758,
+                242,
+                774
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Dually to effects, a coeffect system [18, 31] enriches the context rather than the type, yielding judgments of the form"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                787,
+                882,
+                820
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\Gamma _ { \\mathrm { c o e f f e c t } } \\vdash t : T\\tag{3}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/942bc1c6909e629acb11b995e2227ab3ec5f4973814d5644e68fd38ef5e9704d.jpg"
+                }
+            },
+            "bbox": [
+                440,
+                827,
+                557,
+                845
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Here, the context is annotated with an element of a coeffect algebra describing what the computation requires from its environment, such as resources to access, permissions to hold or services to depend on. While effects model a program's impact on the world, coeffects model the world's constraints on the program."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                854,
+                885,
+                889
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "7"
+                    }
+                ]
+            },
+            "bbox": [
+                492,
+                927,
+                505,
+                940
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                112,
+                97,
+                882,
+                130
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Comonadic coeffects. The idea of using comonads to structure context-dependent computation was first developed by Uustalu and Vene [32], who proposed symmetric (semi)monoidal comonads as the dual of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { M o g g i ^ { \\prime } s }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "monadic framework for effects, capturing notions such as dataflow and attribute evaluation. Petricek et al. [18] built on this foundation to propose coeffects as a unified static analysis of context-dependence. A comonad "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( D , \\varepsilon , \\delta )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "captures context-dependent computation: "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\varepsilon : D ( A ) \\to A"
+                    },
+                    {
+                        "type": "text",
+                        "content": "extracts the current value from a context, and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\delta : D ( A )  D ( D ( A ) )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "duplicates context for nested access. The Environment comonad "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "D ( X ) = E \\times X"
+                    },
+                    {
+                        "type": "text",
+                        "content": "models dependence on a fixed environment "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "E ;"
+                    },
+                    {
+                        "type": "text",
+                        "content": "the Stream comonad "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "D ( X ) ="
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbb { N } \\to X"
+                    },
+                    {
+                        "type": "text",
+                        "content": "models dependence on temporal data."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                137,
+                884,
+                285
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Graded coeffects. For finer-grained tracking, graded coeffect systems use a pre-ordered semiring "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pmb { S } = ( S , \\pmb { \\Sigma } , + , \\times , 0 , 1 )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "as the coeffect algebra [33], a discipline later unified with graded effects by Gaboardi et al. [19]. Elements of S annotate each variable binding to quantify its usage: 0 for unused, 1 for linear use, n for bounded use, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\infty"
+                    },
+                    {
+                        "type": "text",
+                        "content": "for unrestricted use. The semiring operations compose coeffects sequentially "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\times )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and in parallel (+), enabling precise resource tracking, sensitivity analysis [34], and information-flow control [35, 36] within a unified algebraic framework [37]."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                292,
+                885,
+                406
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2.3. Relationship to Dynamic Composability"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                432,
+                504,
+                450
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Effect and coeffect systems organize reasoning about computation along two complementary directions: effects describe how a computation modifies its environment, whereas coeffects describe how it depends on its environment. These two directions correspond to the two dimensions of dynamic composability identified in Section 1:"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                462,
+                885,
+                529
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "• Temporal composability demands that a component's modifications to the shared environment be revertible upon unloading. The relevant effects are the stateful ones, which durably transform that environment; undoing such a transformation requires it to admit an inverse."
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                535,
+                885,
+                599
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "• Spatial composability demands that inter-component dependencies be declared and managed reactively. Such dependencies are the very thing coeffects capture, and managing them amounts to resolving each against what the environment supplies."
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                600,
+                885,
+                650
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "However, classical effect and coeffect systems are static instruments: effects are tracked within lexically fixed scopes and discharged by compile-time handlers; coeffect annotations are verified against contexts determined before execution. Dynamic composition, by contrast, requires these guarantees to hold for components that arrive and depart at runtime, against contexts that evolve continuously. No fixed lexical scope can delimit a plugin loaded after deployment; no compile-time context can anticipate dependencies that emerge from runtime configuration."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                657,
+                885,
+                772
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This motivates a shift in perspective: rather than extending static type systems with more annotations, we reify the conceptual structures of effects and coeffects so that a runtime can operate on them directly, establishing dynamically the guarantees these systems provide statically."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                778,
+                887,
+                845
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "8"
+                    }
+                ]
+            },
+            "bbox": [
+                492,
+                927,
+                505,
+                940
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3. Revertible Effects and Reactive Coeffects"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                112,
+                97,
+                559,
+                114
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This section lifts the concepts of effects and coeffects introduced in Section 2 to runtime mechanisms, constructing a theory of dynamic composition. The central idea is to turn the typing contexts carrying effects and coeffects into context types, runtime-operable types that reify the context as a first-class entity. Section 3.1 models an effect as a context transformation paired with an inverse that the runtime holds, establishing temporal composability local to one component; Section 3.2 models a coeffect as a declared dependency against which every context change is classified, establishing its spatial counterpart. Each local guarantee stops where other components enter. Toward the global form of both, Section 3.3 unifies the two contexts into one and introduces the context paradigm: every effect and coeffect is mediated through the unified context, and the mediation induces the observational equivalence up to which every later equality is read. Section 3.4 then establishes effect independence and coeffect commutativity, under which the effects of distinct components interleave without disturbing one another."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                131,
+                885,
+                328
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.1. Revertible Effects"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                354,
+                312,
+                369
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Temporal composability is the ability to load and unload components at runtime such that, upon unloading, the shared environment is recovered to its pre-composition state. This requires that every modification a component makes to the environment be both trackable and recoverable. We therefore model an effect as a function of type "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Gamma  \\Gamma \\times ( \\Gamma  \\Gamma )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ": applied to the current context, it yields the modified context together with an explicit inverse. Supplying that inverse is what lets the effect be reverted, and returning it to the runtime is what makes the effect trackable. We call such effects revertible: by composing these inverses during execution, local temporal composability becomes a structural guarantee."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                382,
+                885,
+                514
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.1.1. Effect Context"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                537,
+                290,
+                554
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Given any impure function "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f : X \\to Y ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "we transform it into a pure form "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f : \\Gamma \\times X \\to \\Gamma \\times Y ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "where Γ is the context type. On this pure form, all possible side effects can be represented as transformations on Γ: for any fixed input "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "x : X ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": " the induced map "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma \\mapsto \\mathrm { p r } _ { 1 } ( f ( \\gamma , x ) ) : \\Gamma \\to \\mathrm { I }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "captures the side effect of f independently of the return value. Effects on Γ therefore live in the monoid of transformations "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Gamma  \\Gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": "under composition o, where each monoid axiom has a direct reading as a property of effects:"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                564,
+                885,
+                663
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "• Closure: the sequential composition of two effects is again an effect;"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                664,
+                712,
+                680
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "• Associativity: a composite effect is independent of how it is bracketed;"
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                680,
+                732,
+                695
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "I d e n t i t y { : } \\operatorname { i d } _ { \\Gamma } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "the identity function on "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Gamma ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "acts as the unit of composition."
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                696,
+                742,
+                713
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "To model effects that can be undone, we pair each transformation f with another transformation g that undoes "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and call g a left inverse of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "abbreviated to inverse throughout the paper. Undoing is one-sided: what an inverse is held to is "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g \\circ f"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and never "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f \\circ g"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Pairs of transformations carry a multiplication of their own:"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                720,
+                887,
+                785
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Definition 1. Define the twisted composition of pairs of context transformations by"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                797,
+                779,
+                814
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "( f _ { 1 } , g _ { 1 } ) \\circ ( f _ { 2 } , g _ { 2 } ) : = ( f _ { 1 } \\circ f _ { 2 } , g _ { 2 } \\circ g _ { 1 } )\\tag{4}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/5ad63fcda5cd305c28cd44611df46fab671a967625d5e2f0f65aa1962eb3f685.jpg"
+                }
+            },
+            "bbox": [
+                352,
+                822,
+                643,
+                840
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "As for o itself, the left operand acts after the right, and the inverses accumulate in the opposite order. It makes "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\Gamma  \\Gamma ) \\times ( \\Gamma  \\Gamma )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "a monoid with unit "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\mathrm { i d } _ { \\Gamma } , \\mathrm { i d } _ { \\Gamma } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the product of the monoid of transformations with its opposite, which we call the twisted composition monoid "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { T } _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "over Γ."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                850,
+                884,
+                900
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "9"
+                    }
+                ]
+            },
+            "bbox": [
+                492,
+                927,
+                505,
+                940
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "To track effects within the context itself, we introduce the following definition:"
+                    }
+                ]
+            },
+            "bbox": [
+                139,
+                97,
+                786,
+                114
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Definition 2. Given a context Γ, define its effect context as:"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                126,
+                586,
+                142
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\partial \\Gamma : = \\Gamma \\times ( \\Gamma \\to \\Gamma )\\tag{5}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/1571e92a762d524ae634895eae0864b23b487a6ab1b8685243d25825af7957d9.jpg"
+                }
+            },
+            "bbox": [
+                418,
+                151,
+                576,
+                167
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "It can be understood as a pair "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\gamma , \\varphi )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", where:"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                179,
+                477,
+                195
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma : \\Gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is the current context state;"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                196,
+                430,
+                210
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "\\varphi : \\Gamma \\to \\Gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is the accumulator, the composite of the inverses of the effects performed so far, and the function that recovers the context to its initial state."
+                    }
+                ]
+            },
+            "bbox": [
+                139,
+                211,
+                885,
+                243
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In particular, the initial effect context can be represented as "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\gamma _ { 0 } , \\mathrm { i d _ { \\Gamma } } )"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                243,
+                673,
+                260
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "We also write "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\partial ^ { 2 } \\Gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": "for "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\partial ( \\partial \\Gamma ) = \\partial \\Gamma \\times ( \\partial \\Gamma \\to \\partial \\Gamma )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "; iterating ∂ this way yields the tower "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Gamma , \\partial \\Gamma , \\partial ^ { 2 } \\Gamma , \\cdots"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                272,
+                884,
+                305
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Given the presence of the accumulator "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\varphi ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "all effects performed on "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\partial \\Gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": "can be tracked and the context can be recovered. We now give the concrete constructions for tracking and recovery."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                313,
+                884,
+                347
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Definition 3. Define the transformation track "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\tau _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "on pairs of context functions:"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                359,
+                741,
+                375
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array} { l r c l c l } { \\operatorname { t r a c k } _ { \\Gamma } } & { \\colon } & { ( \\Gamma \\to \\Gamma ) \\times ( \\Gamma \\to \\Gamma ) } & { \\to } & { \\partial \\Gamma } & { \\to } & { \\partial \\Gamma } \\\\ { \\operatorname { t r a c k } _ { \\Gamma } } & { = } & { ( f , g ) } & { \\mapsto } & { ( \\gamma , \\varphi ) } & { \\mapsto } & { ( f ( \\gamma ) , \\varphi \\circ g ) } \\end{array}\\tag{6}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/508db6a35d9ab54d6dbd8ce7a0fa880dd8c1193459d92f756c9e1ea17efe8b74.jpg"
+                }
+            },
+            "bbox": [
+                252,
+                382,
+                742,
+                423
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This transformation converts a forward function f together with a candidate inverse g into a transformation of the effect context ∂Γ. Applying "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\operatorname { t r a c k } _ { \\Gamma } ( f , g )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "to a state "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\gamma , \\varphi )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "transforms γ by f and composes the inverse g onto "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\varphi ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "thereby tracking the effect of f in the context."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                435,
+                884,
+                485
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Theorem 4. For every "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( f , g ) \\in ( \\Gamma \\to \\Gamma ) \\times ( \\Gamma \\to \\Gamma )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", write "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f ^ { \\prime } : = \\mathrm { t r a c k } _ { \\Gamma } ( f , g )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "; then the following diagram commutes, that is,"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                495,
+                884,
+                529
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\operatorname { p r } _ { 1 } \\circ f ^ { \\prime } = f \\circ \\operatorname { p r } _ { 1 }\\tag{7}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/a3ca6a90289858481f05141f737c9b22f97a0a6d631674dddb7fadfc25f0fa94.jpg"
+                }
+            },
+            "bbox": [
+                426,
+                537,
+                568,
+                555
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array} { r l r } & { } & { \\Gamma \\xrightarrow { f } \\Gamma } \\\\ & { } & { \\mathrm { p r } _ { 1 } \\Bigg \\uparrow \\overline { { \\Bigg \\bigcup _ { t = \\mathrm { d } \\setminus \\mathrm { d } } \\Bigg \\bigcup _ { \\mathrm { } } \\mathrm { p r } _ { 1 } } } } \\\\ & { } & { \\partial \\Gamma \\xrightarrow { \\partial \\Gamma } \\partial \\Gamma } \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/e4cd1e742ee0707e78eb9ba04f64f9fc52603582f1cf268d39b99e32d5ae342d.jpg"
+                }
+            },
+            "bbox": [
+                410,
+                567,
+                584,
+                667
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Proof. For all "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\gamma , \\varphi ) \\in \\partial \\Gamma"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                684,
+                321,
+                701
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array} { r } { ( \\mathrm { p r } _ { 1 } \\circ \\mathrm { t r a c k } _ { \\Gamma } ( f , g ) ) ( \\gamma , \\varphi ) = \\mathrm { p r } _ { 1 } ( f ( \\gamma ) , \\varphi \\circ g ) } \\\\ { = f ( \\gamma ) \\qquad } \\\\ { = ( f \\circ \\mathrm { p r } _ { 1 } ) ( \\gamma , \\varphi ) } \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/e05be2387e2f9659c45e5cb5431f8b4f39b8386e2651c28c9c0bf0eb34c1adc4.jpg"
+                }
+            },
+            "bbox": [
+                324,
+                709,
+                670,
+                768
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Theorem 4 ensures that tracking leaves the forward behavior untouched: on the context state, track "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\scriptstyle \\int f , g )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "acts as "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f"
+                    },
+                    {
+                        "type": "text",
+                        "content": "does, whatever candidate inverse it carries."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                787,
+                884,
+                820
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Theorem "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5 . \\mathrm { t r a c k } _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is a monoid homomorphism from "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { T } _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "into "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\partial \\Gamma  \\partial \\Gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". That is,"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                832,
+                764,
+                847
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1. tracl "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { { s } } _ { \\Gamma } ( \\mathrm { { i d } } _ { \\Gamma } , \\mathrm { { i d } } _ { \\Gamma } ) = \\mathrm { { i d } } _ { \\partial \\Gamma } ;"
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                848,
+                361,
+                864
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2. for all "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( f _ { 1 } , g _ { 1 } ) , ( f _ { 2 } , g _ { 2 } ) \\in \\mathfrak { T } _ { \\Gamma } ,"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                864,
+                394,
+                881
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\operatorname { t r a c k } _ { \\Gamma } ( ( f _ { 1 } , g _ { 1 } ) \\circ ( f _ { 2 } , g _ { 2 } ) ) = \\operatorname { t r a c k } _ { \\Gamma } ( f _ { 1 } , g _ { 1 } ) \\circ \\operatorname { t r a c k } _ { \\Gamma } ( f _ { 2 } , g _ { 2 } )\\tag{8}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/3450eac973c95faf890b59424c17dcfc7abe0365fbb0ca15a370decacee21025.jpg"
+                }
+            },
+            "bbox": [
+                292,
+                881,
+                754,
+                898
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "10"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                510,
+                941
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Proof."
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                97,
+                164,
+                112
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1. The unit is carried to the unit, since track "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { \\Phi } _ { \\Gamma } ( \\mathrm { i d } _ { \\Gamma } , \\mathrm { i d } _ { \\Gamma } ) ( \\gamma , \\varphi ) = ( \\gamma , \\varphi \\circ \\mathrm { i d } _ { \\Gamma } ) = ( \\gamma , \\varphi )"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                112,
+                818,
+                129
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2. For the multiplication, take any "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\gamma , \\varphi ) \\in \\partial \\Gamma \\colon"
+                    }
+                ]
+            },
+            "bbox": [
+                139,
+                129,
+                529,
+                146
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array} { r l } & { \\bigl ( \\operatorname { t r a c k } _ { \\Gamma } ( f _ { 1 } , g _ { 1 } ) \\circ \\operatorname { t r a c k } _ { \\Gamma } ( f _ { 2 } , g _ { 2 } ) \\bigr ) ( \\gamma , \\varphi ) = \\operatorname { t r a c k } _ { \\Gamma } ( f _ { 1 } , g _ { 1 } ) ( f _ { 2 } ( \\gamma ) , \\varphi \\circ g _ { 2 } ) } \\\\ & { \\qquad = \\bigl ( f _ { 1 } ( f _ { 2 } ( \\gamma ) \\bigr ) , \\varphi \\circ g _ { 2 } \\circ g _ { 1 } \\bigr ) } \\\\ & { \\qquad = \\operatorname { t r a c k } _ { \\Gamma } ( f _ { 1 } \\circ f _ { 2 } , g _ { 2 } \\circ g _ { 1 } ) ( \\gamma , \\varphi ) } \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/7c65b4f447f0d4278f6e4ddf21724dce68884e79d75caeb1ecfbb2b78fb72692.jpg"
+                }
+            },
+            "bbox": [
+                250,
+                146,
+                796,
+                205
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Theorem "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ 5"
+                    },
+                    {
+                        "type": "text",
+                        "content": "ensures that tracking one pair at a time agrees with tracking their twisted composite at once, so a sequence of tracked effects can be reasoned about as a single tracked effect."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                223,
+                882,
+                271
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Definition 6. Define the transformation recover on "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\partial \\Gamma"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                285,
+                573,
+                300
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array} { l r } { \\mathrm { r e c o v e r } _ { \\Gamma } } & { \\colon \\quad \\partial \\Gamma } & { \\to \\quad \\partial \\Gamma } \\\\ { \\mathrm { r e c o v e r } _ { \\Gamma } } & { = } & { ( \\gamma , \\varphi ) \\mapsto \\begin{array} { l } { ( \\varphi ( \\gamma ) , \\mathrm { i d } _ { \\Gamma } ) } \\end{array} } \\end{array}\\tag{9}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/2f18fab4c91ac83cf091533fd39b38d11085dacb384fd0b75a9c16082f41e836.jpg"
+                }
+            },
+            "bbox": [
+                349,
+                309,
+                645,
+                349
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This transformation applies the recovery function "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\varphi"
+                    },
+                    {
+                        "type": "text",
+                        "content": "to the current state "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and resets "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\varphi"
+                    },
+                    {
+                        "type": "text",
+                        "content": "to the identity. The following diagram illustrates how recover recovers the context to its initial state after a sequence of effects "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f _ { i } ^ { \\prime } : = \\mathrm { t r a c k } _ { \\Gamma } ( f _ { i } , g _ { i } ) , i = 1 , \\cdots , n ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "has been applied to "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\partial \\Gamma"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                360,
+                884,
+                410
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array} { r l } & { \\Gamma \\xrightarrow { f _ { 1 } } \\Gamma \\xrightarrow { \\Gamma \\quad \\quad \\Gamma \\quad \\quad \\Gamma \\quad \\quad \\Gamma \\quad } \\Gamma \\xrightarrow { f _ { n } \\quad \\quad \\Gamma \\quad } \\Gamma } \\\\ & { \\partial \\Gamma \\xrightarrow { \\mathrm { \\Bigg \\Vert ~ t r a c k ~ } } \\partial \\Gamma \\xrightarrow { \\mathrm { \\Bigg \\Vert ~ t r a c k ~ } } \\partial \\Gamma \\xrightarrow { \\mathrm { \\Bigg \\Vert ~ t r a c k ~ } } \\partial \\Gamma \\xrightarrow { \\mathrm { \\Bigg \\Vert ~ t r a c k ~ } } \\partial \\Gamma } \\\\ & { \\uparrow \\quad \\quad \\quad \\quad \\mathrm { r e c o v e r } } \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/d6b67ca87fb5b99b6bf56a44720669ea02e81110418e2e6f22d99eec275630ba.jpg"
+                }
+            },
+            "bbox": [
+                324,
+                419,
+                672,
+                541
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The diagram shows that the tracked effects followed by recover carry the initial effect context back to itself. Each tracking step in fact preserves the result of recovery itself, from whatever state it is taken:"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                551,
+                884,
+                600
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Theorem 7. For every "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\gamma , \\varphi ) \\in \\partial \\Gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and every pair "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( f , g )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\begin{array} { r } { g ( f ( \\gamma ) ) = \\gamma , } \\end{array}"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                613,
+                709,
+                631
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\operatorname { r e c o v e r } _ { \\Gamma } \\bigl ( \\operatorname { t r a c k } _ { \\Gamma } ( f , g ) ( \\gamma , \\varphi ) \\bigr ) = \\operatorname { r e c o v e r } _ { \\Gamma } ( \\gamma , \\varphi )\\tag{10}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/131e4bdf4bc8ec8fa96f218a5597da3355e1decd4459917508ccc65a28af6b80.jpg"
+                }
+            },
+            "bbox": [
+                312,
+                638,
+                682,
+                656
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Proof."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                669,
+                166,
+                686
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array} { r l } & { \\mathrm { r e c o v e r } _ { \\Gamma } ( \\mathrm { t r a c k } _ { \\Gamma } ( f , g ) ( \\gamma , \\varphi ) ) = \\mathrm { r e c o v e r } _ { \\Gamma } ( f ( \\gamma ) , \\varphi \\circ g ) } \\\\ & { \\qquad = ( \\varphi ( g ( f ( \\gamma ) ) ) , \\mathrm { i d } _ { \\Gamma } ) } \\\\ & { \\qquad = ( \\varphi ( \\gamma ) , \\mathrm { i d } _ { \\Gamma } ) = \\mathrm { r e c o v e r } _ { \\Gamma } ( \\gamma , \\varphi ) } \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/1edf4479d00ef66ebd7655029309cdec90fe61120b0771eae6f4573326cbcb22.jpg"
+                }
+            },
+            "bbox": [
+                258,
+                695,
+                737,
+                753
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Theorem "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "7"
+                    },
+                    {
+                        "type": "text",
+                        "content": "ensures that a tracked effect whose inverse reverts it does not move the result of recovery: recovering after the step returns what recovering before it would have. Recovery reads a state through the quantity "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\varphi ( \\gamma )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "alone, so the guarantee amounts to preserving "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\varphi ( \\gamma ) ;"
+                    },
+                    {
+                        "type": "text",
+                        "content": "we refer to "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\varphi ( \\gamma ) = \\gamma _ { 0 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "as the soundness invariant of a state in "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\partial \\Gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". In particular, starting from the initial effect context "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\gamma _ { 0 } , \\mathrm { i d _ { \\Gamma } } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", every state reached by tracked effects whose inverses revert them satisfies the invariant, and recovery carries each such state back to "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\gamma _ { 0 } , \\mathrm { i d _ { \\Gamma } } )"
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                771,
+                885,
+                870
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "11"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                928,
+                509,
+                940
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The preservation along a sequence follows from Theorem 5 in one application. Let "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( f _ { 1 } , g _ { 1 } ) , \\cdots , ( f _ { n } , g _ { n } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "be applied in order from "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\gamma , \\varphi )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and write "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\delta _ { 0 } = \\gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\delta _ { i } = f _ { i } ( \\delta _ { i - 1 } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "for the intermediate context states. By Theorem 5, the composite track(fn, 9n) • …  trac "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\operatorname { k } _ { \\Gamma } ( f _ { 1 } , g _ { 1 } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is a single tracking step, track of the twisted composite "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( f _ { n } \\circ \\cdots \\circ f _ { 1 } , g _ { 1 } \\circ \\cdots \\circ g _ { n } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". If each inverse reverts its own step, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g _ { i } ( \\delta _ { i } ) = \\delta _ { i - 1 } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "then the composite inverse carries "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\delta _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "back to the start: "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( g _ { 1 } \\circ"
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\dotsb \\circ g _ { n } ) ( \\delta _ { n } ) = \\delta _ { 0 } = \\gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The twisted composite therefore meets the hypothesis of Theorem 7 at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and one application of the theorem gives"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                97,
+                885,
+                211
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\operatorname { r e c o v e r } _ { \\Gamma } ( ( \\operatorname { t r a c k } _ { \\Gamma } ( f _ { n } , g _ { n } ) \\circ \\dotsb \\circ \\operatorname { t r a c k } _ { \\Gamma } ( f _ { 1 } , g _ { 1 } ) ) ( \\gamma , \\varphi ) ) = \\operatorname { r e c o v e r } _ { \\Gamma } ( \\gamma , \\varphi )\\tag{11}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/39e83c1c68e6fc4212102acd6212448411737e0cccb661b49f66bca6d5d60da0.jpg"
+                }
+            },
+            "bbox": [
+                220,
+                219,
+                776,
+                237
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A pair with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g \\circ f = \\operatorname { i d } _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "meets the hypothesis at every state."
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                247,
+                625,
+                265
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.1.2. Effect Functions"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                287,
+                307,
+                304
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The track/recover model of the previous section has two limitations:"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                317,
+                677,
+                332
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1. trac "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\operatorname { k } _ { \\Gamma } ( f , g )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "fixes g before any context state is seen, so one uniform g has to meet the hypothesis of Theorem 7 at every state the effect is applied at. Reverting needs less: an inverse for the one state where "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is applied, which may differ from state to state. A perstate inverse cannot be fixed in the argument position before the state is seen; it has to be returned at the point of application."
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                341,
+                885,
+                422
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2. recover is all-or-nothing: it cannot selectively undo one effect while retaining others."
+                    }
+                ]
+            },
+            "bbox": [
+                139,
+                423,
+                863,
+                439
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "To address the two issues, we enhance the model at the input and output sides respectively:"
+                    }
+                ]
+            },
+            "bbox": [
+                139,
+                447,
+                884,
+                463
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1. On the input side, we not only transform Γ but also return an inverse function alongside "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathrm { i t } } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "so that the inverse is supplied where the effect is applied: "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Gamma \\to \\Gamma \\times ( \\Gamma \\to \\Gamma ) , { \\mathrm { i . e . } } , \\Gamma \\to"
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\partial \\Gamma _ { \\mathbf { \\lambda } }"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                470,
+                882,
+                519
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2. On the output side, we not only transform "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\partial \\Gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": "but also return an inverse function alongside "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathrm { i t } } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "so that one effect can be undone while the others are retained: "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\partial \\Gamma  \\partial \\Gamma \\times ( \\partial \\Gamma"
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\partial \\Gamma ) , \\mathrm { i . e . , } \\partial \\Gamma  \\partial ^ { 2 } \\Gamma"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                520,
+                884,
+                569
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The two changes give the input and the output the same shape, i.e., a map from a context to the transformed context paired with an inverse: "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Gamma  \\partial \\Gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": "on the input side and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\partial \\Gamma  \\partial ^ { 2 } \\Gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": "on the output side. One type family therefore covers both levels, and we define it at each context as the effect function type "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { E } _ { \\Gamma } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", refined by a witness to "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathfrak { E } } _ { \\Gamma } ^ { * }"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                576,
+                885,
+                643
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Definition 8. Define the effect function "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { E } _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and witnessed effect function "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathfrak { E } } _ { \\Gamma } ^ { * }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "as:"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                653,
+                752,
+                670
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array} { r l } & { \\mathfrak { E } _ { \\Gamma } : = \\Gamma \\to \\Gamma \\times ( \\Gamma \\to \\Gamma ) } \\\\ & { \\mathfrak { E } _ { \\Gamma } ^ { * } : = \\left( e : \\Gamma \\to \\Gamma \\times ( \\Gamma \\to \\Gamma ) \\right) } \\\\ & { \\quad \\quad \\times \\left( ( \\gamma : \\Gamma ) \\to ( \\delta : \\Gamma ) \\to ( g : \\Gamma \\to \\Gamma ) \\to ( ( \\delta , g ) = e ( \\gamma ) \\to g ( \\delta ) = \\gamma ) \\right) } \\end{array}\\tag{12}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/72d6aad70d44f9f209335fac20f8769bf9594a594201535f09be67a1db3a5134.jpg"
+                }
+            },
+            "bbox": [
+                218,
+                680,
+                776,
+                738
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e ( \\gamma )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "yields a pair "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\delta , g )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "representing:"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                747,
+                473,
+                764
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "\\delta : \\Gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is the new context;"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                764,
+                361,
+                778
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "g : \\Gamma \\to \\Gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is the inverse function of the current effect."
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                781,
+                596,
+                796
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The witness holds each returned inverse to one equation, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g ( \\delta ) = \\gamma \\colon"
+                    },
+                    {
+                        "type": "text",
+                        "content": "the inverse is required to revert the effect only at the state where it was applied. An element of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathfrak { E } } _ { \\Gamma } ^ { * }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "may therefore choose a different inverse at every state. A single g with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g \\circ f = \\operatorname { i d } _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "meets the equation at every state at once, so the assignment "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( f , g ) \\mapsto \\gamma \\mapsto ( f ( \\gamma ) , g )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "carries such a pair into "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathfrak { E } } _ { \\Gamma } ^ { * }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and Theorem 11 shows this assignment to be a homomorphism. The following commutative diagram states the same condition: the inverse e returns reverts the transformation at the state where e was applied:"
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                809,
+                884,
+                891
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "12"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                510,
+                941
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                112,
+                97,
+                884,
+                130
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/2c81c4960ced8fab6015e9c57192f1a3f4663147e25506bbece584de862d22e8.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                388,
+                140,
+                606,
+                237
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Since effect functions "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { E } _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "are no longer endomorphisms on the context, they cannot be directly composed. We therefore define a new operation for effect composition:"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                247,
+                884,
+                281
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Definition 9. Given functions "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f , g \\in { \\mathfrak { E } } _ { \\Gamma } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "define their effect composition "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f \\diamond g"
+                    },
+                    {
+                        "type": "text",
+                        "content": "as:"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                292,
+                747,
+                310
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array} { c c c c } { { f \\diamond g } } & { { : } } & { { \\Gamma } } & { { \\to } } & { { \\partial \\Gamma } } \\\\ { { } } & { { } } & { { } } & { { { \\bf k } { \\bf \\epsilon } ( \\delta , s ) = g ( \\gamma ) ~ { \\bf i n } } } \\\\ { { f \\diamond g } } & { { = } } & { { \\gamma } } & { { \\mapsto ~ { \\bf l e t } ( \\varepsilon , t ) = f ( \\delta ) ~ { \\bf i n } } } \\\\ { { } } & { { } } & { { } } & { { ( \\varepsilon , s \\circ t ) } } \\end{array}\\tag{13}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/047ad5aa8734cb2d33f1ac256cc4dbd172a35000d18647fa78b55989f4d0980b.jpg"
+                }
+            },
+            "bbox": [
+                347,
+                316,
+                648,
+                387
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Theorem 10. Effect composition carries the monoid structure of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { T } _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "over to "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { E } _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". That is,"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                405,
+                821,
+                420
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( { \\mathfrak { E } } _ { \\Gamma } , \\circ )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is a monoid with unit "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\eta _ { \\Gamma } : = \\gamma \\mapsto ( \\gamma , \\mathrm { i d } _ { \\Gamma } ) ;"
+                    }
+                ]
+            },
+            "bbox": [
+                139,
+                422,
+                559,
+                437
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2. the assignment "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( f , g ) \\mapsto \\gamma \\mapsto ( f ( \\gamma ) , g )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is a monoid homomorphism from "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { T } _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "into "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { E } _ { \\Gamma }"
+                    }
+                ]
+            },
+            "bbox": [
+                139,
+                437,
+                852,
+                455
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1. Associativity and the unit laws follow componentwise from those of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\circ _ { \\bullet }"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                474,
+                744,
+                489
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2. Write "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e _ { i } = \\gamma \\mapsto ( f _ { i } ( \\gamma ) , g _ { i } ) ."
+                    },
+                    {
+                        "type": "text",
+                        "content": "; then "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( e _ { 1 } \\diamond e _ { 2 } ) ( \\gamma ) = ( f _ { 1 } ( f _ { 2 } ( \\gamma ) ) , g _ { 2 } \\circ g _ { 1 } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", which is the image of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\left( f _ { 1 } , g _ { 1 } \\right) \\circ \\left( f _ { 2 } , g _ { 2 } \\right)"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\mathrm { i d } _ { \\Gamma } , \\mathrm { i d } _ { \\Gamma } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "maps to "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\eta _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "□"
+                    }
+                ]
+            },
+            "bbox": [
+                139,
+                489,
+                884,
+                525
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Theorem 11. Witnessing survives effect composition, and a uniform inverse witnesses at every state. That is,"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                544,
+                882,
+                575
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathfrak { E } } _ { \\Gamma } ^ { * }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is a submonoid of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { E } _ { \\Gamma } ;"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                577,
+                376,
+                593
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2. the homomorphism of Theorem 10 carries every pair with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g \\circ f = \\operatorname { i d } _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "into "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathfrak { E } } _ { \\Gamma } ^ { * }"
+                    }
+                ]
+            },
+            "bbox": [
+                139,
+                593,
+                801,
+                609
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1. The unit lies in "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathfrak { E } } _ { \\Gamma } ^ { * }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "since "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\operatorname { i d } _ { \\Gamma } ( \\gamma ) = \\gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". For closure, take "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f , g \\in { \\mathfrak { E } } _ { \\Gamma } ^ { * }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and any "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma \\in \\Gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and let "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\delta , s ) = g ( \\gamma ) , ( \\varepsilon , t ) = f ( \\delta )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", so that "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( f \\diamond g ) ( \\gamma ) = ( \\varepsilon , s \\circ t )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Then "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "s ( \\delta ) = \\gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "t ( \\varepsilon ) = \\delta ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "therefore "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( s \\circ t ) ( \\varepsilon ) = s ( \\delta ) = \\gamma"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                629,
+                885,
+                677
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g \\circ f = \\operatorname { i d } _ { \\Gamma } \\operatorname { g i v e s } g ( f ( \\gamma ) ) = \\gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": "at every γ, so the image of such a pair is witnessed at every state. □"
+                    }
+                ]
+            },
+            "bbox": [
+                139,
+                678,
+                884,
+                709
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Just as track lifts a pair of transformations on Γ to ∂Γ, we define effect to lift "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { E } _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "to "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathfrak { E } } _ { \\partial \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "••"
+                    }
+                ]
+            },
+            "bbox": [
+                139,
+                727,
+                850,
+                744
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Definition 12. Define the effect function transformation effect as:"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                756,
+                658,
+                772
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array} { l l l l l l } { { \\mathrm { e f f e c t } _ { \\Gamma } } } & { { : } } & { { \\mathfrak { E } _ { \\Gamma } } } & { {  } } & { { \\partial \\Gamma } } & { {  } } & { { \\partial ^ { 2 } \\Gamma } } \\\\ { { } } & { { } } & { { } } & { { } } & { { } } & { { } } & { { } } \\\\ { { \\mathrm { e f f e c t } _ { \\Gamma } } } & { { = } } & { { e } } & { { \\mapsto } } & { { ( \\gamma , \\varphi ) } } & { { \\mapsto } } & { { \\mathbf { l e t } \\ ( \\delta , g ) = e ( \\gamma ) \\ \\mathbf { i n } } } \\\\ { { } } & { { } } & { { } } & { { } } & { { } } & { { \\ ( ( \\delta , \\varphi \\circ g ) , \\mathrm { t r a c k } _ { \\Gamma } ( g , \\mathrm { p r } _ { 1 } \\circ e ) ) } } \\end{array}\\tag{14}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/9f8960e6921483268540d461c5ddc938c08123d2239f3f792ae8023371b85bfd.jpg"
+                }
+            },
+            "bbox": [
+                250,
+                778,
+                742,
+                835
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Since "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { e f f e c t } _ { \\Gamma } ( e )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is itself "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathfrak { E } } _ { \\partial \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", what it returns is an inverse in the sense of Definition 8 read one level up. That inverse is itself a track of the pair obtained by swapping the two directions of the effect. The ordinary tracking rule applies once more: undoing the effect is an effect in its"
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                847,
+                884,
+                898
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "13"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                510,
+                941
+            ]
+        }
+    ]
+]

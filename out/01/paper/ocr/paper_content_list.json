@@ -1,0 +1,2239 @@
+[
+    {
+        "type": "text",
+        "text": "the same condition: the inverse e returns reverts the transformation at the state where e was applied:",
+        "bbox": [
+            112,
+            97,
+            884,
+            130
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/09d421a4c5db4c16f81b9b2d6460ce2fbf90ce826df7a10060c7d868fd7d06ed.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            388,
+            140,
+            606,
+            237
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Since effect functions $\\mathfrak { E } _ { \\Gamma }$ are no longer endomorphisms on the context, they cannot be directly composed. We therefore define a new operation for effect composition:",
+        "bbox": [
+            112,
+            247,
+            884,
+            281
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Definition 9. Given functions $f , g \\in { \\mathfrak { E } } _ { \\Gamma } ,$ define their effect composition $f \\diamond g$ as:",
+        "bbox": [
+            112,
+            292,
+            747,
+            310
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/856a5c4e2e7ffa9eb278e1919b3e84c9446d1b9ec5ba741237472740ec939f86.jpg",
+        "text": "$$\n\\begin{array} { c c c c } { { f \\diamond g } } & { { : } } & { { \\Gamma } } & { { \\to } } & { { \\partial \\Gamma } } \\\\ { { } } & { { } } & { { } } & { { { \\bf k } { \\bf \\Lambda } ( \\delta , s ) = g ( \\gamma ) ~ { \\bf i n } } } \\\\ { { f \\diamond g } } & { { = } } & { { \\gamma } } & { { \\mapsto ~ { \\bf \\Lambda } { \\bf k } { \\bf t } ~ ( \\varepsilon , t ) = f ( \\delta ) ~ { \\bf i n } } } \\\\ { { } } & { { } } & { { } } & { { ( \\varepsilon , s ~ \\circ t ) } } \\end{array}\\tag{13}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            347,
+            316,
+            648,
+            387
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Theorem 10. Effect composition carries the monoid structure of $\\mathfrak { T } _ { \\Gamma }$ over to $\\mathfrak { E } _ { \\Gamma }$ . That is,",
+        "bbox": [
+            112,
+            405,
+            821,
+            420
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1. $( { \\mathfrak { E } } _ { \\Gamma } , \\circ )$ is a monoid with unit $\\eta _ { \\Gamma } : = \\gamma \\mapsto ( \\gamma , \\mathrm { i d } _ { \\Gamma } ) ;$",
+        "bbox": [
+            139,
+            422,
+            559,
+            437
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2. the assignment $( f , g ) \\mapsto \\gamma \\mapsto ( f ( \\gamma ) , g )$ is a monoid homomorphism from $\\mathfrak { T } _ { \\Gamma }$ into $\\mathfrak { E } _ { \\Gamma }$",
+        "bbox": [
+            139,
+            437,
+            852,
+            455
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1. Associativity and the unit laws follow componentwise from those of $\\circ _ { \\bullet }$",
+        "bbox": [
+            141,
+            474,
+            744,
+            489
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2. Write $e _ { i } = \\gamma \\mapsto ( f _ { i } ( \\gamma ) , g _ { i } ) .$ ; then $( e _ { 1 } \\diamond e _ { 2 } ) ( \\gamma ) = ( f _ { 1 } ( f _ { 2 } ( \\gamma ) ) , g _ { 2 } \\circ g _ { 1 } )$ , which is the image of $\\left( f _ { 1 } , g _ { 1 } \\right) \\circ \\left( f _ { 2 } , g _ { 2 } \\right)$ , and $( \\mathrm { i d } _ { \\Gamma } , \\mathrm { i d } _ { \\Gamma } )$ maps to $\\eta _ { \\Gamma }$ □",
+        "bbox": [
+            139,
+            489,
+            884,
+            525
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Theorem 11. Witnessing survives effect composition, and a uniform inverse witnesses at every state. That is,",
+        "bbox": [
+            112,
+            544,
+            882,
+            575
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1. ${ \\mathfrak { E } } _ { \\Gamma } ^ { * }$ is a submonoid of $\\mathfrak { E } _ { \\Gamma } ;$",
+        "bbox": [
+            141,
+            577,
+            376,
+            593
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2. the homomorphism of Theorem 10 carries every pair with $g \\circ f = \\operatorname { i d } _ { \\Gamma }$ into ${ \\mathfrak { E } } _ { \\Gamma } ^ { * }$",
+        "bbox": [
+            139,
+            593,
+            801,
+            609
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1. The unit lies in ${ \\mathfrak { E } } _ { \\Gamma } ^ { * }$ since $\\operatorname { i d } _ { \\Gamma } ( \\gamma ) = \\gamma$ . For closure, take $f , g \\in { \\mathfrak { E } } _ { \\Gamma } ^ { * }$ and any $\\gamma \\in \\Gamma$ , and let $( \\delta , s ) = g ( \\gamma ) , ( \\varepsilon , t ) = f ( \\delta )$ , so that $( f \\diamond g ) ( \\gamma ) = ( \\varepsilon , s \\circ t )$ . Then $s ( \\delta ) = \\gamma$ and $t ( \\varepsilon ) = \\delta ,$ therefore $( s \\circ t ) ( \\varepsilon ) = s ( \\delta ) = \\gamma$",
+        "bbox": [
+            141,
+            629,
+            885,
+            677
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2. $g \\circ f = \\operatorname { i d } _ { \\Gamma } \\operatorname { g i v e s } g ( f ( \\gamma ) ) = \\gamma$ at every γ, so the image of such a pair is witnessed at every state. □",
+        "bbox": [
+            139,
+            678,
+            884,
+            709
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Just as track lifts a pair of transformations on Γ to ∂Γ, we define effect to lift $\\mathfrak { E } _ { \\Gamma }$ to ${ \\mathfrak { E } } _ { \\partial \\Gamma }$ ••",
+        "bbox": [
+            139,
+            727,
+            850,
+            744
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Definition 12. Define the effect function transformation effect as:",
+        "bbox": [
+            114,
+            756,
+            658,
+            772
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/a1dfb92d51db1211f1c3c4edc6b7ca1f3115ed1c5420e911be873f46b86b650b.jpg",
+        "text": "$$\n\\begin{array} { l l l l l l } { { \\mathrm { e f f e c t } _ { \\Gamma } } } & { { : } } & { { \\mathfrak { E } _ { \\Gamma } } } & { {  } } & { { \\partial \\Gamma } } & { {  } } & { { \\partial ^ { 2 } \\Gamma } } \\\\ { { } } & { { } } & { { } } & { { } } & { { } } & { { } } & { { } } \\\\ { { \\mathrm { e f f e c t } _ { \\Gamma } } } & { { = } } & { { e } } & { { \\mapsto } } & { { ( \\gamma , \\varphi ) } } & { { \\mapsto } } & { { \\mathbf { l e t } \\ ( \\delta , g ) = e ( \\gamma ) \\ \\mathbf { i n } } } \\\\ { { } } & { { } } & { { } } & { { } } & { { } } & { { \\ ( ( \\delta , \\varphi \\circ g ) , \\mathrm { t r a c k } _ { \\Gamma } ( g , \\mathrm { p r } _ { 1 } \\circ e ) ) } } \\end{array}\\tag{14}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            250,
+            778,
+            742,
+            835
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Since $\\mathrm { e f f e c t } _ { \\Gamma } ( e )$ is itself ${ \\mathfrak { E } } _ { \\partial \\Gamma }$ , what it returns is an inverse in the sense of Definition 8 read one level up. That inverse is itself a track of the pair obtained by swapping the two directions of the effect. The ordinary tracking rule applies once more: undoing the effect is an effect in its",
+        "bbox": [
+            110,
+            847,
+            884,
+            898
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "page_number",
+        "text": "13",
+        "bbox": [
+            487,
+            927,
+            510,
+            941
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "own right, transforming the state by ${ \\mathit { g } } ,$ and the way to undo that is to perform the effect again, which is what $\\mathrm { p r } _ { 1 } \\circ e$ does. The inverse therefore composes onto the accumulator it is handed, exactly as track prescribes.",
+        "bbox": [
+            112,
+            97,
+            887,
+            146
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "We can now prove properties for effect analogous to those of track.",
+        "bbox": [
+            139,
+            154,
+            692,
+            171
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Theorem 13. effect preserves the  operation. That is, $\\forall f , g \\in \\mathfrak { E } _ { \\Gamma }$",
+        "bbox": [
+            112,
+            183,
+            648,
+            199
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "img_path": "images/5579cc502381ec93ce138a4ee32add42961507420dce1051a3aeedc234d5b2f3.jpg",
+        "text": "$$\n\\operatorname { e f f e c t } _ { \\Gamma } ( f ) \\diamond \\operatorname { e f f e c t } _ { \\Gamma } ( g ) = \\operatorname { e f f e c t } _ { \\Gamma } ( f \\diamond g )\\tag{15}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            342,
+            208,
+            652,
+            225
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Proof. Take any $( \\gamma , \\varphi ) \\in \\partial \\Gamma$ , and let $( \\delta , s ) = g ( \\gamma )$ and $( \\varepsilon , t ) = f ( \\delta )$ , so that $( f \\diamond g ) ( \\gamma ) = ( \\varepsilon , s \\circ t )$ and $\\operatorname { p r } _ { 1 } \\circ ( f \\circ g ) = ( \\operatorname { p r } _ { 1 } \\circ f ) \\circ ( \\operatorname { p r } _ { 1 } \\circ g )$ . Then",
+        "bbox": [
+            112,
+            239,
+            880,
+            273
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "img_path": "images/ba1d49813f5c6cbcf2ea3abc83ab8b7e20e2ba116aa31be917ed5f41d7389d7c.jpg",
+        "text": "$$\n\\begin{array} { r l } & { ( \\mathrm { e f f e c t } _ { \\Gamma } ( f ) \\diamond \\mathrm { e f f e c t } _ { \\Gamma } ( g ) ) ( \\gamma , \\varphi ) = ( ( \\varepsilon , \\varphi \\circ s \\circ t ) , \\mathrm { t r a c k } _ { \\Gamma } ( s , \\mathrm { p r } _ { 1 } \\circ g ) \\circ \\mathrm { t r a c k } _ { \\Gamma } ( t , \\mathrm { p r } _ { 1 } \\circ f ) ) } \\\\ & { \\qquad = ( ( \\varepsilon , \\varphi \\circ s \\circ t ) , \\mathrm { t r a c k } _ { \\Gamma } ( s \\circ t , ( \\mathrm { p r } _ { 1 } \\circ f ) \\circ ( \\mathrm { p r } _ { 1 } \\circ g ) ) ) } \\\\ & { \\qquad = \\mathrm { e f f e c t } _ { \\Gamma } ( f \\circ g ) ( \\gamma , \\varphi ) } \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            168,
+            280,
+            828,
+            338
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "where the first step unfolds Definition 12 at $( \\gamma , \\varphi )$ and at $( \\delta , \\varphi \\circ s )$ , the second is Theorem $5 ,$ and the third folds Definition 12 □",
+        "bbox": [
+            112,
+            349,
+            885,
+            381
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "How the two levels relate is what the following diagram shows. Its upper triangle is the witness condition of $e ,$ according to Definition $8 ,$ and its lower triangle is the question of whether $e ^ { \\prime }$ is witnessed the way e is.",
+        "bbox": [
+            112,
+            398,
+            884,
+            447
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/0460797880c24e2fd59fcaaf0a216779430279764b989a72a12b691f4a0c8895.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            337,
+            458,
+            658,
+            625
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Between the levels, the projection $\\mathrm { p r } _ { 1 }$ relates each lifted map to the map it lifts, as it does for $\\mathrm { \\ t r a c { k _ { \\mathrm { T } } } }$ in Theorem 4.",
+        "bbox": [
+            112,
+            636,
+            882,
+            669
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Theorem 14. Let $e \\in { \\mathfrak { E } } _ { \\Gamma } ,$ , write $f : = \\mathrm { p r } _ { 1 } \\circ e .$ , and let $e ^ { \\prime } : = \\mathrm { e f f e c t } _ { \\Gamma } ( e )$ with forward map $f ^ { \\prime } : = \\mathrm { p r } _ { 1 } \\circ$ $e ^ { \\prime }$ Then",
+        "bbox": [
+            112,
+            681,
+            882,
+            713
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1. $\\mathrm { p r } _ { 1 } \\circ f ^ { \\prime } = f \\circ \\mathrm { p r } _ { 1 } ;$",
+        "bbox": [
+            141,
+            714,
+            312,
+            730
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2. for each $( \\gamma , \\varphi ) \\in \\partial \\Gamma$ , the lifted inverse $g ^ { \\prime } : = \\mathrm { p r } _ { 2 } ( e ^ { \\prime } ( \\gamma , \\varphi ) )$ and the inverse $g : = \\mathrm { p r } _ { 2 } ( e ( \\gamma ) )$ witnessed there satisfy $\\operatorname { p r } _ { 1 } \\circ g ^ { \\prime } = g \\circ \\operatorname { p r } _ { 1 }$",
+        "bbox": [
+            141,
+            730,
+            880,
+            762
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Proof.",
+        "bbox": [
+            114,
+            766,
+            164,
+            781
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1. By Definition 12, $f ^ { \\prime } ( \\gamma , \\varphi ) = ( f ( \\gamma ) , \\varphi \\circ g )$ , whose state is $f ( \\gamma ) = ( f \\circ \\operatorname { p r } _ { 1 } ) ( \\gamma , \\varphi )$",
+        "bbox": [
+            141,
+            782,
+            796,
+            799
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2. This is Theorem 4 applied to $g ^ { \\prime } = \\operatorname { t r a c k } _ { \\Gamma } ( g , f )$",
+        "bbox": [
+            141,
+            800,
+            546,
+            815
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Whether the lower triangle closes is settled by computing what the lifted inverse returns:",
+        "bbox": [
+            141,
+            832,
+            872,
+            847
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Theorem 15. Let $e \\in \\mathfrak { E } _ { \\Gamma } ^ { * }$ and write $f : = \\mathrm { p r } _ { 1 } \\circ e$ .Fix $( \\gamma , \\varphi ) \\in \\partial \\Gamma$ , let $( \\delta , g ) = e ( \\gamma )$ , and write $( \\Delta , g ^ { \\prime } )$ for the value of $\\mathrm { e f f e c t } _ { \\Gamma } ( e )$ at $( \\gamma , \\varphi )$ . Then",
+        "bbox": [
+            112,
+            860,
+            880,
+            894
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "page_number",
+        "text": "14",
+        "bbox": [
+            487,
+            927,
+            510,
+            940
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "img_path": "images/34d9d6cadf34e11bae4c51a1bf9c172a2de3574aaf6fb6be167dd14430678c55.jpg",
+        "text": "$$\ng ^ { \\prime } ( \\Delta ) = ( \\gamma , \\varphi \\circ g \\circ f )\\tag{16}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            410,
+            97,
+            586,
+            115
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The state is recovered exactly. The accumulator is restored as well, equivalently $\\operatorname { e f f e c t } _ { \\Gamma } ( e ) \\in$ ${ \\mathfrak { E } } _ { \\partial \\Gamma } ^ { * }$ , if and only if $g \\circ f = \\operatorname { i d } _ { \\Gamma } ;$ and in every case $( \\varphi \\circ g \\circ f ) ( \\gamma ) = \\varphi ( \\gamma )$ , so the soundness invariant is preserved.",
+        "bbox": [
+            112,
+            126,
+            884,
+            174
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Proof. By Definition 12, $\\Delta = ( \\delta , \\varphi \\circ g )$ and $g ^ { \\prime } = \\operatorname { t r a c k } _ { \\Gamma } ( g , f )$ , SO",
+        "bbox": [
+            112,
+            185,
+            623,
+            203
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "img_path": "images/461de91086de76ba840fdc533aed1666b6f506b59ff4ef863a4469a5b2318350.jpg",
+        "text": "$$\ng ^ { \\prime } ( \\Delta ) = ( g ( \\delta ) , \\varphi \\circ g \\circ f ) = ( \\gamma , \\varphi \\circ g \\circ f )\n$$",
+        "text_format": "latex",
+        "bbox": [
+            336,
+            210,
+            658,
+            228
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "using $g ( \\delta ) = \\gamma$ . Membership in ${ \\mathfrak { E } } _ { \\partial \\Gamma } ^ { * }$ requires this to equal $( \\gamma , \\varphi )$ at every input; taking $\\varphi = \\mathrm { i d } _ { \\Gamma }$ turns the equality of accumulators into $g \\circ f = \\operatorname { i d } _ { \\Gamma } ,$ and that condition conversely gives the equality of accumulators for every $\\varphi .$ Finally $( \\varphi \\circ g \\circ f ) ( \\gamma ) = \\varphi ( g ( \\delta ) ) = \\varphi ( \\gamma )$ □",
+        "bbox": [
+            112,
+            239,
+            884,
+            290
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The lower triangle therefore closes only when the inverse witnessed at $\\gamma$ reverts $f$ at every state, so effect does not carry ${ \\mathfrak { E } } _ { \\Gamma } ^ { * }$ into ${ \\mathfrak { E } } _ { \\partial \\Gamma } ^ { * }$ . What holds in every case is agreement at $\\gamma \\colon \\mathrm { r e c o v e r } _ { \\Gamma } ( g ^ { \\prime } ( \\Delta ) ) = \\mathrm { r e c o v e r } _ { \\Gamma } ( \\gamma , \\varphi )$ , which is the whole of what Theorem $7$ assumes of an accumulator, so reverting leaves the recovery target untouched.",
+        "bbox": [
+            110,
+            304,
+            885,
+            370
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3.1.3. Effect Iterators",
+        "text_level": 2,
+        "bbox": [
+            112,
+            393,
+            299,
+            410
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "What a component loads by is not one effect but a sequence of them, and what its unloading reverts is the whole sequence. Reverting effects in the reverse order of application requires nothing further, because each inverse then meets the state its own application produced:",
+        "bbox": [
+            110,
+            422,
+            884,
+            473
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Theorem 16. Let $e _ { 1 } , \\cdots , e _ { n } \\in \\mathfrak { E } _ { \\Gamma } ^ { * }$ be applied in order from $( \\gamma _ { 0 } , \\mathrm { i d _ { \\Gamma } } )$ and reverted in the reverse order. Then",
+        "bbox": [
+            112,
+            483,
+            882,
+            514
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1. each revert recovers the context state its application ran against;",
+        "bbox": [
+            141,
+            517,
+            690,
+            532
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2. every intermediate state satisfies the soundness invariant.",
+        "bbox": [
+            141,
+            533,
+            640,
+            549
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Proof. Each step is an application or a revert. An application carries $( \\gamma , \\varphi )$ to $( \\delta , \\varphi \\circ g )$ with $g ( \\delta ) = \\gamma$ , so it preserves $\\varphi ( \\gamma )$ by Theorem $^ { 7 , }$ whose hypothesis is exactly the witness of ${ \\mathfrak { E } } _ { \\Gamma } ^ { * }$ Reverting in the reverse order hands each inverse the state its own application produced, so by Theorem 15 that revert recovers the preceding state exactly and preserves $\\varphi ( \\gamma )$ as well; neither conclusion depends on the accumulator the inverse receives. □",
+        "bbox": [
+            112,
+            552,
+            885,
+            634
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The sequence itself deserves a reification. An effect iterator performs it one effect at a time, each of whose iterations yields the modified context, an inverse, and a continuation:",
+        "bbox": [
+            110,
+            651,
+            885,
+            684
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Definition 17. Define the effect iterator $\\Im _ { \\Gamma }$ and witnessed effect iterator $\\Im _ { \\Gamma } ^ { * }$ as the following recursive types:",
+        "bbox": [
+            112,
+            696,
+            884,
+            730
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "img_path": "images/a485c5e74cf7bcd5415fe71e27902180080f25eecf55f3ddeacb378778e8d298.jpg",
+        "text": "$$\n\\begin{array} { r l } & { \\mathfrak { I } _ { \\Gamma } : = \\mu \\mathfrak { I } . \\Gamma \\to \\Gamma \\times ( \\Gamma \\to \\Gamma ) \\times \\mathsf { M a y b e } ( \\mathfrak { I } ) } \\\\ & { \\mathfrak { I } _ { \\Gamma } ^ { * } : = \\mu \\mathfrak { I } . \\big ( e : \\Gamma \\to \\Gamma \\times ( \\Gamma \\to \\Gamma ) \\times \\mathsf { M a y b e } ( \\mathfrak { I } ) \\big ) } \\\\ & { \\qquad \\times \\big ( ( \\gamma : \\Gamma ) \\to ( \\delta : \\Gamma ) \\to ( g : \\Gamma \\to \\Gamma ) \\to ( o : \\mathsf { M a y b e } ( \\mathfrak { I } ) ) \\to ( ( \\delta , g , o ) = e ( \\gamma ) \\to g ( \\delta ) = \\gamma ) \\big ) } \\end{array}\\tag{17}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            154,
+            738,
+            840,
+            790
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "where $e ( \\gamma )$ yields a triple $( \\delta , g , o )$ representing:",
+        "bbox": [
+            112,
+            801,
+            502,
+            816
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "• δ is the new context;",
+        "bbox": [
+            141,
+            819,
+            334,
+            832
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "● $g$ is the inverse function of the current effect;",
+        "bbox": [
+            141,
+            834,
+            529,
+            848
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "• o indicates the continuation:",
+        "bbox": [
+            142,
+            851,
+            398,
+            864
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Nothing signals iteration termination;",
+        "bbox": [
+            188,
+            866,
+            514,
+            881
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Just(i) provides the next iteration.",
+        "bbox": [
+            188,
+            883,
+            489,
+            898
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "page_number",
+        "text": "15",
+        "bbox": [
+            487,
+            927,
+            510,
+            941
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The witness holds each iteration to the constraint Definition 8 places on a single effect, and the continuation a witnessed iterator yields is again witnessed.",
+        "bbox": [
+            110,
+            97,
+            882,
+            130
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The effect iterator transformation effectiter extends effect to the iterator structure through recursive invocation:",
+        "bbox": [
+            112,
+            142,
+            882,
+            174
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Definition 18. Define the effect iterator transformation effectiter as:",
+        "bbox": [
+            112,
+            187,
+            660,
+            204
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "img_path": "images/eade12d0266cdbde953a7f3950778305830540a9a36a71146afa4d22ea8f0feb.jpg",
+        "text": "$$\n\\begin{array} { r l r l } & { \\mathrm { e f f e c t } _ { \\Gamma } ^ { \\mathrm { i t e r } } } & { : \\begin{array} { l } { \\mathfrak { I } _ { \\Gamma } } & { \\to } \\end{array} } & { \\partial \\Gamma } & { \\to } \\\\ & { } & & { \\begin{array} { l } { \\mathrm { l e t } \\ ( \\delta , g , o ) = i ( \\gamma ) \\ \\mathrm { i n } } \\\\ { \\mathrm { l e t } \\ t = \\mathrm { t r a c k } _ { \\Gamma } ( g , \\mathrm { p r } _ { 1 } \\circ i ) \\ \\mathrm { i n } } \\end{array} } \\\\ & { \\mathrm { e f f e c t } _ { \\Gamma } ^ { \\mathrm { i t e r } } } & { = } & { i \\ } &  \\mapsto \\begin{array} { l } { ( \\gamma , \\varphi ) } \\end{array} \\mapsto \\begin{array} { l } { \\begin{array} { l } { \\mathbf { m a t c h } \\ o } \\\\ { \\vert \\mathrm { M o t h i n g } \\ \\Rightarrow \\ ( ( \\delta , \\varphi \\circ g ) , t ) } \\end{array} } \\\\ & { } & { \\vert \\operatorname { J u s t } ( i ^ { \\prime } ) \\Rightarrow \\begin{array} { l } { \\mathrm { l e t } \\ ( s , r ) = \\mathrm { e f f e c t } _ { \\Gamma } ^ { \\mathrm { i t e r } } ( i ^ { \\prime } ) ( \\delta , \\varphi \\circ g ) \\ \\mathrm { i n } } \\\\ { ( s , t \\circ r ) } \\end{array} } \\\\ & { } & & { \\begin{array} { r l } { ( s , t \\circ r ) } \\end{array} } \\end{array} \\end{array}\\tag{18}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            163,
+            209,
+            833,
+            331
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "At each iteration, the inverse $g$ is composed onto $\\varphi$ in application order, so the accumulator $\\varphi \\circ g _ { 1 } \\circ \\cdots \\circ g _ { k }$ reverts the effects in LIFO order when applied (Theorem 16). Because $\\mathrm { e f f e c t } _ { \\Gamma } ^ { \\mathrm { i t e r } }$ lands in the same $\\partial \\Gamma  \\partial ^ { 2 } \\Gamma$ as $\\mathrm { e f f e c t } _ { \\Gamma }$ does, an iterator is an effect in its own right and can be used wherever an effect can, and Section 4 reads a component's whole loading as one iterator. The Maybe(J) continuation makes a boundary available between any two consecutive iterations, at which the context is whatever the iterations so far have made it and the accumulator recovers those and nothing more. In this sense the effect iterator is a reified delimited continuation, the structure that mainstream languages expose through the yield operator [38], so the model maps directly onto the generators they already provide.",
+        "bbox": [
+            110,
+            344,
+            885,
+            492
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A plain effect function is the degenerate case: an $e \\in { \\mathfrak { E } } _ { \\Gamma }$ embeds as the iterator whose first iteration already yields Nothing,",
+        "bbox": [
+            112,
+            498,
+            884,
+            531
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "img_path": "images/3636955c9513f43c91cb7e569496fab268c53705b2426a5ff1d9f53f8c4e4255.jpg",
+        "text": "$$\n\\gamma \\mapsto \\mathbf { l e t } \\ ( \\delta , g ) = e ( \\gamma ) \\ \\mathbf { i n } \\ ( \\delta , g , \\mathsf { N o t h i n g } )\\tag{19}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            336,
+            539,
+            658,
+            557
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "and the embedding carries ${ \\mathfrak { E } } _ { \\Gamma } ^ { * }$ into $\\Im _ { \\Gamma } ^ { * }$ , the two witnesses asking the same equation. Every notion defined at iterators below is read at an effect function through this embedding.",
+        "bbox": [
+            112,
+            567,
+            882,
+            601
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Together, these constructions constitute revertible effects: each effect function in ${ \\mathfrak { E } } _ { \\Gamma } ^ { * }$ explicitly provides its own inverse, effect tracks the effect on $\\partial \\Gamma .$ , and the  operation composes effect functions while preserving revertibility. What they deliver is local temporal composability, local in that the guarantee is read of one component's effects taken by themselves. We take that to be the following criterion: for every sequence of effect functions a component applies, the accumulator recovers the context it began at (Theorem 7), and reverting the sequence hands each inverse the state its own application ran against (Theorem 16). Loading a component is running one iterator and accumulating its inverses in $\\varphi ;$ unloading it is applying φ. Two things the criterion leaves out, and both arrive once several components are in play: reverting out of the order the accumulator imposes, and a sequence that interleaves the effects of others. Both are supplied by independence, a condition on the effects rather than a property of the construction (Section 3.4).",
+        "bbox": [
+            110,
+            607,
+            885,
+            804
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3.2. Reactive Coeffects",
+        "text_level": 2,
+        "bbox": [
+            112,
+            829,
+            317,
+            845
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Spatial composability is the ability for components to declare dependencies on one another and for the system to resolve, provide, and withdraw those dependencies at runtime. This requires that dependency satisfaction be re-evaluated whenever the shared context changes, so that a component activates when its dependencies become available and deactivates when they are withdrawn. We therefore model dependencies of a component as a specification and classify each change to the context, against that specification, as activating, deactivating, or neutral. Classifying against the specification is what detects a change in satisfaction; responding to that classification is what drives activation and deactivation. We call such coeffects reactive: by classifying context changes and driving activation and deactivation from them, local spatial composability becomes a structural guarantee.",
+        "bbox": [
+            112,
+            858,
+            884,
+            894
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "page_number",
+        "text": "16",
+        "bbox": [
+            487,
+            927,
+            510,
+            941
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            110,
+            97,
+            885,
+            229
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.2.1. Coeffect Context",
+        "text_level": 2,
+        "bbox": [
+            114,
+            250,
+            312,
+            268
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Traditional inversion-of-control (IoC) containers [39] typically model dependencies as simple key-value mappings. This section formalizes IoC as a coeffect context that synergizes with revertible effects to provide a mathematical foundation for dynamic composition.",
+        "bbox": [
+            112,
+            280,
+            884,
+            330
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Definition 19. Given a type family $\\nu : K \\to$ Type, define the coeffect context as the dependent partial function type:",
+        "bbox": [
+            112,
+            342,
+            884,
+            375
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "img_path": "images/0195a19d77ab049552e2c5bcb2ad7439e2da51684eb97f96a01bf30365662600.jpg",
+        "text": "$$\n\\Sigma : = ( k : K )  \\mathcal { V } _ { k }\\tag{20}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            421,
+            382,
+            574,
+            399
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "where $\\sigma : \\Sigma$ is a finite partial function assigning to each $k \\in \\mathrm { d o m } ( \\sigma ) \\subseteq K$ a value of type $\\nu _ { k }$ We write:",
+        "bbox": [
+            112,
+            410,
+            882,
+            442
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "$\\sigma ( k )$ for application (defined when $k \\in \\mathrm { d o m } ( \\sigma ) )$",
+        "bbox": [
+            141,
+            443,
+            564,
+            460
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "$\\sigma [ k \\mapsto v ]$ for the table binding v at k and agreeing with σ elsewhere;",
+        "bbox": [
+            141,
+            460,
+            717,
+            476
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "$\\sigma \\setminus$ k for restriction (defined when $k \\in \\mathrm { d o m } ( \\sigma ) )$",
+        "bbox": [
+            141,
+            476,
+            559,
+            492
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "$k \\in \\mathrm { d o m } ( \\sigma )$ for membership.",
+        "bbox": [
+            142,
+            493,
+            400,
+            508
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The use of a type family V ensures that each dependency key k is associated with a specific value type $\\nu _ { k }$ , providing static type safety for dependency access. Extension and restriction carry preconditions, imposed by the operations below: a dependency cannot be provided twice $( k \\notin \\mathrm { d o m } ( \\sigma )$ for extension) nor revoked if absent $( k \\in \\mathrm { d o m } ( \\sigma )$ for restriction). A violated precondition is signaled as an error and produces no transition, so the effect algebra, which describes the transitions that do occur, applies to these operations unchanged. A reader preferring to internalize the failure may read every $\\Sigma  \\Sigma$ below as $\\Sigma  \\mathsf { M a y b e } ( \\Sigma )$ and compose in the Maybe monad (Section 2.1), at the cost of replacing each identity by the partial identity on the operation's domain. Based on this context structure, we define two core operations:",
+        "bbox": [
+            110,
+            520,
+            885,
+            669
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Definition 20. The get and set operations on $\\Sigma$ are defined as:",
+        "bbox": [
+            114,
+            680,
+            623,
+            696
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "img_path": "images/9f44860da2607e19e440be906639163e88b1da8fecf3dc3a817e88533051012e.jpg",
+        "text": "$$\n\\begin{array} { l l c c c l } { \\mathrm { g e t } } & { : } & { ( k : K ) } & { \\to \\ \\Sigma } & { \\longrightarrow } & { \\mathcal { V } _ { k } } \\\\ { \\mathrm { g e t } } & { = } & { k } & { \\mapsto } & { \\sigma } & { \\mapsto } & { \\sigma ( k ) } \\\\ { \\mathrm { s e t } } & { : } & { ( k : K ) \\times \\mathcal { V } _ { k } } & { \\to } & { \\Sigma } & {  } & { \\Sigma \\times ( \\Sigma  \\Sigma ) } \\\\ { \\mathrm { s e t } } & { = } & { ( k , v ) } & { \\mapsto } & { \\sigma } & { \\mapsto } & { ( \\sigma [ k \\mapsto v ] , \\lambda \\sigma ^ { \\prime } . \\sigma ^ { \\prime } \\setminus k ) } \\end{array}\\tag{21}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            270,
+            703,
+            724,
+            787
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "where get(k) requires $k \\in \\mathrm { d o m } ( \\sigma )$ and $\\operatorname { s e t } ( k , v )$ requires k  dom(σ) as preconditions.",
+        "bbox": [
+            112,
+            794,
+            811,
+            812
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Notably, set $( k , v )$ has type $\\mathfrak { E } _ { \\Sigma } ^ { * } , \\mathrm { i . e . , }$ an effect function on the coeffect context. We can therefore directly apply the effect machinery from Section 3.1: effecty provides automatic tracking and recovery of dependency registrations. This is the synergy between reactive coeffects and revertible effects: coeffect operations are effects, and effects are revertible.",
+        "bbox": [
+            110,
+            824,
+            885,
+            890
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "page_number",
+        "text": "17",
+        "bbox": [
+            487,
+            927,
+            510,
+            941
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.2.2. Specification and Notification",
+        "text_level": 2,
+        "bbox": [
+            112,
+            97,
+            423,
+            114
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The preceding definitions describe how individual dependencies are registered and accessed. Accessing an absent dependency, however, is a runtime failure. A component should therefore activate only once all the dependencies it declares are present, rather than accessing them optimistically and failing when one is missing. This raises two questions: whether a component's declared dependencies are jointly satisfied, and how the system should respond when that status changes. The coeffect context Σ carries a natural observational structure that makes both questions tractable: for any coeffect specification $d \\subseteq K ,$ , define the satisfaction predicate:",
+        "bbox": [
+            110,
+            127,
+            887,
+            242
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "img_path": "images/318823836d893c162e590d5e03bf3ed07f1bec305acfbe4e6e10d1154624fc93.jpg",
+        "text": "$$\n\\sigma \\models d : = \\forall k \\in d . k \\in \\operatorname { d o m } ( \\sigma )\\tag{22}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            381,
+            248,
+            615,
+            265
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "This predicate is decidable (since dom(σ) is finite). Since all mutations to σ pass through effect functions (whose inverses recover the previous domain), changes to satisfaction are detectable at each effect boundary. This is the algebraic basis of reactivity: the effect system guarantees that every coeffect change is observed.",
+        "bbox": [
+            110,
+            277,
+            884,
+            343
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Definition 21. A coeffect specification is:",
+        "bbox": [
+            112,
+            354,
+            433,
+            370
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "img_path": "images/18c058f213885d4b670f4dc834daf7d331f2cfd3e2de8951acd08b5cb4419adc.jpg",
+        "text": "$$\n{ \\mathfrak { D } } _ { \\Sigma } : = { \\mathsf { S e t } } ( K )\\tag{23}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            438,
+            379,
+            556,
+            397
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "representing the set of dependencies a component declares from the environment.",
+        "bbox": [
+            112,
+            407,
+            789,
+            424
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "What makes this specification reactive is how it classifies state transitions. Any effect that transforms $\\sigma$ to $\\sigma ^ { \\prime }$ can be classified by a specification $d \\in \\mathfrak { D } _ { \\Sigma }$ according to whether d's satisfaction status is altered:",
+        "bbox": [
+            112,
+            436,
+            885,
+            485
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Definition 22. Given a coeffect specification $d \\subseteq K$ and states $\\sigma , \\sigma ^ { \\prime } \\in \\Sigma$ , define:",
+        "bbox": [
+            114,
+            498,
+            761,
+            514
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "img_path": "images/b7b80ff7014eac63ee2ff2c09c2f61819a3713390cf9cb507c271dc5ddf2175d.jpg",
+        "text": "$$\n\\mathrm { n o t i f y } _ { d } ( \\sigma , \\sigma ^ { \\prime } ) : = \\left\\{ \\begin{array} { l l } { \\mathrm { a c t i v a t i n g } \\quad \\mathrm { i f } \\ \\sigma \\nvdash d \\land \\sigma ^ { \\prime } \\models d } \\\\ { \\mathrm { d e a c t i v a t i n g ~ i f } \\ \\sigma \\vdash d \\land \\sigma ^ { \\prime } \\nvdash d } \\\\ { \\mathrm { n e u t r a l } \\quad \\quad \\mathrm { o t h e r w i s e } } \\end{array} \\right.\\tag{24}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            302,
+            524,
+            695,
+            574
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "An activating transition triggers the execution of the component's effects, tracked as Section 3.1 prescribes, and a deactivating transition triggers recovery by applying the accumulator. The activation and deactivation so triggered receive their operational semantics in Section 4.",
+        "bbox": [
+            110,
+            590,
+            887,
+            640
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "What set and notify deliver together is local spatial composability, local in the same sense as before, the guarantee being read of one component's coeffects taken by themselves. We take that to be the following criterion: a component activates only at a state satisfying its specification, so it never reads a binding that is absent, and every change to the context is classified against that specification, so a loss of satisfaction is detected where it happens and drives a deactivation. Both halves are immediate from the definitions above, satisfaction being a precondition checked where the component would activate and notifya being defined at every transition; one direction of the coeffect ordering comes with the first half, a component activating only after the components that provide its declared keys. Two things the criterion leaves out, and both arrive once several components are in play: withdrawing a binding only after the deactivations it causes have finished, and keeping the bindings an activation reads unmoved while the activation runs. Both are conditions on other components rather than on the one acting, so they belong to the global form of the guarantee, which Section 4.3.3 establishes.",
+        "bbox": [
+            110,
+            648,
+            887,
+            862
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "page_number",
+        "text": "18",
+        "bbox": [
+            487,
+            927,
+            510,
+            941
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.2.3. Isolation and Interception",
+        "text_level": 2,
+        "bbox": [
+            114,
+            97,
+            391,
+            114
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The basic coeffect context Σ models a flat dependency table. In practice, however, the system may need to bind distinct values to the same logical dependency for different components. This section extends the coeffect context with two mechanisms: coeffect isolation (the same key resolves differently in different contexts) and coeffect interception (cross-cutting behavior on dependency access).",
+        "bbox": [
+            112,
+            127,
+            885,
+            209
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Realization. The two mechanisms differ from get and set in what they act on. A provision writes the shared table every component reads, so it is an effect on that table and carries an inverse to withdraw it. Isolation and interception instead adjust how a key is resolved for the components under one context, leaving the table itself as it stands. Typing an operation as an effect fixes its denotation, a successor state paired with an inverse, but not its realization, which determines how that inverse is carried out.",
+        "bbox": [
+            110,
+            216,
+            885,
+            313
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Definition 23. An effect function on a context admits two realizations:",
+        "bbox": [
+            114,
+            326,
+            682,
+            342
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "• In-place realization mutates the context and returns a nontrivial inverse; the successor aliases the input, and recovery runs the inverse to undo the mutation.",
+        "bbox": [
+            141,
+            343,
+            884,
+            374
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "• Derived realization leaves the input intact and returns a fresh context deriving from it, with the identity as its inverse; recovery discards the derived context. A context derived from another is what the recursive structure of Definition 28 carries.",
+        "bbox": [
+            141,
+            375,
+            885,
+            424
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "In a purely functional setting the two coincide, and an imperative host may choose either per operation; Section 5.1.2 implements both. Isolation and interception are given derived realization outright: each produces a fresh context whose own table differs from the inherited one, so each is typed below as a map from context to context rather than as an effect function. Nothing in the shared table changes, so there is no effect to track and nothing for Definition 12 to lift, and recovery discards the derived context along with the adjustment it carried. Assignment on a derived table overrides whatever the inherited table held at the key, which is why neither operation carries a precondition.",
+        "bbox": [
+            110,
+            436,
+            885,
+            568
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Coeffect Isolation. By introducing isolation realms, coeffect isolation allows the same dependency to bind to different values in different contexts. This has broad applications in multitenant systems, testing environments, and component sandboxes.",
+        "bbox": [
+            112,
+            574,
+            887,
+            624
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Definition 24. Define the coeffect context with isolation as:",
+        "bbox": [
+            114,
+            636,
+            600,
+            652
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "img_path": "images/d6bfe97f773c221dabd9678b9dc4c0ff8c75a5175aa606087a8265bb827a0d5a.jpg",
+        "text": "$$\n\\Sigma ^ { \\mathrm { i s o } } : = ( K  R ) \\times ( ( r : R )  \\mathcal { V } _ { r } )\\tag{25}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            359,
+            661,
+            636,
+            678
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "It can be represented as a pair $( \\rho , \\sigma )$ , where:",
+        "bbox": [
+            112,
+            690,
+            478,
+            706
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "$\\rho : K \\to R$ is the isolation realm table, assigning a realm identifier to each isolated key; a key outside dom $( \\rho )$ resolves to its own realm, so we write $\\rho ( k ) = k$ there $( R \\supseteq K )$ $\\sigma : ( r : R )  \\mathcal { V } _ { r }$ is the dependency table, a partial dependent function from realm identifiers to typed values.",
+        "bbox": [
+            141,
+            706,
+            885,
+            771
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The two-layer mapping structure decouples the logical layer from the storage layer, making dependency access context-aware. When accessing a key $k ,$ the system first resolves $\\rho ( k )$ to obtain a realm identifier $^ { r , }$ then accesses $\\sigma ( r )$ for the actual value.",
+        "bbox": [
+            112,
+            783,
+            884,
+            833
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Definition 25. The get, set, and isolate operations on $\\Sigma ^ { \\mathrm { i s o } }$ are:",
+        "bbox": [
+            114,
+            845,
+            615,
+            862
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "page_number",
+        "text": "19",
+        "bbox": [
+            487,
+            927,
+            510,
+            940
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "img_path": "images/65b1979b44675af4f5d02caaf5459ae81baa3e471c40838900b1dda14b91bcdd.jpg",
+        "text": "$$\n{ \\begin{array} { r c c c c c c } { \\operatorname { g e t } \\ } & { : } & { ( k : K ) } & { \\to } & { \\Sigma ^ { \\mathrm { i s o } } } & { \\to } & { \\ \\qquad \\quad \\lambda _ { \\rho ( k ) } } \\\\ { \\operatorname { g e t } \\ } & { = } & { k } & { \\mapsto } & { ( \\rho , \\sigma ) } & { \\mapsto } & { \\sigma ( \\rho ( k ) ) } \\\\ { \\operatorname { s e t } \\ } & { : } & { ( k : K ) \\times \\mathscr { V } _ { \\rho ( k ) } \\ \\to } & { \\Sigma ^ { \\mathrm { i s o } } } & { \\to } & { \\Sigma ^ { \\mathrm { i s o } } \\times \\left( \\Sigma ^ { \\mathrm { i s o } } \\frown \\Sigma ^ { \\mathrm { i s o } } \\right) } \\\\ { \\operatorname { s e t } \\ } & { = } & { ( k , v ) } & { \\mapsto } & { ( \\rho , \\sigma ) } & { \\mapsto } & { ( ( \\rho , \\sigma [ \\rho ( k ) \\mapsto v ] ) , \\lambda ( \\rho ^ { \\prime } , \\sigma ^ { \\prime } ) . ( \\rho ^ { \\prime } , \\sigma ^ { \\prime } \\setminus \\rho ^ { \\prime } ( k ) ) ) } \\\\ { \\operatorname { i s o l a t e } \\ } & { : } & { K \\times R } & { \\to } & { \\Sigma ^ { \\mathrm { i s o } } } & { \\to } & { \\Sigma ^ { \\mathrm { i s o } } } \\\\ { \\operatorname { i s o l a t e } \\ } & { = } & { ( k , r ) } & { \\mapsto } & { ( \\rho , \\sigma ) } & { \\mapsto } & { ( \\rho [ k \\mapsto r ] , \\sigma ) } \\end{array} }\\tag{26}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            152,
+            96,
+            842,
+            225
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "where get and set carry the preconditions of Definition 20 transported along $\\rho ,$ namely $\\rho ( k ) \\in$ dom(σ) and $\\rho ( k ) \\notin$ dom(σ). The context that isolate $( k , r )$ derives assigns the realm r to k and inherits the dependency table unchanged, so a key already isolated is reassigned rather than refused.",
+        "bbox": [
+            110,
+            231,
+            884,
+            298
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The coeffect isolation mechanism essentially implements a runtime ad-hoc polymorphism system. Through isolation realm identifiers, the same dependency key can resolve to entirely different values in different contexts, and this polymorphism can be dynamically adjusted at runtime. Compared to traditional dependency injection, coeffect isolation provides finergrained control, enabling customized isolation for specific components; set remains an effect function $\\left( \\mathfrak { E } _ { \\Sigma ^ { \\mathrm { { i s o } } } } ^ { * } \\right)$ and thus inherits revertibility, whereas isolate needs none, deriving a context instead of writing the shared table.",
+        "bbox": [
+            110,
+            310,
+            887,
+            424
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Coeffect Interception. The second mechanism, coeffect interception, attaches cross-cutting metadata to dependency access, adding behavior without modifying the dependency value. This metadata can be either context-carried or component-declared, so we extend both the coeffect context and the coeffect specification:",
+        "bbox": [
+            110,
+            431,
+            885,
+            498
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Definition 26. Define the coeffect context and specification with interception as:",
+        "bbox": [
+            114,
+            510,
+            771,
+            526
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "img_path": "images/89f8661e146eaf051e741e7da9360a8e48b961043116fc99fce51db261fffe11.jpg",
+        "text": "$$\n\\begin{array} { r l } & { \\Sigma ^ { \\mathrm { i n t e r } } : = ( ( \\boldsymbol { k } : \\boldsymbol { K } ) \\to \\mathcal { M } _ { k } ) \\times ( ( \\boldsymbol { k } : \\boldsymbol { K } ) \\to ( \\mathcal { M } _ { k } \\to \\mathcal { V } _ { k } ) ) } \\\\ & { \\mathfrak { D } ^ { \\mathrm { i n t e r } } : = ( \\boldsymbol { k } : \\boldsymbol { K } )  \\mathcal { M } _ { k } } \\end{array}\\tag{27}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            284,
+            535,
+            710,
+            574
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The context $\\Sigma ^ { \\mathrm { i n t e r } }$ is a pair $( \\iota , \\sigma ) \\colon$ is the context-carried metadata installed on the context itself, empty $\\left( \\epsilon _ { k } \\right)$ by default; and σ maps each key k to a provider function from metadata $\\mathcal { M } _ { k }$ to value $\\nu _ { k } . \\textrm { A }$ specification $d \\in \\mathfrak { D } ^ { \\mathrm { i n t e r } }$ carries the component-declared metadata, assigning each key its metadata $d ( k ) .$ , with dom(d) serving as the dependency set. Each key equips its metadata with a monoid $( \\mathcal { M } _ { k } , \\oplus _ { k } , \\epsilon _ { k } ) \\mathrm { . }$ the merge $\\oplus _ { k }$ is associative with identity $\\epsilon _ { k }$ (the empty metadata).",
+        "bbox": [
+            110,
+            585,
+            885,
+            669
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Definition 27. The get, set, and intercept operations on $\\Sigma ^ { \\mathrm { i n t e r } }$ are:",
+        "bbox": [
+            112,
+            684,
+            647,
+            700
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "img_path": "images/d17c635b955fc70633d1e016c82b69ddae678cee704c232f9ffc33e39f463574.jpg",
+        "text": "$$\n\\begin{array} { r l r l r l r l } & { \\mathrm { g e t } } & { : } & { ( k : K ) \\times \\mathcal { M } _ { k } } & { \\quad  } & { \\sum ^ { \\mathrm { i n t e r } } } & { \\longrightarrow } & { \\mathcal { V } _ { k } } & { \\gamma _ { k } } \\\\ & { \\mathrm { g e t } } & { = } & { ( k , \\mu ) } & { \\mapsto } & { ( \\iota , \\sigma ) } & { \\mapsto } & { \\sigma ( k ) ( \\mu \\oplus _ { k } \\iota ( k ) ) } & \\\\ & { \\mathrm { s e t } } & { : } & { ( k : K ) \\times ( \\mathcal { M } _ { k }  \\mathcal { V } _ { k } ) } & {  } & { \\sum ^ { \\mathrm { i n t e r } } } & {  } & { \\sum ^ { \\mathrm { i n t e r } } \\times \\ ( \\sum ^ { \\mathrm { i n t e r } }  \\ \\sum ^ { \\mathrm { i n t e r } } ) } \\\\ & { \\mathrm { s e t } } & { = } & { ( k , \\psi ) } & { \\mapsto } & { ( \\iota , \\sigma ) } & { \\mapsto } & { ( ( \\iota , \\sigma [ k \\mapsto \\psi ] ) , \\lambda ( \\iota ^ { \\prime } , \\sigma ^ { \\prime } ) . ( \\iota ^ { \\prime } , \\sigma ^ { \\prime } \\setminus k ) ) } \\\\ & { \\mathrm { i n t e r c e p t } } & { : } & { ( k : K ) \\times \\mathcal { M } _ { k } } & { } & {  } & { \\sum ^ { \\mathrm { i n t e r } } } & {  } & { \\sum ^ { \\mathrm { i n t e r } } } \\\\ & { \\mathrm { i n t e r c e p t } } & { = } & { ( k , \\nu ) } & { \\mapsto } & { ( \\iota , \\sigma ) } & { \\mapsto } & { ( \\iota [ k \\mapsto \\iota ( k ) \\oplus _ { k } \\nu ] , \\sigma ) } \\end{array}\\tag{28}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            176,
+            707,
+            818,
+            825
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "where get and set carry the preconditions of Definition 20 on the provider table, namely $k \\in$ dom(σ) and $k \\not \\in$ dom(σ). The context that intercept(k, ν) derives merges ν onto the metadata inherited at k and inherits the provider table unchanged.",
+        "bbox": [
+            110,
+            831,
+            884,
+            881
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "page_number",
+        "text": "20",
+        "bbox": [
+            487,
+            927,
+            510,
+            941
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "When a component with specification d accesses key k, the system evaluates $\\sigma ( k ) ( d ( k ) \\oplus _ { k }$ $\\iota ( k ) )$ : the component-declared metadata is merged with the context-carried metadata $\\iota ,$ and the provider function is applied to the result. This merge follows each key's own semantics (e.g. scalar fields are overwritten, set-valued fields unioned) and is right-biased, so ¿(k) takes priority and can override the component's declaration, letting an enclosing context constrain how a component uses a coeffect without modifying that component (e.g. Section 6.3).",
+        "bbox": [
+            110,
+            97,
+            884,
+            196
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.3. The Context Paradigm",
+        "text_level": 2,
+        "bbox": [
+            114,
+            222,
+            351,
+            239
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Section 3.1 and Section 3.2 each act on a context, the first as the carrier of effects and the second as the carrier of coeffects. Section 3.3.1 constructs a unified context carrying both, gives each of its keys a set of operations, and establishes the context paradigm by constraining the stages of an effect iterator (Definition 30). Section 3.3.2 then makes the operations the standard of comparison: two context states are observationally equivalent when no sequence of operations distinguishes them, and every equality of Section 3.1 is re-read up to that equivalence.",
+        "bbox": [
+            110,
+            250,
+            885,
+            350
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.3.1. Unified Context",
+        "text_level": 2,
+        "bbox": [
+            114,
+            372,
+            307,
+            388
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "For a context Γ, the effect context ∂Γ (Section 3.1) provides a higher-level abstraction, carrying the previous-level context and that level's accumulator (Definition 2). Making this structure recursive and combining it with the coeffect context Σ yields the following type:",
+        "bbox": [
+            112,
+            401,
+            884,
+            451
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Definition 28. The context type $\\Gamma _ { \\infty }$ is defined as:",
+        "bbox": [
+            114,
+            462,
+            517,
+            479
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "img_path": "images/4866aeb16c47a46bbef42d68f8a29b0d99a315590940b061c476eb80baaa0a88.jpg",
+        "text": "$$\n\\Gamma _ { \\infty } : = \\mu \\Gamma . \\Gamma \\times ( \\Gamma \\to \\Gamma ) \\times \\Sigma\\tag{29}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            383,
+            487,
+            613,
+            505
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "where the three projections are:",
+        "bbox": [
+            114,
+            516,
+            379,
+            531
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "• Γ: the current context state (recursive);",
+        "bbox": [
+            141,
+            532,
+            487,
+            548
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "• Γ → Γ: the accumulator, which reverts this level's effects;",
+        "bbox": [
+            141,
+            548,
+            631,
+            564
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "• Σ: the coeffect context carrying dependency information.",
+        "bbox": [
+            141,
+            564,
+            631,
+            581
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Under this definition, effect maps ${ \\mathfrak { E } } _ { \\Gamma _ { \\infty } }$ to itself, unifying the ∂-tower into a single selfsimilar type. The coeffect context Σ is structurally integrated: dependency operations (set, get) act on $\\Sigma ,$ and the accumulator holds their inverses. Since the type family V underlying Σ is unconstrained, any state the system needs to share across components can be encoded as a dependency with an appropriate value type—Σ subsumes all shared mutable states, not just inter-component dependencies. Every interaction between a component and its environment passes through this single entity.",
+        "bbox": [
+            110,
+            593,
+            885,
+            709
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Passing through one entity is a discipline only where there is nothing else to pass through, so what a component may do with a bound value has to be fixed as well. A key therefore carries more than a value type:",
+        "bbox": [
+            112,
+            717,
+            885,
+            765
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Definition 29. A coeffect at a key k is a pair $( \\nu _ { k } , A _ { k } )$ , where $\\nu _ { k }$ is the value type of Definition 19 and $\\mathcal { A } _ { k }$ is a set of coeffect operations, the operations the value bound at k provides to a component holding it. An operation $a \\in \\mathcal { A } _ { k }$ carries an argument type $X _ { a }$ and an outcome type $B _ { a } ,$ , and acts on the value alone:",
+        "bbox": [
+            110,
+            777,
+            884,
+            843
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "img_path": "images/4a70cf6f4ea8602b82ce75e7cdbfedc29b5c065854ec02233f952a545be789f3.jpg",
+        "text": "$$\na : X _ { a } \\to \\mathcal { V } _ { k } \\to \\mathcal { V } _ { k } \\times ( \\mathcal { V } _ { k } \\to \\mathcal { V } _ { k } ) \\times B _ { a }\\tag{30}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            346,
+            851,
+            650,
+            869
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "page_number",
+        "text": "21",
+        "bbox": [
+            487,
+            927,
+            509,
+            941
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "its first two constituents forming an effect function on $\\nu _ { k }$ witnessed as Definition 8 requires, and its third an outcome. The operations induce the equivalence $\\simeq _ { k }$ on $\\nu _ { k }$ up to which values at k are compared (Section 3.3.2). An operation acts on the coeffect context through its lift",
+        "bbox": [
+            112,
+            97,
+            885,
+            147
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "img_path": "images/d6606599cc2a2973fd8827dd9cc007c7f492fce9bbb6608835eca2b237c42164.jpg",
+        "text": "$$\na ^ { \\Sigma } ( x ) ( \\sigma ) : = \\mathrm { { l e t } } \\ ( v , g , b ) = a ( x ) ( \\sigma ( k ) ) \\mathrm { { i n } } \\ ( \\sigma [ k \\mapsto v ] , \\lambda \\sigma ^ { \\prime } . \\sigma ^ { \\prime } [ k \\mapsto g ( \\sigma ^ { \\prime } ( k ) ) ] , b )\\tag{31}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            191,
+            155,
+            803,
+            173
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "defined when $k \\in \\mathrm { d o m } ( \\sigma )$ , whose first two constituents are an effect function on Σ.",
+        "bbox": [
+            112,
+            183,
+            791,
+            199
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Typing an operation of k on $\\nu _ { k }$ is what confines it to the binding at k: the lift reads and writes that binding and leaves every other key as it stands, so no side condition is needed to say so. Where isolation is in force the binding it reaches is the one the realm resolves to (Definition 24), two keys sharing a realm sharing one binding. An operation whose behavior turns on another key reads that key's value into its argument $X _ { a } ,$ and the reactive discipline of Section 3.2.2 is what holds the binding in place for as long as the component that read it runs (Theorem 70), the value moving only by operations of that key. The pair is not yet the whole of a coeffect: once the independence of two operations has been defined, Section 3.4.2 completes the pair with a third constituent, a witness certifying that the operations of $\\mathcal { A } _ { k }$ are pairwise independent.",
+        "bbox": [
+            112,
+            212,
+            887,
+            361
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "What a component performs is a sequence of stages in which each may depend on what the ones before it yielded: an operation on a value some key binds, or the provision of a binding of its own. Iterators of that shape, one stage per iteration, are the form the discipline takes at an effect function.",
+        "bbox": [
+            112,
+            367,
+            885,
+            432
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Definition 30. For key sets $P \\subseteq S \\subseteq K$ , the context-mediated iterators $\\Im _ { \\Sigma } ^ { \\mathcal { A } } ( S , P )$ form the least set of iterators on Σ that contains the unit $\\sigma \\mapsto ( \\sigma , \\operatorname { i d } _ { \\Sigma }$ , Nothing) and, whenever each named continuation is Nothing or Just of a member, contains",
+        "bbox": [
+            112,
+            444,
+            884,
+            494
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "img_path": "images/c5e68870c15f4b122a151e7fd3284a588e90ebf739694e6ffc84c2a1c1b04c37.jpg",
+        "text": "$$\n\\sigma \\mapsto \\mathbf { l e t } \\ ( \\delta , s , b ) = a ^ { \\Sigma } ( x ) ( \\sigma ) \\ \\mathbf { i n } \\ ( \\delta , s , c _ { b } ) \\quad { \\mathrm { f o r ~ } } k \\in S , a \\in { \\mathcal { A } } _ { k } , x : X _ { a } , ( c _ { b } ) _ { b \\in B _ { a } }\\tag{32}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            186,
+            504,
+            806,
+            524
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "img_path": "images/9d1a36dcc576f30c5c4f44aaf5f6c3b0c3238274d93ae76323d57a67a43162ab.jpg",
+        "text": "$$\n\\sigma \\mapsto \\mathrm { l e t } ~ ( \\delta , s ) = \\mathrm { s e t } ( k , v ) ( \\sigma ) ~ \\mathrm { i n } ~ ( \\delta , s , c ) \\quad ~ \\mathrm { f o r } ~ k \\in P , v : \\mathcal { V } _ { k } , c\n$$",
+        "text_format": "latex",
+        "bbox": [
+            186,
+            529,
+            684,
+            546
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "An operation stage performs one coeffect operation and chooses what follows it by the outcome, so an argument may depend on the outcomes already obtained. A provision stage installs one binding, at a key no operation can create, an operation presupposing the binding it acts on, and yields the restriction set pairs with the extension (Definition 20). The stages occurring in a member are its own and those of every iterator its continuations reach.",
+        "bbox": [
+            110,
+            556,
+            887,
+            639
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Membership in this class is the formal content of mediating every interaction through the context. What falls outside it is a map reading anything else, whether a key it performs no stage at or a location no key binds; an allocator drawing handles from a counter the context does not carry is the second case, and becomes context-mediated once the counter is bound at a key of its own.",
+        "bbox": [
+            112,
+            650,
+            885,
+            731
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Hierarchical composition. The recursive structure of $\\Gamma _ { \\infty }$ supports hierarchical control: a parent context aggregates multiple child-level effects, forming a tree-shaped control structure that maintains modularity while enabling unified cross-level management. The effect transformation realizes a literal “plug-in\" metaphor:",
+        "bbox": [
+            112,
+            740,
+            885,
+            806
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "• Loading a component corresponds to executing its effects (plugging in);",
+        "bbox": [
+            141,
+            813,
+            757,
+            829
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "• Unloading a component corresponds to reverting its effects (unplugging, without affecting other running components);",
+        "bbox": [
+            141,
+            829,
+            887,
+            863
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "page_number",
+        "text": "22",
+        "bbox": [
+            487,
+            927,
+            510,
+            940
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "• Components at different levels of the hierarchy are independently loadable and unloadable; a parent context aggregates and manages the effects of all its children, enabling arbitrarily nested composition.",
+        "bbox": [
+            141,
+            97,
+            887,
+            147
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.3.2. Observational Equivalence",
+        "text_level": 2,
+        "bbox": [
+            114,
+            170,
+            400,
+            186
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The recovery guarantee of Section 3.1 asserts an equality of states (Theorem 7), which is an idealization, because the physical state cannot be recovered as it stood. For example, free releases a block to the allocator without restoring the layout the heap had before malloc; and a generative name is not restored by the inverse that discards it, since the next creation draws a fresh one [40]. The equalities of Section 3 are therefore to be read up to an equivalence ≈, and we take ≈ to be an observational equivalence: two states are related when no observer can distinguish them. Comparing behavior rather than representation is the established route to program equivalence [41], and the relation such a comparison yields depends on what the observer is given to work with [42]. What an observer of a context is given is the coeffects it carries, and what an observer of a value is given is the operations of its key (Definition 29), so the relation at each key is generated from those operations, and the relation on a context is assembled from the relations at its keys. Both constructions are the business of this subsection, and quotienting by the result is what makes the independence of Section 3.4.1 attainable.",
+        "bbox": [
+            110,
+            199,
+            887,
+            412
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "An observer of a value runs the operations of its key and reads their outcomes.",
+        "bbox": [
+            139,
+            418,
+            789,
+            435
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Definition 31. Let V carry a set A of operations in the sense of Definition 29. A test over A is a finite word whose letters are forward maps and yielded inverses of the effect functions $a ( x )$ , over every $a \\in { \\mathcal { A } }$ and every argument x : $X _ { a } ,$ each letter applied to the value the letters before it left; its outcomes are those the letters that are forward maps yield along the way, and it is undefined where a precondition fails. Values $v , v ^ { \\prime }$ : V are indistinguishable, written v ${ \\approx } _ { A } v ^ { \\prime } .$ when every test over A is defined at both or at neither and yields the same outcomes at both. The equivalence at a key is indistinguishability under its own operations:",
+        "bbox": [
+            110,
+            447,
+            885,
+            563
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "img_path": "images/0d47947756edd79922720b05b3a372172fc6ecea37a28570eafbfe205d0a78c6.jpg",
+        "text": "$$\n\\begin{array} { r l } { \\simeq _ { k } } & { { } : = \\quad \\approx _ { \\mathcal { A } _ { k } } } \\end{array}\\tag{33}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            438,
+            570,
+            556,
+            588
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "An operation respects an equivalence when, at related values, it is defined at both or at neither and, where defined, yields related successors, inverses carrying related values to related values, and equal outcomes.",
+        "bbox": [
+            110,
+            604,
+            884,
+            653
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Lemma 32. Each $\\simeq _ { k }$ is an equivalence that every operation of $\\boldsymbol { \\mathcal { A } } _ { k }$ respects, and it is the coarsest such relation. That is,",
+        "bbox": [
+            112,
+            665,
+            884,
+            696
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1. $\\approx _ { A }$ is an equivalence, and every operation of A respects it;",
+        "bbox": [
+            141,
+            699,
+            648,
+            714
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "2. every equivalence that every operation of A respects is contained in $\\approx _ { A }$",
+        "bbox": [
+            139,
+            715,
+            756,
+            731
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1. Agreement of tests, in definedness and in outcomes, is reflexive, symmetric, and transitive. Let $v \\approx _ { A } v ^ { \\prime }$ and let $a \\in { \\mathcal { A } }$ be applied to an argument. Prefixing a test by one letter is again a test, so the values the forward map reaches are indistinguishable, as are the values any one yielded inverse reaches from indistinguishable arguments; the one-letter test gives definedness at both or neither and equality of the outcome.",
+        "bbox": [
+            142,
+            751,
+            885,
+            832
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "2. Let R be such an equivalence and $v R v ^ { \\prime }$ . Each letter of a test is a forward map or a yielded inverse of an operation, and respect carries R along either, keeping the values reached related and the outcomes equal at every letter. Hence every test agrees at v and $v ^ { \\prime }$ . □",
+        "bbox": [
+            139,
+            832,
+            884,
+            882
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "page_number",
+        "text": "23",
+        "bbox": [
+            487,
+            927,
+            510,
+            940
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Clause (2) doubles as the proof principle for $\\simeq _ { k } :$ to relate two values, exhibit an equivalence the operations respect that contains the pair.",
+        "bbox": [
+            112,
+            97,
+            882,
+            130
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Definition 33. Two coeffect contexts are related at a set $S \\subseteq K$ of keys when they bind the same keys of S to related values, and two states of a context when their coeffect projections are:",
+        "bbox": [
+            112,
+            142,
+            882,
+            175
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "img_path": "images/17c768fd84ffa341734aed77c73145cfc11495058f6c925a34f534a039f58d54.jpg",
+        "text": "$$\n\\begin{array} { l l l l } { \\sigma \\simeq _ { S } \\sigma ^ { \\prime } } & { : = } & { \\operatorname { d o m } ( \\sigma ) \\cap S = \\operatorname { d o m } ( \\sigma ^ { \\prime } ) \\cap S \\wedge \\forall k \\in \\operatorname { d o m } ( \\sigma ) \\cap S . \\sigma ( k ) \\simeq _ { k } \\sigma ^ { \\prime } ( k ) } \\\\ { \\gamma \\simeq _ { S } \\gamma ^ { \\prime } } & { : = } & { \\sigma _ { \\gamma } \\simeq _ { S } \\sigma _ { \\gamma ^ { \\prime } } } \\end{array}\\tag{34}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            184,
+            183,
+            810,
+            222
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "writing $\\sigma _ { \\gamma }$ for the coeffect projection of $\\gamma$ (Definition 28). Each $\\simeq _ { k }$ is an equivalence on $\\nu _ { k }$ by Lemma 32, so $\\simeq _ { S }$ is an equivalence on coeffect contexts and on states, each of the three properties holding key by key. The subscript is dropped where $S = K .$ , so that ≈ is the finest of these relations and $\\simeq _ { S }$ forgets the keys outside S as well.",
+        "bbox": [
+            110,
+            233,
+            884,
+            300
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The part of a state that no key binds is thereby forgotten, and forgetting it is what lets Theorem 7 be read up to ≈ at all: the heap layout and the generative name of the examples above lie outside the relation unless some key binds them. A restriction forgets more, comparing only what the keys of S bind, and Section 4 reads each claim about one component at the restriction that component's own declarations name (Definition 48). What Section 3.2.2 needs of ≈ follows rather than being assumed. Related states have the same domain, so they agree on the satisfaction predicate σ = d and on the classification noti $\\mathrm { f y } _ { d }$ of Definition 22, and reactivity is a property of $\\Sigma / \\simeq$",
+        "bbox": [
+            110,
+            311,
+            885,
+            443
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Substituting ≈ for = throughout is not by itself enough, because an effect function returns an inverse as well as a state, and two states that ≈ identifies have to yield inverses ≈ identifies as well.",
+        "bbox": [
+            112,
+            450,
+            884,
+            499
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Definition 34. The relation of Definition 33 on states and each $\\simeq _ { k }$ on the values of its key are the base cases, and on any other base type $\\simeq _ { S }$ is equality. The relation extends along the type formers:",
+        "bbox": [
+            112,
+            511,
+            884,
+            560
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "img_path": "images/7122d3ad0e47b78b377f25d8d79c8edb370bc8231b8eb2478d97d2f05c7aa8a6.jpg",
+        "text": "$$\n{ \\begin{array} { r c l r c l } { { \\mathrm { f o r ~ } } f , g : X \\to Y , } & { f \\simeq _ { S } g } & { : = } & { ( \\gamma : X ) \\to ( \\gamma ^ { \\prime } : X ) \\to ( \\gamma \\simeq _ { S } \\gamma ^ { \\prime } \\to f ( \\gamma ) \\simeq _ { S } g ( \\gamma ^ { \\prime } ) ) } \\\\ { { \\mathrm { f o r ~ } } a , b : X _ { 1 } \\times \\cdots \\times X _ { n } , } & { a \\simeq _ { S } b } & { : = } & { ( a _ { 1 } \\simeq _ { S } b _ { 1 } ) \\wedge \\cdots \\wedge ( a _ { n } \\simeq _ { S } b _ { n } ) } \\end{array} }\\tag{35}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            139,
+            568,
+            853,
+            607
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "img_path": "images/fd425010d4e3f1d72a1371330d431e4a2b5793937e5a5070e6ed572a404de286.jpg",
+        "text": "$$\n{ \\mathrm { f o r ~ } } x , y : { \\mathsf { M a y b e } } ( X ) , \\qquad x \\simeq _ { S } y \\quad : = \\quad { \\left\\{ \\begin{array} { l l } { z \\simeq _ { S } z ^ { \\prime } } & { { \\mathrm { i f ~ } } x = { \\mathrm { J u s t } } ( z ) { \\mathrm { ~ a n d ~ } } y = { \\mathrm { J u s t } } ( z ^ { \\prime } ) } \\\\ { \\top } & { { \\mathrm { i f ~ } } x = y = { \\mathrm { N o t h i n g } } } \\\\ { \\bot } & { { \\mathrm { o t h e r w i s e } } } \\end{array} \\right. }\n$$",
+        "text_format": "latex",
+        "bbox": [
+            141,
+            611,
+            801,
+            661
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "On a recursive type the clauses are read coinductively, $\\simeq _ { S }$ being the greatest relation satisfying its unfolding, as on $\\Im _ { \\Gamma }$ . A map or an iterator respects $\\simeq _ { S }$ when it is related to itself, written $f \\simeq _ { S } f .$",
+        "bbox": [
+            110,
+            674,
+            882,
+            722
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Lemma 35. On maps and on iterators $\\simeq _ { S }$ is a partial equivalence: it is symmetric and transitive, so two related members each respect it.",
+        "bbox": [
+            112,
+            739,
+            885,
+            772
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Proof. On the base types $\\simeq _ { S }$ is an equivalence, by Definition 33 and Lemma 32. For functions, symmetry is symmetry of the base relations applied at input and output, and transitivity reads the middle map at $\\gamma ^ { \\prime } \\simeq _ { S } \\gamma ^ { \\prime } \\colon$ from $f \\simeq _ { S } g , g \\simeq _ { S } h _ { . }$ , and $\\gamma \\simeq _ { S } \\gamma ^ { \\prime }$ follow $f ( \\gamma ) \\simeq _ { S } g ( \\gamma ^ { \\prime } )$ and $g ( \\gamma ^ { \\prime } ) \\simeq _ { S } h ( \\gamma ^ { \\prime } )$ , whence $f ( \\gamma ) \\simeq _ { S } h ( \\gamma ^ { \\prime } )$ ; products inherit both componentwise and Maybe by cases. For iterators, the inverse $R ^ { - 1 }$ and the composite $R \\circ R$ of the greatest relation R satisfy the unfolding again, by the two arguments above read coinductively, so both are contained in R. Then $f \\simeq _ { S } g \\mathrm { g i v e s } f \\simeq _ { S } f$ by symmetry and transitivity, which is respect. □",
+        "bbox": [
+            110,
+            783,
+            885,
+            900
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "page_number",
+        "text": "24",
+        "bbox": [
+            487,
+            927,
+            510,
+            941
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A map respecting $\\simeq _ { S }$ is one that descends to $\\Gamma / \\simeq _ { S } ,$ , and two maps related by $\\simeq _ { S }$ are two that descend to the same map there, each respecting it by Lemma 35. Reflexivity is the one property the function former does not preserve: $f \\simeq _ { S } f$ demands related outputs at every pair of related inputs and not at the equal ones alone, so it holds of a map exactly where the map descends, which is why respect is a condition rather than a given. Respect at two key sets is two conditions of which neither implies the other, since ${ \\simeq } \\subseteq \\simeq { _ { S } }$ weakens the hypothesis and the conclusion together. A map that branches on a key outside S is the case that separates them, respecting ≈ and failing to respect $\\simeq _ { S }$",
+        "bbox": [
+            110,
+            97,
+            885,
+            229
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Definition 36. Define the effect function witnessed up to $\\simeq _ { S }$ as:",
+        "bbox": [
+            114,
+            240,
+            623,
+            256
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "equation",
+        "img_path": "images/3ded2a1b14bb1c4c98f0086d0bd8bbdfd077c4a19b8eb9d16e6282788222a1d5.jpg",
+        "text": "$$\n\\begin{array} { r l } & { \\mathfrak { E } _ { \\Gamma } ^ { S } : = ( e : \\Gamma  \\Gamma \\times ( \\Gamma  \\Gamma ) ) \\times ( e \\simeq _ { S } e ) } \\\\ & { \\quad \\quad \\times ( ( \\gamma : \\Gamma )  ( \\delta : \\Gamma )  ( g : \\Gamma  \\Gamma )  ( ( \\delta , g ) = e ( \\gamma )  g ( \\delta ) \\simeq _ { S } \\gamma ) ) } \\end{array}\\tag{36}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            213,
+            266,
+            781,
+            305
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "The clause e $\\simeq _ { S }$ e carries every constituent's respect, its instance at $\\gamma \\simeq _ { S } \\gamma$ relating each yielded inverse to itself. We write ${ \\mathfrak { E } } _ { \\Gamma } ^ { * }$ for $\\mathfrak { E } _ { \\Gamma } ^ { K }$ , and taking ≈ to be equality on Γ recovers Definition $8 ,$ every map being equal to itself. The key set is where a component's declarations enter: what Section 4 holds an effect function to is $\\dot { \\mathfrak { E } _ { \\Gamma } ^ { S } }$ at the keys that component names (Definition 48).",
+        "bbox": [
+            112,
+            315,
+            885,
+            381
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "The iterator of Section 3.1.3 is witnessed the same way, its continuation compared by Definition 34 and witnessed again by the recursion:",
+        "bbox": [
+            112,
+            392,
+            887,
+            425
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Definition 37. Define the effect iterator witnessed up $t o \\simeq _ { S }$ as:",
+        "bbox": [
+            112,
+            438,
+            615,
+            455
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "equation",
+        "img_path": "images/c426ceb4c36abc6f5f72d6a7244573fd4750c5440aef1782eadc9827b3ac568c.jpg",
+        "text": "$$\n\\begin{array} { r l } & { \\mathfrak { I } _ { \\Gamma } ^ { S } : = \\mu \\mathfrak { I } . ( e : \\Gamma  \\Gamma \\times ( \\Gamma  \\Gamma ) \\times \\mathsf { M a y b e } ( \\mathfrak { I } ) ) \\times ( e \\simeq _ { S } e ) } \\\\ & { \\qquad \\times ( ( \\gamma : \\Gamma )  ( \\delta : \\Gamma )  ( g : \\Gamma  \\Gamma )  ( o : \\mathsf { M a y b e } ( \\mathfrak { I } ) )  ( ( \\delta , g , o ) = e ( \\gamma )  g ( \\delta ) \\simeq _ { S } \\gamma ) ) } \\end{array}\\tag{37}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            149,
+            463,
+            845,
+            499
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "The embedding of Section 3.1.3 carries $\\mathfrak { E } _ { \\Gamma } ^ { S }$ into $\\Im _ { \\Gamma } ^ { S }$ , and taking ≈ to be equality on Γ and $S = K$ recovers the witnessed $\\Im _ { \\Gamma } ^ { * }$ of Definition 17.",
+        "bbox": [
+            112,
+            508,
+            882,
+            543
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Lemma 38. With ${ \\mathfrak { E } } _ { \\Gamma } ^ { * }$ read as in Definition $^ { 3 6 , }$ every equality of states asserted in Section 3.1 holds with = replaced by $\\simeq ,$ and the accumulator of every state reachable from $( \\gamma _ { 0 } , \\mathrm { i d _ { \\Gamma } } )$ respects $\\simeq$ The same holds of any equivalence substituted for $\\simeq ,$ the proof using no property of the relation beyond transitivity and respect.",
+        "bbox": [
+            110,
+            560,
+            884,
+            626
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Proof. An accumulator is a composition of inverses, each respecting $\\simeq ,$ the clause $e \\simeq e$ of Definition 36 read at $\\gamma \\simeq \\gamma ,$ and a composition of maps respecting ≈ respects $\\simeq ,$ the base case being $\\mathrm { i d } _ { \\Gamma }$ . The proofs of Section 3.1 then go through unchanged, respect being what carries a relation through an inverse: from $g _ { 2 } ( \\delta _ { 2 } ) \\simeq \\delta _ { 1 }$ and $g _ { 1 } ( \\delta _ { 1 } ) \\simeq \\gamma$ respect gives $( g _ { 1 } \\circ g _ { 2 } ) ( \\delta _ { 2 } ) \\simeq \\gamma ,$ which is the step each composition of inverses takes, and the soundness invariant of Theorem 7 reads $\\varphi ( \\gamma ) \\simeq \\gamma _ { 0 }$ by that step. □",
+        "bbox": [
+            112,
+            637,
+            885,
+            736
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "The stage shape of Definition 30 settles which readings of $\\simeq \\ a$ member admits, and with them its membership in the witnessed iterators, which is what lets a claim about one component be read at the keys that component names.",
+        "bbox": [
+            112,
+            751,
+            884,
+            800
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Lemma 39. Let $i \\in \\Im _ { \\Sigma } ^ { \\mathcal { A } } ( S ^ { \\prime } , P )$ and let $S \\subseteq K$ contain every key at which a stage of i occurs. Then i lies in $\\Im _ { \\Sigma } ^ { S }$ (Definition 37); in particular i and every inverse it yields respect $\\simeq _ { S } .$ , and the witnesses hold at equality.",
+        "bbox": [
+            112,
+            812,
+            885,
+            862
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "page_number",
+        "text": "25",
+        "bbox": [
+            487,
+            927,
+            510,
+            940
+        ],
+        "page_idx": 12
+    }
+]

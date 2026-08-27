@@ -1,0 +1,4826 @@
+[
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A map respecting "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq _ { S }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is one that descends to "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Gamma / \\simeq _ { S } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and two maps related by "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq _ { S }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "are two that descend to the same map there, each respecting it by Lemma 35. Reflexivity is the one property the function former does not preserve: "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f \\simeq _ { S } f"
+                    },
+                    {
+                        "type": "text",
+                        "content": "demands related outputs at every pair of related inputs and not at the equal ones alone, so it holds of a map exactly where the map descends, which is why respect is a condition rather than a given. Respect at two key sets is two conditions of which neither implies the other, since "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\simeq } \\subseteq \\simeq { _ { S } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "weakens the hypothesis and the conclusion together. A map that branches on a key outside S is the case that separates them, respecting ≈ and failing to respect "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq _ { S }"
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                97,
+                885,
+                229
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Definition 36. Define the effect function witnessed up to "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq _ { S }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "as:"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                240,
+                623,
+                256
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array} { r l } & { \\mathfrak { E } _ { \\Gamma } ^ { S } : = ( e : \\Gamma  \\Gamma \\times ( \\Gamma  \\Gamma ) ) \\times ( e \\simeq _ { S } e ) } \\\\ & { \\quad \\quad \\times ( ( \\gamma : \\Gamma )  ( \\delta : \\Gamma )  ( g : \\Gamma  \\Gamma )  ( ( \\delta , g ) = e ( \\gamma )  g ( \\delta ) \\simeq _ { S } \\gamma ) ) } \\end{array}\\tag{36}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/15cb94e575a1c847eeceb2e7a5fb0314badd31ddd0b5017ab2d846413d3c7e59.jpg"
+                }
+            },
+            "bbox": [
+                213,
+                266,
+                781,
+                305
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The clause e "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq _ { S }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "e carries every constituent's respect, its instance at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma \\simeq _ { S } \\gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": "relating each yielded inverse to itself. We write "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathfrak { E } } _ { \\Gamma } ^ { * }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "for "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { E } _ { \\Gamma } ^ { K }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and taking ≈ to be equality on Γ recovers Definition "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "8 ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "every map being equal to itself. The key set is where a component's declarations enter: what Section 4 holds an effect function to is "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\dot { \\mathfrak { E } _ { \\Gamma } ^ { S } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "at the keys that component names (Definition 48)."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                315,
+                885,
+                381
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The iterator of Section 3.1.3 is witnessed the same way, its continuation compared by Definition 34 and witnessed again by the recursion:"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                392,
+                887,
+                425
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Definition 37. Define the effect iterator witnessed up "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "t o \\simeq _ { S }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "as:"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                438,
+                615,
+                455
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array} { r l } & { \\mathfrak { I } _ { \\Gamma } ^ { S } : = \\mu \\mathfrak { I } . ( e : \\Gamma  \\Gamma \\times ( \\Gamma  \\Gamma ) \\times \\mathsf { M a y b e } ( \\mathfrak { I } ) ) \\times ( e \\simeq _ { S } e ) } \\\\ & { \\qquad \\times ( ( \\gamma : \\Gamma )  ( \\delta : \\Gamma )  ( g : \\Gamma  \\Gamma )  ( o : \\mathsf { M a y b e } ( \\mathfrak { I } ) )  ( ( \\delta , g , o ) = e ( \\gamma )  g ( \\delta ) \\simeq _ { S } \\gamma ) ) } \\end{array}\\tag{37}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/555ce4e4c92787f2f03cfa2a3babf95fcaa9e8ac5df9d012dbc3aa0cb0d66904.jpg"
+                }
+            },
+            "bbox": [
+                149,
+                463,
+                845,
+                499
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The embedding of Section 3.1.3 carries "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { E } _ { \\Gamma } ^ { S }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "into "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Im _ { \\Gamma } ^ { S }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and taking ≈ to be equality on Γ and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "S = K"
+                    },
+                    {
+                        "type": "text",
+                        "content": "recovers the witnessed "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Im _ { \\Gamma } ^ { * }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "of Definition 17."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                508,
+                882,
+                543
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Lemma 38. With "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathfrak { E } } _ { \\Gamma } ^ { * }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "read as in Definition "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ { 3 6 , }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "every equality of states asserted in Section 3.1 holds with = replaced by "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and the accumulator of every state reachable from "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\gamma _ { 0 } , \\mathrm { i d _ { \\Gamma } } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "respects "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq"
+                    },
+                    {
+                        "type": "text",
+                        "content": "The same holds of any equivalence substituted for "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "the proof using no property of the relation beyond transitivity and respect."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                560,
+                884,
+                626
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Proof. An accumulator is a composition of inverses, each respecting "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "the clause "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e \\simeq e"
+                    },
+                    {
+                        "type": "text",
+                        "content": "of Definition 36 read at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma \\simeq \\gamma ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and a composition of maps respecting ≈ respects "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "the base case being "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { i d } _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The proofs of Section 3.1 then go through unchanged, respect being what carries a relation through an inverse: from "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g _ { 2 } ( \\delta _ { 2 } ) \\simeq \\delta _ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g _ { 1 } ( \\delta _ { 1 } ) \\simeq \\gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": "respect gives "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( g _ { 1 } \\circ g _ { 2 } ) ( \\delta _ { 2 } ) \\simeq \\gamma ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "which is the step each composition of inverses takes, and the soundness invariant of Theorem 7 reads "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\varphi ( \\gamma ) \\simeq \\gamma _ { 0 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "by that step. □"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                637,
+                885,
+                736
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The stage shape of Definition 30 settles which readings of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq \\ a"
+                    },
+                    {
+                        "type": "text",
+                        "content": "member admits, and with them its membership in the witnessed iterators, which is what lets a claim about one component be read at the keys that component names."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                751,
+                884,
+                800
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Lemma 39. Let "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "i \\in \\Im _ { \\Sigma } ^ { \\mathcal { A } } ( S ^ { \\prime } , P )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and let "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "S \\subseteq K"
+                    },
+                    {
+                        "type": "text",
+                        "content": "contain every key at which a stage of i occurs. Then i lies in "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Im _ { \\Sigma } ^ { S }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "(Definition 37); in particular i and every inverse it yields respect "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq _ { S } ."
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and the witnesses hold at equality."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                812,
+                885,
+                862
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "25"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                510,
+                940
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Proof. By induction on the construction of Definition 30. The unit yields its argument, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { i d } _ { \\Sigma } ."
+                    },
+                    {
+                        "type": "text",
+                        "content": "and Nothing everywhere. At an operation stage performing "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a \\in { \\mathcal { A } } _ { k } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "let "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma \\simeq _ { S } \\sigma ^ { \\prime } ;"
+                    },
+                    {
+                        "type": "text",
+                        "content": "then "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k \\in S ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "SO "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma ( k ) \\simeq _ { k } \\sigma ^ { \\prime } ( k )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". a respects "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq _ { k }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "(Lemma 32), so it is defined at both or at neither and yields "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq _ { k ^ { - } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "related values, equal outcomes, and inverses carrying "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq _ { k }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-related values to "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq _ { k }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-related values, and its lift reads and writes k alone; the states reached are therefore "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq _ { S } \\mathrm { - r e l a t e d }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the inverses are "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq _ { S }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-related and respect "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq _ { S } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and the equal outcomes select one continuation, to which the induction hypothesis applies. At a provision stage at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k \\in P \\subseteq S ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "the precondition k "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\notin"
+                    },
+                    {
+                        "type": "text",
+                        "content": "dom(σ) holds at both or at neither, the states reached bind k to the one value the stage carries, and the restriction it yields respects "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq _ { S } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "two related states binding k alike. The witness of each stage holds at equality, the lift of an operation's inverse restoring the value Definition 29 witnesses it to and the restriction reverting the extension (Definition 20), and equality gives "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq _ { S }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "□"
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                97,
+                885,
+                278
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A stage reads the key it performs at and nothing else, so the hypothesis is met by taking S to be the keys the member names."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                292,
+                884,
+                325
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.4. Attaining Independence"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                353,
+                368,
+                369
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "On the strength of Section 3.3, this section supplies the condition that extends the local guarantees to a system of interleaved components. Section 3.4.1 defines the condition, namely independence of two effect functions: every transformation of one commutes with every transformation of the other, forward maps and yielded inverses alike. Section 3.4.2 then reduces independence of context-mediated effect functions to commutativity at single coeffects and refines the coeffect with a witness of that commutativity, parallel to the witness of an effect function."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                381,
+                887,
+                495
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.4.1. Effect Independence"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                519,
+                336,
+                536
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Reverting an effect at the state its own application produced is what Theorem 16 covers; reverting one at any other state is what this subsection covers. Two situations call for the latter. An inverse may be run while later effects are still in place, which is what removing one component from a running system amounts to; and one sequence may interleave the effects of several components, each holding the inverses of its own, so that the inverses of one component are separated by the applications of another. In both an inverse meets a state that foreign effects have moved, and whether it still reverts what it was built to revert is a question of commutation: what has to commute is every transformation one effect can perform with every transformation the other can perform, forward map and yielded inverse alike. A single accumulator settles neither situation, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\varphi"
+                    },
+                    {
+                        "type": "text",
+                        "content": "being a composite that runs every inverse it holds in one order and all at once."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                548,
+                885,
+                727
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "An iterator gives rise to several maps: the forward map of each iteration it can reach, and the inverse each yields at each context state. Commutation of two iterators relates the two collections rather than two single maps, and those collections are what the definitions below quantify over."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                736,
+                884,
+                801
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Definition 40. For an iterator "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "i \\in \\Im _ { \\Gamma } ."
+                    },
+                    {
+                        "type": "text",
+                        "content": ", let reach(i) be the least set of iterators containing i and closed under continuation. The transformation monoid m(i) is the submonoid of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Gamma  \\Gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": "generated by the forward maps and the yielded inverses of every iterator in reach(i), and the generators of (i) are the elements of that generating set:"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                813,
+                885,
+                879
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "26"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                510,
+                941
+            ]
+        }
+    ],
+    [
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array} { r l } & { \\mathrm { r e a c h } ( i ) : = \\bigcap \\{ S \\mid i \\in S \\land \\forall i ^ { \\prime } \\in S , \\gamma \\in \\Gamma . i ^ { \\prime } ( \\gamma ) = ( - , - , \\mathsf { J u s t } ( i ^ { \\prime \\prime } ) ) \\Rightarrow i ^ { \\prime \\prime } \\in S \\} } \\\\ & { \\quad \\mathfrak { M } ( i ) : = \\langle \\{ \\mathrm { p r } _ { 1 } \\circ i ^ { \\prime } \\mid i ^ { \\prime } \\in \\mathrm { r e a c h } ( i ) \\} \\cup \\{ \\mathrm { p r } _ { 2 } ( i ^ { \\prime } ( \\gamma ) ) \\mid i ^ { \\prime } \\in \\mathrm { r e a c h } ( i ) , \\gamma \\in \\Gamma \\} \\rangle } \\end{array}\\tag{38}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/b5334fea302153b78f01624eacd9b5380e1110c6e40d2c4430cedaecd3e1f245.jpg"
+                }
+            },
+            "bbox": [
+                189,
+                98,
+                805,
+                140
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Write len(i) for the supremum of |C| over the chains "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C \\subseteq \\mathrm { r e a c h } ( i )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "that continuation orders. Through the embedding of Section 3.1.3, m(e) at an effect function e is generated by the forward map of e together with every inverse e yields; an effect induced by a pair "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( f , g ) \\in \\mathfrak { T } _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "has "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g"
+                    },
+                    {
+                        "type": "text",
+                        "content": "for its generators, the inverse it yields being g at every state."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                149,
+                885,
+                217
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Lemma 41. Commutation is settled on the generators, and  enlarges no transformation monoid. That is,"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                233,
+                882,
+                265
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1. if every generator of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { M } ( e _ { 1 } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "commutes with every generator of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { M } ( e _ { 2 } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", then every element of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { M } ( e _ { 1 } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "commutes with every element of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathfrak { M } } ( e _ { 2 } ) ;"
+                    }
+                ]
+            },
+            "bbox": [
+                139,
+                265,
+                884,
+                298
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { M } ( e _ { 1 } \\circ e _ { 2 } ) \\subseteq \\langle \\mathfrak { M } ( e _ { 1 } ) \\cup \\mathfrak { M } ( e _ { 2 } ) \\rangle"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                298,
+                421,
+                315
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Proof."
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                318,
+                164,
+                334
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1. The maps commuting with every generator of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { M } ( e _ { 2 } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "form a submonoid of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Gamma  \\Gamma ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "since "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { i d _ { T } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "lies in it and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f \\circ f ^ { \\prime }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "does where "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f ^ { \\prime }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "do. That submonoid contains the generators of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { M } ( e _ { 1 } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "by hypothesis and hence contains "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { M } ( e _ { 1 } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Fixing "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f \\in \\Re ( e _ { 1 } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the maps commuting with f likewise form a submonoid containing the generators of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { M } ( e _ { 2 } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and hence "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { M } ( e _ { 2 } )"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                334,
+                884,
+                399
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2. By Definition 9 the forward map of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e _ { 1 } \\diamond e _ { 2 } \\mathrm { i } s \\left( \\mathrm { p r } _ { 1 } \\circ e _ { 1 } \\right) \\circ \\left( \\mathrm { p r } _ { 1 } \\circ e _ { 2 } \\right)"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and the inverse it yields at any state is "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "s \\circ t"
+                    },
+                    {
+                        "type": "text",
+                        "content": "for an s yielded by "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and a t yielded by "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e _ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Every generator of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathfrak { M } } ( e _ { 1 } \\circ"
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e _ { 2 } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is therefore a composite of generators of the two. □"
+                    }
+                ]
+            },
+            "bbox": [
+                139,
+                399,
+                884,
+                450
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Definition 42. Iterators "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "i , j \\in \\Im _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "are independent when"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                470,
+                556,
+                486
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1. every transformation of one commutes with every transformation of the other,"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                486,
+                810,
+                502
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\forall f \\in { \\mathfrak { M } } ( i ) , g \\in { \\mathfrak { M } } ( j ) . \\quad f \\circ g = g \\circ f\\tag{39}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/7c1865654f8521ee4ac40aef014aa5bc6948f0ae7c9990a98ea2a35f8d1104ea.jpg"
+                }
+            },
+            "bbox": [
+                374,
+                502,
+                673,
+                519
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2. neither one's transformations disturb what the other yields, inverse and continuation alike,"
+                    }
+                ]
+            },
+            "bbox": [
+                139,
+                521,
+                882,
+                554
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\forall i ^ { \\prime } \\in \\mathrm { r e a c h } ( i ) , g \\in \\mathfrak { M } ( j ) , \\gamma \\in \\Gamma . \\quad \\mathrm { p r } _ { 2 , 3 } ( i ^ { \\prime } ( g ( \\gamma ) ) ) = \\mathrm { p r } _ { 2 , 3 } ( i ^ { \\prime } ( \\gamma ) )\\tag{40}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/01dfcde83651c29d9b36a073a42fe00778c70cfc74e629fd94460bfa4751f060.jpg"
+                }
+            },
+            "bbox": [
+                267,
+                556,
+                778,
+                573
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "and the same with i and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "j"
+                    },
+                    {
+                        "type": "text",
+                        "content": "exchanged."
+                    }
+                ]
+            },
+            "bbox": [
+                163,
+                577,
+                477,
+                593
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A family "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ ( i _ { l } ) } _ { l \\in L }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is pairwise independent when "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "i _ { l }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "i _ { l ^ { \\prime } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "are independent for every "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathit { l } } \\neq { \\mathit { l } } ^ { \\prime } . \\mathrm { A }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "family may repeat an iterator, and holding one independent of itself is holding M(i) commutative."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                592,
+                882,
+                629
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Read at effect functions through the embedding of Section 3.1.3, clause (2) compares the inverse alone, the continuation being Nothing at every state, and the result below is given at effect functions; Section 4 applies the definition at the iterators themselves. For effects induced by pairs "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( f _ { 1 } , g _ { 1 } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( f _ { 2 } , g _ { 2 } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", clause (1) is by Lemma 41(1) the commutation of the four pairs "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f _ { 1 } , f _ { 2 } ; g _ { 1 } , g _ { 2 } ; f _ { 1 } , g _ { 2 } ;"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g _ { 1 } , f _ { 2 } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and clause (2) holds outright, an induced effect yielding one inverse at every state. Commutation under  is a different property. What "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e _ { 1 } \\diamond e _ { 2 } = e _ { 2 } \\diamond e _ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "equates is the composite forward map of the two orders with each other and the composite inverse of the two orders with each other, each inverse entering the composite at the state its own application produced; independence instead relates each transformation of one effect to each transformation of the other, a forward map paired with a foreign inverse included."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                639,
+                884,
+                803
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Under independence an inverse may be run at a state later effects have moved, and it withdraws there its own contribution and nothing else, whatever order the inverses are applied in:"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                810,
+                887,
+                844
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "27"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                510,
+                940
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Theorem 43. Let "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e _ { 1 } , \\cdots , e _ { n } \\in \\mathfrak { E } _ { \\Gamma } ^ { * }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "be pairwise independent and applied in order from "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma _ { 0 } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and let each "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g _ { i }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "be the inverse "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e _ { i }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "yields where it is applied. Applying the n inverses at the state the sequence reaches, in the order of any permutation of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\{ 1 , \\cdots , n \\}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", reaches "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma _ { 0 }"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                97,
+                884,
+                147
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Proof. Write "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f _ { i } : = \\mathrm { p r } _ { 1 } \\circ e _ { i } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "let "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\delta _ { i } : = f _ { i } ( \\delta _ { i - 1 } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\delta _ { 0 } : = \\gamma _ { 0 } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "so that "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g _ { i } = \\mathrm { p r } _ { 2 } ( e _ { i } ( \\delta _ { i - 1 } ) )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Fix j and write "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\delta _ { i } ^ { \\prime } : = \\big ( f _ { i } \\circ \\cdots \\circ f _ { j + 1 } \\big ) \\big ( \\delta _ { j - 1 } \\big )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "for the states of the sequence with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e _ { j }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "omitted, so that "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\delta _ { j } ^ { \\prime } = \\delta _ { j - 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Two claims hold for every u with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "j \\le u \\le n"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                156,
+                882,
+                206
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "( 1 ) \\delta _ { u } = f _ { j } ( \\delta _ { u } ^ { \\prime } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g _ { j } ( \\delta _ { u } ) = \\delta _ { u } ^ { \\prime }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The first equation is an induction on u: at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "u = j"
+                    },
+                    {
+                        "type": "text",
+                        "content": "it reads "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\delta _ { j } = f _ { j } ( \\delta _ { j - 1 } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", which is the definition of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\delta _ { j } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and for the inductive step, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\delta _ { u + 1 } = f _ { u + 1 } ( \\delta _ { u } ) ="
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\begin{array} { r } { \\dot { f } _ { u + 1 } \\big ( \\dot { f } _ { j } ( \\dot { \\delta } _ { u } ^ { \\prime } ) \\big ) = f _ { j } \\big ( f _ { u + 1 } ( \\delta _ { u } ^ { \\prime } ) \\big ) = f _ { j } \\big ( \\delta _ { u + 1 } ^ { \\prime } \\big ) } \\end{array}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the middle equality being clause (1) of Definition 42 for "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e _ { u + 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e _ { j } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "which are distinct effects of the family since "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "u + 1 > j"
+                    },
+                    {
+                        "type": "text",
+                        "content": "For the second equation, clause (1) carries "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g _ { j }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "out through the forward maps applied after "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e _ { j } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "leaving the witness of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e _ { j }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "to be used at the one state it holds at:"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                215,
+                884,
+                312
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "g _ { j } ( \\delta _ { u } ) = \\bigl ( g _ { j } \\circ f _ { u } \\circ \\cdots \\circ f _ { j + 1 } \\bigr ) \\bigl ( \\delta _ { j } \\bigr ) = \\bigl ( f _ { u } \\circ \\cdots \\circ f _ { j + 1 } \\bigr ) \\bigl ( g _ { j } \\bigl ( f _ { j } \\bigl ( \\delta _ { j - 1 } \\bigr ) \\bigr ) \\bigr ) = \\delta _ { u } ^ { \\prime }",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/21b77ed24c8957b153887be2c793bb90acef9bfac93d50d7d630cb6ef6a6b5ca.jpg"
+                }
+            },
+            "bbox": [
+                218,
+                321,
+                776,
+                342
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "the last equality resting on "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g _ { j } \\big ( f _ { j } \\big ( \\delta _ { j - 1 } \\big ) \\big ) = \\delta _ { j - 1 } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", which is the witness Definition 8 requires of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e _ { j }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\delta _ { j - 1 }"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                350,
+                880,
+                387
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "(2) Each "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e _ { i }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "i > j"
+                    },
+                    {
+                        "type": "text",
+                        "content": "yields at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\delta _ { i - 1 } ^ { \\prime }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "the same inverse "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g _ { i }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "it yields at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\delta _ { i - 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ": by (1) the state "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\delta _ { i - 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f _ { j } ( \\delta _ { i - 1 } ^ { \\prime } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f _ { j } \\in \\mathfrak { M } ( e _ { j } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", so clause (2) of Definition 42 for "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e _ { i }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e _ { j } \\mathrm { g i v e s } \\mathrm { p r } _ { 2 } \\big ( e _ { i } \\big ( f _ { j } ( \\delta _ { i - 1 } ^ { \\prime } ) \\big ) \\big ) ="
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { p \\bar { r } _ { 2 } } ( e _ { i } ( \\delta _ { i - 1 } ^ { \\prime } ) )"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                392,
+                882,
+                443
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The theorem follows by downward induction on n. Let the permutation begin with j. By (1) applying "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g _ { j }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\delta _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "reaches "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\delta _ { n } ^ { \\prime } ."
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the state the sequence with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e _ { j }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "omitted reaches, and by (2) the inverses the remaining effects yielded there are the "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g _ { i }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "in hand. That sequence is pairwise independent, being a subfamily, so the induction hypothesis applies to it and to the rest of the permutation; the empty sequence reaches "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma _ { 0 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "□"
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                449,
+                884,
+                533
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Section 4.3.2 carries this conclusion to a trace of a whole system, where the steps of other fibers intervene between an effect and its revert."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                548,
+                882,
+                580
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.4.2. Coeffect Commutativity"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                605,
+                374,
+                621
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The commutation Definition 42 requires is read up to ≈ by Lemma 38, a yielded continuation compared as Definition 34 compares two iterators, and reading it that way is what makes it attainable at all: two operations may leave values that "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq _ { k }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "identifies and still count as commuting. Of two operations it requires one thing more than of the effect functions their lifts induce, an operation yielding an outcome as well."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                633,
+                885,
+                717
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Definition 44. Operations a and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a ^ { \\prime }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "are independent when their lifts are independent as effect functions (Definition 42) at every pair of arguments, and neither one's transformations disturb the outcome the other yields:"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                727,
+                884,
+                776
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\forall x : X _ { a } , g \\in \\mathfrak { M } ( a ^ { \\prime \\Sigma } ) , \\sigma \\in \\Sigma . \\quad \\operatorname { p r } _ { 3 } \\big ( a ^ { \\Sigma } ( x ) ( g ( \\sigma ) ) \\big ) = \\operatorname { p r } _ { 3 } \\big ( a ^ { \\Sigma } ( x ) ( \\sigma ) \\big )\\tag{41}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/a5fe5519c3adad64e08287fc9228ee4418b5542e8629331896e56d5bcf01f9e9.jpg"
+                }
+            },
+            "bbox": [
+                231,
+                784,
+                761,
+                803
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "and the same with a and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a ^ { \\prime }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "exchanged, writing "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathfrak { M } } ( a ^ { \\Sigma } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "for the submonoid generated by the forward maps and yielded inverses of the lifts "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a ^ { \\Sigma } ( \\dot { x } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "over every argument, as Definition 40 generates M. A key k is commutative when any two operations of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\boldsymbol { A } _ { k }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "are independent, an operation being held independent of itself as well."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                814,
+                884,
+                881
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "28"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                510,
+                940
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Across distinct keys the condition holds outright."
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                97,
+                549,
+                114
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Theorem 45. Operations at distinct keys are independent."
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                126,
+                589,
+                142
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Proof. Let a lie in "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathcal { A } _ { k }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a ^ { \\prime }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "in "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\boldsymbol { A } _ { k ^ { \\prime } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "with k "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\neq k ^ { \\prime }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". By Definition 29 every generator of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathfrak { M } } ( a ^ { \\Sigma } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is of the form "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma \\mapsto \\sigma [ k \\mapsto u ( \\sigma ( k ) ) ]"
+                    },
+                    {
+                        "type": "text",
+                        "content": "for a map u on "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu _ { k } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", being either the lift of a forward map or the lift of a yielded inverse, and likewise for "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a ^ { \\prime }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k ^ { \\prime }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Two such maps commute, each reading and writing one key alone and the two keys differing, and Lemma 41 (1) extends the commutation from the generators to the two monoids. For the second condition, what "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a ^ { \\Sigma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "yields at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "inverse and outcome alike, is determined by "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma ( k )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", which every generator of m "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\left( a ^ { \\prime \\Sigma } \\right)"
+                    },
+                    {
+                        "type": "text",
+                        "content": "leaves as it stands."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                153,
+                885,
+                254
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The condition therefore turns on the pairs at one key, and the proof of their independence is made a constituent of the coeffect itself, as the proof that an inverse reverts is a constituent of the effect function (Definition 8):"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                268,
+                884,
+                318
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Definition 46. A coeffect at k (Definition 29) is witnessed when it carries, as a third constituent beside "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu _ { k }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\boldsymbol { A } _ { k } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "a proof that k is commutative (Definition 44)."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                330,
+                882,
+                365
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The two witnesses are parallel: each certifies the condition its consumers would otherwise have to assume, the returned inverse reverting there and the operations commuting here, and each is supplied where the definition is written rather than checked where it is used. By Theorem 45 the proof concerns the operations of k alone, so the obligation falls on the component providing the key and on no component consuming it; the examples below are how it is discharged. From here on every coeffect is witnessed, and Section 4 reads every key of K so."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                375,
+                887,
+                475
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A key whose value is a table of entries is commutative when each registration takes an entry of its own, registration of a route or of an event listener being the representative case. The operation draws an identifier for the entry it adds and the inverse it yields removes that entry, so two registrations name two entries whatever they register: either order leaves a table that answers every test alike, and either registration can be withdrawn while the other stands. Replicated data types are designed to this condition and attach a unique tag to each addition for this very reason, a set whose additions and removals name a bare element having no such property [43]. A key whose value is an ordered chain is not commutative, since a middleware inserted before another sees a different request, and neither order can be withdrawn without disturbing the other."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                482,
+                887,
+                645
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The allocator of the opening example divides by what its interface publishes. Where the handles it hands out are compared by no operation of the key, no test observes them, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\bf s o } \\simeq _ { k }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "relates two heaps up to a renaming of handles and allocation is commutative; a renaming is an equivalence the operations respect, contained in "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq _ { k }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "by Lemma 32(2), and it is how CompCert relates the memory states of a program and of its translation [44]. Where the addresses are outcomes compared by equality, the outcome of a further allocation separates the two orders of allocation, and the key is not commutative. POSIX draws the same line across its own allocators: mmap may return any unused address and creat may assign any unused inode, whereas open is required to return the lowest available descriptor, and that requirement alone is what stops two descriptor allocations from commuting [45]."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                652,
+                885,
+                816
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Definition 31 turns each of these divisions into a design choice. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq _ { k }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is indistinguishability under the tests the operations of k generate, so an interface publishing fewer outcomes admits fewer tests and coarsens the relation, and withholding an outcome its callers do not need can carry a key from one side of a division to the other. The scalable commutativity rule applies the same move across the POSIX interface, and reads commutativity as indistinguishability through an interface rather than equality of internal states [45]."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                822,
+                885,
+                890
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "29"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                510,
+                940
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                112,
+                97,
+                882,
+                131
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Independence of two context-mediated iterators (Definition 30) turns on their keys alone:"
+                    }
+                ]
+            },
+            "bbox": [
+                139,
+                137,
+                878,
+                155
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Theorem 47. Let "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "i _ { 1 } \\in \\Im _ { \\Sigma } ^ { A } ( S _ { 1 } , P _ { 1 } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "i _ { 2 } \\in \\Im _ { \\Sigma } ^ { A } ( S _ { 2 } , P _ { 2 } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "P _ { 1 } \\cap S _ { 2 } = P _ { 2 } \\cap S _ { 1 } = \\emptyset"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and let every key at which operations of both occur be commutative (Definition 44). Then "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "i _ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "i _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "are independent (Definition 42)."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                166,
+                882,
+                217
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Proof. Every iterator reach "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( i _ { l } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "contains is the unit or a stage, whose forward map and yielded inverses are the constituents of the operation or the set its head performs, so the generators of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { M } ( i _ { l } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "are among those of the stages occurring in "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "i _ { l } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "together with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { i d } _ { \\Sigma }"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                227,
+                884,
+                279
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "For clause (1) of Definition 42 it is enough, by Lemma 41(1), that those generators commute pairwise. Each is key-local: defined by the binding at one key alone, presence included, and writing that binding alone, being the lift of an operation's forward map or of an inverse it yields (Definition 29), the extension a provision stage takes, or the restriction it yields (Definition 20). Two key-local maps at distinct keys commute, each leaving what the other reads and writes as it stands. This settles every pair involving a provision-stage generator, whose key lies in one "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "P _ { l }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and hence outside the other member's every key by hypothesis, and every pair of operation generators at distinct keys, which is Theorem 45; a pair of operation generators at one key is covered by that key's commutativity."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                284,
+                885,
+                432
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "For clause (2), take "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "i ^ { \\prime } \\in \\mathrm { r e a c h } ( i _ { 1 } ) , g \\in \\mathfrak { M } ( i _ { 2 } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma \\in \\Sigma"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The unit yields "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\mathrm { i d } _ { \\Sigma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", Nothing) everywhere. A provision stage at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k \\in P _ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "yields the restriction at k and its one continuation whatever the state, and is defined at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g ( \\sigma )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "alike, its precondition reading the presence of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "which every generator of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { M } ( i _ { 2 } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "leaves as it stands. An operation stage at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k \\in S _ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "yields what "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a ^ { \\Sigma } ( x )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "yields at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma ( k )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", inverse and outcome; where no operation of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "i _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "occurs at k the generators of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { M } ( i _ { 2 } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "leave "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma ( k )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "as it stands, and where one does the key is commutative by hypothesis, and independence of its operations, applied to one generator of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g"
+                    },
+                    {
+                        "type": "text",
+                        "content": "at a time, yields the same inverse and the same outcome at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g ( \\sigma )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Equal outcomes select one continuation, so the yields agree."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                438,
+                885,
+                570
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "With every coeffect witnessed, the commutativity hypothesis of Theorem 47 is supplied at every key (Definition 46), and only the disjointness "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "P _ { 1 } \\cap S _ { 2 } = P _ { 2 } \\cap S _ { 1 } = \\emptyset"
+                    },
+                    {
+                        "type": "text",
+                        "content": "remains to be checked of a pair; Section 4 reads that disjointness off the two components' declarations."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                586,
+                882,
+                634
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A component's effect function is the lift of a context-mediated iterator along the coeffect projection (Definition 56), and independence transfers to that lift, whose transformations move the projection alone. The assumption Section 3.4.1 leaves open is met that way, the witness of each coeffect supplying the commutativity Theorem "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "4 7"
+                    },
+                    {
+                        "type": "text",
+                        "content": "consumes, and with it the temporal composability of a whole system of components."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                643,
+                885,
+                725
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "What the decomposition divides is a computation's commuting part from its order-sensitive part. The commuting part is carried by the effects: a component performs them in whatever order its task calls for, and Theorem 43 reverts them in whatever order the system finds convenient, no two components constraining each other. The order-sensitive part is carried by the coeffects, since a key whose operations do not commute is one whose order has to be imposed from outside the effects, and two places are available for imposing it. Within one component the accumulator imposes it, reverting in LIFO order whatever the effects (Theorem 16). Across components a declared coeffect imposes "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathrm { i t } } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "one component providing what another declares and the provision preceding the declaration's satisfaction (Section 3.2.2). Composability is thereby had at the grain of components rather than of single effects, which is the scale Section 4 works at."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                732,
+                885,
+                879
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "30"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                510,
+                941
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                112,
+                97,
+                884,
+                129
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "One limit of the theorem is worth naming, and it is the hypothesis this section opened on: binding every shared location at a key is the paradigm's discipline and not a property of the construction, so a location the system cannot reify as a coeffect lies outside the boundary of Section 6.1 and outside the theorem with it."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                137,
+                885,
+                203
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4. A Calculus of Dynamic Composition"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                112,
+                237,
+                521,
+                256
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This section gives the theory of Section 3 an operational semantics. It decomposes a running system into components, each a triple of a coeffect specification, a provision, and a witnessed effect function. The instantiations of components are fbers, and the calculus supplies the rules that move them: orchestration rules, by which the orchestrator inserts and retires fibers, and lifecycle rules, by which the system activates and deactivates them unprompted. The metatheory then establishes temporal and spatial composability in their global form, the guarantees Section 3 reads of one component holding of every fiber of an arbitrary interleaving."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                272,
+                885,
+                387
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4.1. Components and Fibers"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                412,
+                364,
+                429
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This section fixes the objects the rules act on: the component; the fiber, an instantiation of a component carrying a lifecycle state of its own; and the registry, which holds the fibers a state carries and from which the coeffect context is read off."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                442,
+                884,
+                491
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Components. A component is given as a triple, its coeffect side split into what it reads from the environment and what it provides to it."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                499,
+                884,
+                532
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Definition 48. A component over a context Γ carrying both effects and coeffects (Definition 28) is defined as:"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                543,
+                882,
+                576
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "{ \\mathfrak { E } } _ { \\Gamma } : = ( d : { \\mathfrak { D } } _ { \\Gamma } ) \\times ( p : \\mathfrak { P } _ { \\Gamma } ) \\times { \\mathfrak { I } } _ { \\Gamma } ^ { d \\cup p }\\tag{42}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/29769aa10023043e80afe57c9152e5bf92de2f2128244077cccff3c0f3d3e27d.jpg"
+                }
+            },
+            "bbox": [
+                364,
+                586,
+                631,
+                606
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "representing a triple "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( d , p , e )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", where:"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                617,
+                416,
+                632
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "d : { \\mathfrak { D } } _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is the coeffect specification of Definition 21, declaring the dependencies required from the environment;"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                632,
+                882,
+                664
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "p : \\mathfrak { P } _ { \\Gamma } : = \\mathsf { S e t } ( K )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is the coeffect provision, declaring the coeffect keys the component may provide, and no key outside p is one its effect function installs a binding at;"
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                665,
+                882,
+                697
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\overline { { e } } } : { \\mathfrak { I } } _ { \\Gamma } ^ { d \\cup p }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is the witnessed effect function, an effect iterator (Definition 17) witnessed up to "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\simeq _ { d \\cup p }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "(Definition 37), defining the effects contributed when the component is active together with the inverses that withdraw them; a plain effect function enters through the embedding of Section 3.1.3."
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                697,
+                884,
+                762
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Subscripts are taken on Γ throughout, the coeffect context being one of its projections (Definition 28), so the "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { D } _ { \\Sigma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "of Definition 21 is written "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathfrak { D } } _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "here."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                763,
+                885,
+                795
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Fibers. One component may be instantiated many times over, and each instantiation is activated and deactivated over time, carrying a lifecycle state of its own. We name such an instantiation a fiber. A fiber records the component that produced it, the fiber it was instantiated under, the coeffects it provides, and where in its lifecycle it stands."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                808,
+                885,
+                873
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "31"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                509,
+                941
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Definition 49. Fix a set X of fiber names. A fiber instantiating the component "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( d , p , e ) \\in \\mathfrak { C } _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is a tuple "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\langle d , p , e , \\pi , \\sigma , \\tau , \\theta \\rangle"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", where"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                97,
+                882,
+                129
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "d : \\mathfrak { D } _ { \\Gamma } , p : \\mathfrak { P } _ { \\Gamma } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e : \\Im _ { \\Gamma } ^ { d \\cup p }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "are the coeffect specification, provision, and effect function of Definition 48;"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                129,
+                884,
+                160
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "• π : N ∪ {root} is the parent, the fiber this one was instantiated under, or the root marker root;"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                162,
+                882,
+                193
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma : \\Sigma"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is the fiber's own coeffect table (Definition 19), empty until it activates and written by its effects as they run;"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                195,
+                882,
+                227
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "\\tau : \\{ \\bot , \\top \\}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is the retirement flag, ⊥ in a fresh fiber and T once the orchestrator has retired the fiber;"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                227,
+                882,
+                259
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "\\theta : \\Theta _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is the lifecycle state:"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                260,
+                371,
+                275
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\Theta _ { \\Gamma } : = | \\mathsf { n a c t i v e } \\mid \\mathsf { R e l o a d i n g } ( i , g , \\omega ) \\mid \\mathsf { A c t i v e } ( g , \\omega ) \\mid \\mathsf { U n l o a d i n g } ( g , \\omega )\\tag{43}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/c6c209022a5fb7409187d216323dd55cc419d00fd1034a992ff80bac0382c382.jpg"
+                }
+            },
+            "bbox": [
+                267,
+                277,
+                776,
+                293
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "i : \\Im _ { \\Gamma } ^ { d \\cup p }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is the remaining effect iterator, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g : \\Gamma \\to \\Gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": "the accumulator built so far, and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega : d  \\mathfrak { N }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "the committed view."
+                    }
+                ]
+            },
+            "bbox": [
+                159,
+                296,
+                882,
+                328
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A fiber is installed when its lifecycle state carries an accumulator and a committed view:"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                329,
+                831,
+                344
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\mathrm { i n s t a l l e d } _ { n } ( \\gamma ) : = \\theta _ { n } \\neq \\mathsf { I n a c t i v e }\\tag{44}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/2825892476eddfe8531bc028413491bfec496dce8dd4cf3702bdfed0fd662d4c.jpg"
+                }
+            },
+            "bbox": [
+                378,
+                354,
+                620,
+                370
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "and an installed fiber resolves k to m when "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega _ { n } ( k ) = m"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                381,
+                554,
+                398
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A transition is what moves a fiber from one lifecycle state to another, and between transitions the fiber rests at one of the two settled states, Inactive or Active, contributing nothing at the first and its effects at the second. A transition runs in one of two directions: an activation executes "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "accumulating side effects on the context, and a deactivation applies the accumulator to recover the context. A transition in a real runtime is spread over an interval rather than taken in one step, so each direction has a state of its own that the fiber occupies while the transition runs, Reloading for an activation and Unloading for a deactivation. The committed view ω sends each key the fiber declares to the name of the fiber that provided it when the transition committed. Section 4.2 draws the four states as a state machine (Figure 1) and supplies the rules on its edges."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                410,
+                887,
+                574
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Registry. A state holds its fibers under their names, and both the identity of a fiber and the coeffect context of Section 3.2 are read off that arrangement."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                581,
+                882,
+                614
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Definition 50. Write "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak { F } _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "for the set of fibers over Γ. A state "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma \\in \\Gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": "carries a registry"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                626,
+                776,
+                643
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "F _ { \\gamma } : \\mathfrak { N } \\to \\mathfrak { F } _ { \\Gamma }\\tag{45}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/e4c376d82f17c4fe356de140ebb6b63c19fe8de62077dbba0b7e032cbe0fa2ed.jpg"
+                }
+            },
+            "bbox": [
+                447,
+                650,
+                551,
+                669
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "a finite partial function whose parent pointers form a tree rooted at root, together with whatever else in Γ no fiber's σ names. We write "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ( n )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "for "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F _ { \\gamma } ( n )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and abbreviate a field of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ( n )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "by subscripting it with n where the state is clear, so that "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d _ { n } , p _ { n } , e _ { n } , \\pi _ { n } , \\sigma _ { n } , \\tau _ { n } , \\theta _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "are the fields of Definition 49 and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g _ { n } , \\omega _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "the accumulator and committed view that "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\theta _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "carries; "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "r [ \\theta _ { n } \\mapsto \\theta ^ { \\prime } ]"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", γ[n → "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\langle \\cdots \\rangle ]"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma \\setminus n"
+                    },
+                    {
+                        "type": "text",
+                        "content": "are the states differing from "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": "in one field, one fiber, and the presence of one fiber respectively."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                680,
+                884,
+                778
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A fiber's name is what gives it an identity that survives its own mutation: every rule below rewrites the lifecycle state of one fiber and leaves the others alone, so the rule has to say which one, and two fields refer to fibers rather than describe them, the parent π and the committed view ω. Names are atoms: no rule computes one, inspects its structure, or relates two of them by anything but equality, and introducing a fiber simply draws one not already in use. This is the discipline of dynamically created local names [40], used here for fiber identity."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                790,
+                885,
+                890
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "32"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                510,
+                941
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Each fiber owning a table means the coeffect context is derived rather than stored: it is what the active fibers jointly provide."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                97,
+                884,
+                130
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\sigma _ { \\gamma } : = \\bigcup \\{ \\sigma _ { m } ~ | ~ m \\in \\mathrm { d o m } ( F _ { \\gamma } ) , \\theta _ { m } = \\mathsf { A c t i v e } ( - , - ) \\}\\tag{46}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/b09a7fb294c2da2178c87a8199e9c13733887aca13292d616043440004a62731.jpg"
+                }
+            },
+            "bbox": [
+                294,
+                139,
+                700,
+                160
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The union is well defined because a fiber's own table holds only the keys of its provision, dom "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\sigma _ { n } ) \\subseteq p _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "(Definition 48), and the provisions of distinct fibers are disjoint, O-Insert admitting no fiber whose provision meets an existing one (Section 4.2.1), so each "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k \\in \\mathrm { d o m } ( \\sigma _ { \\gamma } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "lies in the table of exactly one Active fiber, whose name we write provider "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "_ k ( \\gamma ) \\in \\mathfrak { N }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and call the provider of k. Each key therefore has one possible provider, fixed by the provisions and not by the state. No rule writes a table directly: the bindings a fiber provides are the provision stages its own effect function performs, which land in "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and so are already part of the state "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "returns, and they leave again with the accumulator, and the operations it performs at a declared key act on the value its provider's table holds (Definition 56). An effect function is built from such stages and from nothing else, so a location no key binds is one no fiber touches."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                171,
+                887,
+                335
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The disjointness the union rests on is where this chapter parts company with Section 3.2.3, and it simplifies the formalization rather than the systems it models. The isolation of Definition 24 lets one key resolve through a realm table, so that two fibers may provide the same key in different realms; a calculus carrying realms would relax disjointness to disjointness within a realm, resolving a declared key against the realm of the fiber declaring it (Section 4.4 supplies that reading). We read every key at one shared realm instead, and a system that wants several providers of one key keeps two routes: realms, and the broker of Section 6.2, one fiber providing the key and dispatching among implementations registered with it. Within the calculus, the disjointness restricts how often a component may be instantiated: one with a nonempty provision has one fiber at a time, so the many instantiations below are of components providing nothing, which is the common case of a component that only consumes, or that instantiates others."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                342,
+                887,
+                537
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "With "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma _ { \\gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "in hand, the satisfaction relation of Section 3.2.2 applies unchanged, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma \\models"
+                    },
+                    {
+                        "type": "text",
+                        "content": "d abbreviating "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma _ { \\gamma } \\models d . \\mathrm { A }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "key lies in dom "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\left( \\sigma _ { \\gamma } \\right)"
+                    },
+                    {
+                        "type": "text",
+                        "content": "exactly when some Active fiber has installed it, its provision being the keys it may install rather than the ones it has, so "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma ^ { \\textsf { k } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "d already requires that every declared key have an Active provider. Taking the union over Active fibers alone is what lets a fiber cease to provide before it has withdrawn anything, which Section 4.2.2 turns into the ordering discipline, and it fixes how a transition in progress reads: a Reloading or Unloading fiber reads its coeffects through the "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega"
+                    },
+                    {
+                        "type": "text",
+                        "content": "it holds and provides none of its own, so a key its transition has already written is not yet one a dependent may activate against."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                544,
+                885,
+                677
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The two declarations of Definition 48 are the two directions of one interface, d what a component reads from the environment and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "p"
+                    },
+                    {
+                        "type": "text",
+                        "content": "what it writes to it, and the superscript on the effect function's type holds the witness to that interface. A fiber holds its own bindings whether or not they are published, so the projection the witness is read at is a second reading of the same tables."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                683,
+                885,
+                764
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Definition 51. Write"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                777,
+                287,
+                793
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\sigma _ { \\gamma } ^ { S } : = \\bigcup \\{ \\sigma _ { m } | _ { S } \\ | \\ m \\in \\mathrm { d o m } ( F _ { \\gamma } ) \\}\\tag{47}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/336e6e9477a4fe1a581082e62de624110209d66586d89d48145d4c06673e1578.jpg"
+                }
+            },
+            "bbox": [
+                364,
+                802,
+                630,
+                824
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "for the bindings the registry records at a set "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "S \\subseteq K"
+                    },
+                    {
+                        "type": "text",
+                        "content": "of keys, over every fiber and not the Active ones alone; disjointness of provisions makes it a function, and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma _ { \\gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is the restriction of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma _ { \\gamma } ^ { K }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "to the Active fibers. This is the coeffect projection Definition 33 is read at throughout this section, so that "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma \\simeq _ { S } \\delta"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma _ { \\gamma } ^ { S } \\simeq \\sigma _ { \\delta } ^ { S }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Im _ { \\Gamma } ^ { S }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "(Definition 37) is the effect functions witnessed at those keys."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                834,
+                884,
+                901
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "33"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                510,
+                941
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The keys of both declarations are read off the tables rather than off "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma _ { \\gamma } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and the witness condition is why: a binding a transition has written stays in the fiber's table before the fiber is Active, and that binding is what the inverse is held to remove, so the projection the witness is read at has to hold it wherever the fiber's lifecycle stands. The same reading keeps the relation where the control fields cannot move it: a write to a lifecycle state can move a table into or out of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma _ { \\gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "with every binding left as it stands, whereas "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma _ { \\gamma } ^ { S }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "moves only where some binding does. What the witness is thereby held to restore is the two declarations and nothing else."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                97,
+                887,
+                212
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4.2. The Calculus"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                112,
+                239,
+                275,
+                254
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This section gives the calculus: nine rules generating two relations. An orchestration rule, prefixed O- and written "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma \\Rightarrow \\delta ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", is an action the orchestrator may perform; its premises say when the action is legal, not when it occurs. A lifecycle rule, prefixed L- and written "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma \\longrightarrow \\delta ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is a step the system takes unprompted whenever its premises hold. A sequence of steps interleaves the two. Eight of the nine lie on the edges of Figure 1; O-Retire writes the retirement flag alone and applies at every lifecycle state, so it would be a self-loop at each of the four nodes, and the figure omits it."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                267,
+                887,
+                382
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/885ef92d69ae6254b53eef5987e22dad9e91aac9d159ded72e68feb55b6453dc.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 1  The component lifecycle, with the empty node marking a fiber absent from the registry"
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                183,
+                391,
+                811,
+                555
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4.2.1. Orchestration"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                605,
+                292,
+                619
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Insertion and retirement are the only external inputs: the orchestrator requests that a fiber exist or stop existing, and never sets its lifecycle state directly."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                633,
+                884,
+                667
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array} { r l } { \\frac { n \\not \\in \\mathrm { d o m } \\left( F _ { \\gamma } \\right) } { \\gamma } } & { \\pi \\in \\mathrm { d o m } \\left( F _ { \\gamma } \\right) \\cup \\{ \\mathrm { r o o t } \\} \\quad \\left( d , p , e \\right) \\in \\mathfrak { C } _ { \\Gamma } \\quad \\forall m \\in \\mathrm { d o m } \\left( F _ { \\gamma } \\right) . p \\cap p _ { m } = \\emptyset \\quad \\mathrm { O . h s e r t } } \\\\ & { \\qquad \\gamma \\Rightarrow \\gamma [ n \\mapsto \\langle d , p , e , \\pi , \\otimes , \\bot , \\mathrm { l n a c t i v e } \\rangle ] } \\\\ & { \\qquad \\frac { n \\in \\mathrm { d o m } \\left( F _ { \\gamma } \\right) } { \\gamma \\Rightarrow \\gamma [ \\tau _ { n } \\mapsto \\top ] } \\mathrm { O . R e t i r e } } \\\\ & { \\qquad \\frac { \\tau _ { n } = \\top } { \\gamma \\Rightarrow \\gamma \\setminus \\sigma _ { n } = \\emptyset } \\quad \\forall m . \\pi _ { m } \\neq n } \\\\ & { \\qquad \\gamma \\Rightarrow \\gamma \\setminus n } \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/fca981b0b25cba8db4b7738bda80d8b842b166256ed31aeb7c7c1c673f3c6e02.jpg"
+                }
+            },
+            "bbox": [
+                149,
+                673,
+                848,
+                780
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "O-Retire is unconditional on the fiber's state because retiring is a request, and the lifecycle rules are what carry it out. Retirement is separated from removal for the same reason: a retired fiber that is still Active must first be deactivated, and removing it earlier would discard the accumulator and leak. The premise ∀m. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pi _ { m } \\neq n"
+                    },
+                    {
+                        "type": "text",
+                        "content": "keeps the tree well-formed by removing children before their parent, and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma _ { n } = \\emptyset"
+                    },
+                    {
+                        "type": "text",
+                        "content": "admits only an entry holding no bindings, so that a removal discards none: a deactivation leaves the entry so (Corollary 69), and it is what lets Theorem 68 count a removal as no change to the tables. The last premise of O-Insert is where the single-source discipline is imposed: a key has one possible provider because the orchestrator may not admit a second component declaring it."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                789,
+                885,
+                904
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "34"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                510,
+                941
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                110,
+                97,
+                882,
+                130
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Instantiation. A component may instantiate another while installing its effects, which is what a plugin host does when a plugin loads plugins of its own. The rules so far leave the registry to the orchestration rules alone, so such an instantiation has nowhere to happen. One primitive gives it somewhere."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                137,
+                885,
+                204
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Definition 52. An iteration of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "may instantiate a component "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( d , p , e ) \\in \\mathfrak { C } _ { \\Gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". In place of a state map it takes the O-Insert of that component with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pi = n ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and it yields as its inverse the O-Retire of the fiber so instantiated. The rule draws the name, subject to the freshness premise of O-Insert, and hands it to the effect function."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                216,
+                885,
+                281
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The inverse retires rather than removes, and the reason is that an inverse has to apply wherever it is reached. O-Remove carries premises, so an inverse built from it can fail to: a parent whose child is still Active could not run its accumulator, and no rule would move the child, since Definition 53 does not read the fiber tree. O-Retire has "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n \\in \\mathop { \\mathrm { d o m } } \\mathop { \\left( F _ { \\gamma } \\right) }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "as its only premise. The entry it leaves behind at the state the instantiation was taken is retired, Inactive, and holds an empty table, which is the vestigial entry of Lemma 62: it differs from the absence of the fiber in control fields alone, and no rule tells the two apart."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                293,
+                885,
+                409
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Retiring a child sets τ and so takes its target view to ⊥, after which the ordinary rules carry it back to Inactive. The parent is not made to wait, O-Retire being unconditional, so L-Unload applies to the parent whether or not the child has left. A grandchild is reached one level at a time, the child's own accumulator retiring what the child instantiated. Theorem 73 covers this cascade and the one the guard of Section 4.2.2 imposes along coeffects together."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                416,
+                885,
+                499
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4.2.2. Lifecycle"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                520,
+                248,
+                537
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The six lifecycle rules divide by the direction they move a fiber in: an activation carries a fiber toward a target view it does not yet hold, and a deactivation carries one away from a committed view that is no longer its target."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                549,
+                884,
+                600
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Target views. The rules compare each fiber against a target, namely whether it ought to be running and against which resolution of its dependencies. The target is not a property of the fiber alone, since the keys a fiber declares are resolved against the whole state, so it is a predicate on that state."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                606,
+                885,
+                673
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Definition 53. The target view of n at γ maps each declared key to its provider, so it is a total map "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d _ { n } \\to \\mathfrak { N }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and is ⊥ when n ought not to be running at all:"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                684,
+                882,
+                718
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\mathrm { t a r g e t } _ { n } ( \\gamma ) : = \\left\\{ \\begin{array} { l l } { \\hfill \\perp } & { \\mathrm { i f } \\ \\tau _ { n } \\vee \\neg ( \\gamma \\models d _ { n } ) } \\\\ { \\hfill ( k \\in d _ { n } ) \\mapsto \\mathrm { p r o v i d e r } _ { k } ( \\gamma ) } & { \\mathrm { o t h e r w i s e } } \\end{array} \\right.\\tag{48}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/4766881ebf4ccb43f4ddb36c89da11129f1e5579c0fab7ae95521e658edf8c80.jpg"
+                }
+            },
+            "bbox": [
+                258,
+                725,
+                736,
+                760
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A state is quiescent when every fiber has settled at its target view, no transition left in progress:"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                771,
+                884,
+                789
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\operatorname { q u i e t } ( \\gamma ) : = \\forall n \\in \\operatorname { d o m } ( F _ { \\gamma } ) . \\left\\{ { \\begin{array} { l l } { \\operatorname { t a r g e t } _ { n } ( \\gamma ) = \\bot } & { { \\mathrm { i f ~ } } \\theta _ { n } = { \\mathsf { l n a c t i v e } } } \\\\ { \\operatorname { t a r g e t } _ { n } ( \\gamma ) = \\omega _ { n } } & { { \\mathrm { i f ~ } } \\theta _ { n } = \\mathsf { A c t i v e } ( - , \\omega _ { n } ) } \\\\ { \\bot } & { { \\mathrm { o t h e r w i s e } } } \\end{array} } \\right.\\tag{49}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/b74654a547b315c2140b82aa53caedc5e302ab1b1978c91daad55216651d1186.jpg"
+                }
+            },
+            "bbox": [
+                216,
+                797,
+                778,
+                847
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "35"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                510,
+                941
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The target answers to two things and to nothing else: retirement, through "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\tau _ { n } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and coeffect resolution, through "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma \\models d _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and providerk, each declared key being read off "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma _ { \\gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "at the one shared realm of Section 4.1."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                97,
+                884,
+                146
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The committed view of Definition 49 has the same type as the target view, and the lifecycle is driven by comparing them: "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is the resolution n activated against, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { t a r g e t } _ { n } ( \\gamma )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "the one it should be running against, and every rule below fires on their agreeing or differing. This is the reactive discipline of Section 3.2: a transition is initiated whenever the target view changes, regardless of which of the two moved it. Recording a provider rather than a value is what makes the comparison usable, since a different fiber providing an equal value would otherwise compare equal. The value a component reads is reached through the view, since the provider's table holds that value, and the implementation holds the map in fiber. committed and a hash of it in fiber.target (Section 5.1.3)."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                154,
+                885,
+                302
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Activation. An activation may execute multiple effects in sequence, and the deactivation must revert them. The effect iterator "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e _ { n }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "models such an activation (Section 3.1.3), each of its iterations yielding the modified context, an inverse, and a continuation, and a component's whole activation is one run of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e _ { n } \\colon \\mathrm { L } { \\mathrm { - B e g i n } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "enters Reloading, L-Iter takes one iteration, and L-Finish lands the last."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                309,
+                885,
+                390
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\frac { \\theta _ { n } = \\mathsf { I n a c t i v e } \\quad \\omega = \\mathrm { t a r g e t } _ { n } ( \\gamma ) \\neq \\perp } { \\gamma \\longrightarrow \\gamma [ \\theta _ { n } \\mapsto \\mathsf { R e l o a d i n g } ( e _ { n } , \\mathrm { i d } _ { \\Gamma } , \\omega ) ] } \\ \\mathrm { L } \\mathrm { - B e g i n }",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/527e7da602732c9b9f1385d9fb36df79e1cf5945942d2e507f68cb3f3ed552a3.jpg"
+                }
+            },
+            "bbox": [
+                329,
+                398,
+                668,
+                430
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\frac { \\theta _ { n } = \\mathsf { R e l o a d i n g } ( i , g , \\omega ) \\quad \\mathrm { t a r g e t } _ { n } ( \\gamma ) = \\omega \\quad i ( \\gamma ) = ( \\delta , h , \\mathsf { J u s t } ( i ^ { \\prime } ) ) \\quad \\scriptstyle \\mathrm { L - I t e r } } { \\gamma \\longrightarrow \\delta [ \\theta _ { n } \\mapsto \\mathsf { R e l o a d i n g } ( i ^ { \\prime } , g \\circ h , \\omega ) ] } \\quad \\scriptstyle \\mathrm { L - I t e r }",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/38d5dd6fef450b91ed64548756c5263ee68383e6109089c9265d87fc77f1b9b0.jpg"
+                }
+            },
+            "bbox": [
+                235,
+                435,
+                761,
+                468
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\frac { \\theta _ { n } = \\mathsf { R e l o a d i n g } ( i , g , \\omega ) \\quad \\mathrm { t a r g e t } _ { n } ( \\gamma ) = \\omega \\quad i ( \\gamma ) = ( \\delta , h , \\mathsf { N o t h i n g } ) \\quad \\scriptstyle \\mathrm { L - F i n i s h } } { \\gamma \\longrightarrow \\delta [ \\theta _ { n } \\mapsto \\mathsf { A c t i v e } ( g \\circ h , \\omega ) ] } \\quad \\scriptstyle \\mathrm { L - F i n i s h }",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/5194c20f879848665c55fce5f2c5330a15b91f2c99ab648abaf206a0d36ae705.jpg"
+                }
+            },
+            "bbox": [
+                226,
+                473,
+                771,
+                505
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Each iteration composes the newly yielded inverse onto the accumulator as "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathit { g } } \\circ h ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", following Definition 18, so that the accumulator applies the inverses in last-in-first-out order."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                513,
+                882,
+                546
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Deactivation. A deactivation enters from either stage of the lifecycle: L-Divert takes out a fiber whose transition is still in progress, and L-Leave one that is Active. It cannot be taken in one step. A component being torn down because its provider is going away is running its own teardown code, which may need the very coeffect that is being withdrawn; closing a connection pool typically means handing the connections back to whatever provided them. The consumer must therefore still be able to read the key throughout its own deactivation, and the provider's withdrawal must take effect only afterwards, which gives content to the ordering Section 3.2 requires of dependencies and dependents. A deactivation taken in one step would remove the provisions and run the inverse together, with no interval between them for a consumer's teardown to occupy. The rules below therefore separate the decision from the act, and the act is guarded by the following condition."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                554,
+                885,
+                734
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\operatorname { r e l i e d } _ { n } ( \\gamma ) : = \\exists m \\in \\operatorname { d o m } \\bigl ( F _ { \\gamma } \\bigr ) , k \\in d _ { m } . m \\neq n \\land \\operatorname { i n s t a l l e d } _ { m } ( \\gamma ) \\land \\omega _ { m } ( k ) = n",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/e6612728a7b2ca0e5edd7ea9a1b1dedb27e960c416709d4b637ab7612f0a8917.jpg"
+                }
+            },
+            "bbox": [
+                198,
+                771,
+                796,
+                789
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Definition 54. The fiber n is relied upon at γ when some other installed fiber resolves a key to it:"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                745,
+                884,
+                762
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "(50)"
+                    }
+                ]
+            },
+            "bbox": [
+                847,
+                771,
+                880,
+                787
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "36"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                510,
+                941
+            ]
+        }
+    ],
+    [
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array} { r l } & { \\underbrace { \\theta _ { n } = \\mathsf { R e l o a d i n g } ( i , g , \\omega ) \\quad \\mathrm { t a r g e t } _ { n } ( \\gamma ) \\neq \\omega \\quad ( \\delta , h ) = ( \\gamma , \\mathrm { i d } _ { \\Gamma } ) \\vee i ( \\gamma ) = ( \\delta , h , - ) } _ { \\displaystyle \\gamma \\longrightarrow \\delta [ \\theta _ { n } \\mapsto \\mathsf { U n l o a d i n g } ( g \\circ h , \\omega ) ] } \\mathrm { L } \\mathrm { \\lrcorner D i v e r t } } \\\\ & { \\qquad \\underbrace { \\theta _ { n } = \\mathsf { A c t i v e } ( g , \\omega ) \\quad \\mathrm { t a r g e t } _ { n } ( \\gamma ) \\neq \\omega } _ { \\displaystyle \\gamma \\longrightarrow \\gamma [ \\theta _ { n } \\mapsto \\mathsf { U n l o a d i n g } ( g , \\omega ) ] } \\mathrm { L } \\mathrm { \\lrcorner c a v e } } \\\\ & { \\qquad \\underbrace { \\theta _ { n } = \\mathsf { U n l o a d i n g } ( g , \\omega ) \\quad \\mathrm { ~ - r e l i e d } _ { n } ( \\gamma ) \\quad g ( \\gamma ) = \\delta } _ { \\displaystyle \\gamma \\longrightarrow \\delta [ \\theta _ { n } \\mapsto \\mathsf { l n a c t i v e } ] } \\mathrm { ~ } \\mathrm { L } \\mathrm { \\cdot U n l o a d } } \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/5d86e939158b5e557577057c5c5503e9f8985ade27bc3d6024328e518409db4b.jpg"
+                }
+            },
+            "bbox": [
+                183,
+                96,
+                818,
+                204
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "L-Divert may fall between any two consecutive iterations of a transition, routing the fiber into Unloading with the inverses accumulated so far rather than applying them on the spot. Routing through Active instead would let the fiber provide its coeffects for the length of one step and oblige its dependents to activate against a component that is already leaving. The first of L-Divert's two alternatives aborts the iteration the fiber is holding, which only an iteration boundary makes possible, so the granularity at which a divert may fall is that of the iterator; the second lets that iteration land, serving the host Section 4.4 admits, in which an iteration in flight cannot be declined."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                212,
+                887,
+                344
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "L-Leave records the decision to deactivate without acting on it, which stops the fiber providing its coeffects while leaving its own committed view and everyone else's intact. L-Unload applies the accumulator, discards the committed view, and leaves the fiber Inactive; it is the only rule in the calculus that applies an accumulator, an L-Divert routing here rather than applying one of its own."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                350,
+                887,
+                434
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The two requirements are then carried by different parts of the form: the consumer's reading by the committed view, which L-Unload discards as its last act, and the deferral of the withdrawal by the premise "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\lnot \\mathrm { r e l i e d } _ { n } ( \\gamma )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", which we call the guard and which holds a provider's withdrawal back until every consumer that resolves a key to n has gone. For a fiber L-Divert takes out of its first transition the guard is vacuous, a fiber that has never been Active providing nothing and appearing in no committed view. Theorem 70 establishes both requirements."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                439,
+                885,
+                539
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The guard is imposed per binding rather than per fiber: "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\operatorname { r e l i e d } _ { n } ( \\gamma )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "tests whether some committed view names "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "so a fiber that declares none of n's keys is no obstacle, and neither is one that resolved a key of n's in another realm (Section 3.2.3). Under the single-source discipline of O-Insert the per-binding reading coincides with the coarser test "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\exists m \\neq n , k \\in"
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d _ { m }"
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { i n s t a l l e d } _ { m } ( \\gamma ) \\wedge k \\in p _ { n } ."
+                    },
+                    {
+                        "type": "text",
+                        "content": ", a key having one possible provider there."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                545,
+                885,
+                630
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A guard of this kind ordinarily deadlocks. What keeps it from doing so is Unloading together with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma _ { \\gamma }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "being the union over Active fibers alone: once L-Leave or L-Divert has marked "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "its table leaves "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma _ { \\gamma } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "so no target view can name n any longer, and every consumer that committed to n is itself on its way out. Theorem 73 turns that into the claim that the guard always releases."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                634,
+                885,
+                701
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The guard orders deactivations along coeffects and not along the fiber tree: a parent may run its inverse while a child of it is still Unloading, since relied speaks only of committed views. Parent and child are accordingly ordered more weakly than Theorem 70 orders a provider and its consumer, and a parent and a child whose effects meet at a shared key are governed by the pairwise independence of Lemma 66 instead."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                707,
+                887,
+                791
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The rules are nondeterministic: several fibers may hold a committed view differing from their target view, and the relation commits to no order among them. They are also reactive only, in that no rule mentions a scheduler; the steps are any sequence of rule applications, so a theorem proved over all such sequences holds for every scheduling policy a runtime might adopt."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                797,
+                885,
+                879
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "37"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                927,
+                510,
+                941
+            ]
+        }
+    ]
+]

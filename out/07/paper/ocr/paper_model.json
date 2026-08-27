@@ -1,0 +1,4772 @@
+[
+    {
+        "layout_dets": [
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9688,
+                "bbox": [
+                    193,
+                    228,
+                    1466,
+                    342
+                ],
+                "index": 1
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9713,
+                "bbox": [
+                    193,
+                    360,
+                    1463,
+                    475
+                ],
+                "index": 2
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.972,
+                "bbox": [
+                    194,
+                    493,
+                    1466,
+                    609
+                ],
+                "index": 3
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9758,
+                "bbox": [
+                    193,
+                    626,
+                    1466,
+                    778
+                ],
+                "index": 4
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9733,
+                "bbox": [
+                    193,
+                    796,
+                    1466,
+                    912
+                ],
+                "index": 5
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9666,
+                "bbox": [
+                    194,
+                    929,
+                    1465,
+                    1009
+                ],
+                "index": 6
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9757,
+                "bbox": [
+                    193,
+                    1023,
+                    1464,
+                    1180
+                ],
+                "index": 7
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9638,
+                "bbox": [
+                    194,
+                    1195,
+                    1468,
+                    1275
+                ],
+                "index": 8
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9761,
+                "bbox": [
+                    194,
+                    1290,
+                    1464,
+                    1442
+                ],
+                "index": 9
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9724,
+                "bbox": [
+                    193,
+                    1460,
+                    1464,
+                    1575
+                ],
+                "index": 10
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9763,
+                "bbox": [
+                    194,
+                    1592,
+                    1466,
+                    1747
+                ],
+                "index": 11
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9667,
+                "bbox": [
+                    195,
+                    1764,
+                    1466,
+                    1844
+                ],
+                "index": 12
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9677,
+                "bbox": [
+                    194,
+                    1858,
+                    1463,
+                    1937
+                ],
+                "index": 13
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9734,
+                "bbox": [
+                    194,
+                    1953,
+                    1469,
+                    2072
+                ],
+                "index": 14
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.8904,
+                "bbox": [
+                    807,
+                    2169,
+                    846,
+                    2199
+                ],
+                "index": 15
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    193,
+                    230,
+                    1459,
+                    268
+                ],
+                "score": 0.98,
+                "text": "[25] G. Plotkin and M. Pretnar, “Handlers of Algebraic Effects,\" in Programming Languages"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    282,
+                    268,
+                    1463,
+                    305
+                ],
+                "score": 0.993,
+                "text": "and Systems (ESOP), Berlin, Heidelberg: Springer Berlin Heidelberg, 2009, pp. 80–94."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    308,
+                    739,
+                    338
+                ],
+                "score": 0.989,
+                "text": "doi: 10.1007/978-3-642-00590-9_7."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    193,
+                    364,
+                    1457,
+                    400
+                ],
+                "score": 0.984,
+                "text": "[26] M. Pretnar, “An Introduction to Algebraic Effects and Handlers. Invited tutorial paper,\""
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    283,
+                    400,
+                    1457,
+                    438
+                ],
+                "score": 0.98,
+                "text": "Electron. Notes Theor. Comput. Sci., vol. 319, no. C, pp. 19–35, Dec. 2015, doi: 10.1016/"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    280,
+                    439,
+                    540,
+                    475
+                ],
+                "score": 1.0,
+                "text": "j.entcs.2015.12.003."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    191,
+                    496,
+                    1463,
+                    533
+                ],
+                "score": 0.986,
+                "text": "[27] D. Leijen, “Koka: Programming with Row Polymorphic Effect Types,\" Electronic Proceed-"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    537,
+                    1455,
+                    570
+                ],
+                "score": 0.995,
+                "text": "ings in Theoretical Computer Science, vol. 153, pp. 100–126, Jun. 2014, doi: 10.4204/"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    574,
+                    443,
+                    608
+                ],
+                "score": 1.0,
+                "text": "eptcs.153.8."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    631,
+                    1463,
+                    667
+                ],
+                "score": 0.987,
+                "text": "[28] D. Leijen, \"Type directed compilation of row-typed algebraic effects,\" in Proceedings of"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    283,
+                    667,
+                    1459,
+                    703
+                ],
+                "score": 0.994,
+                "text": "the 44th ACM SIGPLAN Symposium on Principles of Programming Languages, in POPL"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    283,
+                    703,
+                    1460,
+                    743
+                ],
+                "score": 0.986,
+                "text": "'17. Paris, France: Association for Computing Machinery, 2017, pp. 486–499. doi:"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    289,
+                    747,
+                    629,
+                    774
+                ],
+                "score": 0.999,
+                "text": "10.1145/3009837.3009872."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    801,
+                    1462,
+                    834
+                ],
+                "score": 0.985,
+                "text": "[29] A. Bauer and M. Pretnar, “Programming with algebraic effects and handlers,\" Journal of"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    839,
+                    1459,
+                    870
+                ],
+                "score": 0.995,
+                "text": "Logical and Algebraic Methods in Programming, vol. 84, no. 1, pp. 108–123, Jan. 2015, doi:"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    878,
+                    659,
+                    911
+                ],
+                "score": 0.998,
+                "text": "10.1016/j.jlamp.2014.02.001."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    935,
+                    1462,
+                    969
+                ],
+                "score": 0.98,
+                "text": "[30] K. Sivaramakrishnan et al., \"Retrofitting parallelism onto OCaml,\" Proc. ACM Program."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    972,
+                    1025,
+                    1004
+                ],
+                "score": 0.99,
+                "text": "Lang., vol. 4, no. ICFP, Aug. 2020, doi: 10.1145/3408995."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    1031,
+                    1460,
+                    1063
+                ],
+                "score": 0.977,
+                "text": "[31] T. Petricek, D. Orchard, and A. Mycroft, \"Coeffects: a calculus of context-dependent"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    283,
+                    1065,
+                    1461,
+                    1103
+                ],
+                "score": 0.996,
+                "text": "computation,\" in Proceedings of the 19th ACM SIGPLAN International Conference on"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    280,
+                    1101,
+                    1461,
+                    1143
+                ],
+                "score": 0.996,
+                "text": "Functional Programming, in ICFP '14. Gothenburg, Sweden: Association for Computing"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    283,
+                    1143,
+                    1108,
+                    1179
+                ],
+                "score": 0.985,
+                "text": "Machinery, 2014, pp. 123–135. doi: 10.1145/2628136.2628160."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    1198,
+                    1464,
+                    1234
+                ],
+                "score": 0.983,
+                "text": "[32] T. Uustalu and V. Vene, \"Comonadic Notions of Computation,\" Electronic Notes in Theo-"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1238,
+                    1462,
+                    1270
+                ],
+                "score": 0.987,
+                "text": "retical Computer Science, vol. 203, no. 5, pp. 263–284, 2008, doi: 10.1016/j.entcs.2008.05.029."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    1296,
+                    1460,
+                    1328
+                ],
+                "score": 0.983,
+                "text": "[33] A. Brunel, M. Gaboardi, D. Mazza, and S. Zdancewic, \"A Core Quantitative Coeffect"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    282,
+                    1329,
+                    1460,
+                    1367
+                ],
+                "score": 0.996,
+                "text": "Calculus,\" in Proceedings of the 23rd European Symposium on Programming Languages and"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    1371,
+                    1460,
+                    1403
+                ],
+                "score": 0.976,
+                "text": "Systems - Volume 8410, Berlin, Heidelberg: Springer-Verlag, 2014, pp. 351–370. doi:"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    288,
+                    1411,
+                    693,
+                    1437
+                ],
+                "score": 1.0,
+                "text": "10.1007/978-3-642-54833-8_19."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    1464,
+                    1458,
+                    1500
+                ],
+                "score": 0.991,
+                "text": "[34] J. Reed and B. C. Pierce, \"Distance makes the types grow stronger: a calculus"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    282,
+                    1500,
+                    1461,
+                    1538
+                ],
+                "score": 0.988,
+                "text": "for differential privacy,\" SIGPLAN Not., vol. 45, no. 9, pp. 157–168, Sep. 2010, doi:"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    289,
+                    1543,
+                    630,
+                    1570
+                ],
+                "score": 1.0,
+                "text": "10.1145/1932681.1863568."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    193,
+                    1598,
+                    1459,
+                    1634
+                ],
+                "score": 0.977,
+                "text": "[35] M. Abadi, A. Banerjee, N. Heintze, and J. G. Riecke, \"A core calculus of dependency,\" in"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    281,
+                    1632,
+                    1460,
+                    1674
+                ],
+                "score": 0.998,
+                "text": "Proceedings of the 26th ACM SIGPLAN-SIGACT Symposium on Principles of Programming"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    1673,
+                    1463,
+                    1709
+                ],
+                "score": 0.997,
+                "text": "Languages, in POPL '99. San Antonio, Texas, USA: Association for Computing Machinery,"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    1712,
+                    913,
+                    1748
+                ],
+                "score": 0.996,
+                "text": "1999, pp. 147–160. doi: 10.1145/292540.292555."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    195,
+                    1767,
+                    1462,
+                    1801
+                ],
+                "score": 0.98,
+                "text": "[36] D. E. Denning, “A lattice model of secure information flow,\" Commun. ACM, vol. 19, no."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    282,
+                    1807,
+                    1008,
+                    1839
+                ],
+                "score": 0.996,
+                "text": "5, pp. 236–243, May 1976, doi: 10.1145/360051.360056."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    1864,
+                    1459,
+                    1898
+                ],
+                "score": 0.989,
+                "text": "[37] U. Dal Lago and F. Gavazzo, “A relational theory of effects and coeffects,\" Proc. ACM"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    1900,
+                    1152,
+                    1932
+                ],
+                "score": 0.996,
+                "text": "Program. Lang., vol. 6, no. POPL, Jan. 2022, doi: 10.1145/3498692."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    1959,
+                    1463,
+                    1991
+                ],
+                "score": 0.979,
+                "text": "[38] R. P. James and A. Sabry, \"Yield: Mainstream Delimited Continuations,\" in First Interna-"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1997,
+                    1463,
+                    2029
+                ],
+                "score": 0.987,
+                "text": "tional Workshop on the Theory and Practice of Delimited Continuations (TPDC 2011), 2011,"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    2036,
+                    1459,
+                    2069
+                ],
+                "score": 0.989,
+                "text": "pp. 20–32. [Online]. Available: https://homes.luddy.indiana.edu/sabry/files/yield.pdf"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    807,
+                    2171,
+                    845,
+                    2203
+                ],
+                "score": 1.0,
+                "text": "85"
+            }
+        ],
+        "page_info": {
+            "page_no": 0,
+            "width": 1654,
+            "height": 2339
+        }
+    },
+    {
+        "layout_dets": [
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9654,
+                "bbox": [
+                    193,
+                    227,
+                    1461,
+                    307
+                ],
+                "index": 1
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9752,
+                "bbox": [
+                    193,
+                    322,
+                    1467,
+                    478
+                ],
+                "index": 2
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9674,
+                "bbox": [
+                    194,
+                    493,
+                    1463,
+                    572
+                ],
+                "index": 3
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9728,
+                "bbox": [
+                    194,
+                    587,
+                    1465,
+                    703
+                ],
+                "index": 4
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9672,
+                "bbox": [
+                    194,
+                    720,
+                    1464,
+                    800
+                ],
+                "index": 5
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9713,
+                "bbox": [
+                    194,
+                    815,
+                    1467,
+                    931
+                ],
+                "index": 6
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9758,
+                "bbox": [
+                    193,
+                    947,
+                    1465,
+                    1101
+                ],
+                "index": 7
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9717,
+                "bbox": [
+                    193,
+                    1118,
+                    1464,
+                    1237
+                ],
+                "index": 8
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9716,
+                "bbox": [
+                    193,
+                    1251,
+                    1467,
+                    1366
+                ],
+                "index": 9
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9632,
+                "bbox": [
+                    193,
+                    1384,
+                    1461,
+                    1463
+                ],
+                "index": 10
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9526,
+                "bbox": [
+                    194,
+                    1478,
+                    1253,
+                    1522
+                ],
+                "index": 11
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9739,
+                "bbox": [
+                    194,
+                    1535,
+                    1468,
+                    1654
+                ],
+                "index": 12
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9735,
+                "bbox": [
+                    194,
+                    1668,
+                    1464,
+                    1783
+                ],
+                "index": 13
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9672,
+                "bbox": [
+                    194,
+                    1799,
+                    1462,
+                    1881
+                ],
+                "index": 14
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9722,
+                "bbox": [
+                    194,
+                    1896,
+                    1469,
+                    2009
+                ],
+                "index": 15
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.8893,
+                "bbox": [
+                    807,
+                    2169,
+                    846,
+                    2200
+                ],
+                "index": 16
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    232,
+                    1455,
+                    266
+                ],
+                "score": 0.994,
+                "text": "[39] M. Fowler, “Inversion of Control Containers and the Dependency Injection pattern.\""
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    271,
+                    1223,
+                    304
+                ],
+                "score": 0.998,
+                "text": "[Online]. Available: https://martinfowler.com/articles/injection.html"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    195,
+                    328,
+                    1460,
+                    360
+                ],
+                "score": 0.988,
+                "text": "[40] A. M. Pitts and I. D. B. Stark, \"Observable Properties of Higher Order Functions that"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    288,
+                    367,
+                    1461,
+                    397
+                ],
+                "score": 0.994,
+                "text": "Dynamically Create Local Names, or What's New?,\" in Mathematical Foundations of"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    288,
+                    404,
+                    1463,
+                    436
+                ],
+                "score": 0.998,
+                "text": "Computer Science 1993 (MFCS 1993), in Lecture Notes in Computer Science, vol. 711."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    443,
+                    1088,
+                    475
+                ],
+                "score": 0.98,
+                "text": "Springer, 1993, pp. 122–141. doi: 10.1007/3-540-57182-5\\_8."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    193,
+                    495,
+                    1459,
+                    534
+                ],
+                "score": 0.984,
+                "text": "[41] G. D. Plotkin, \"LCF Considered as a Programming Language,\" Theoretical Computer"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    537,
+                    1288,
+                    569
+                ],
+                "score": 0.992,
+                "text": "Science, vol. 5, no. 3, pp. 223–255, 1977, doi: 10.1016/0304-3975(77)90044-5."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    193,
+                    592,
+                    1459,
+                    629
+                ],
+                "score": 0.994,
+                "text": "[42] D. R. Ghica, K. Muroya, and T. Waugh Ambridge, \"A Robust Graph-Based Approach to"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    284,
+                    631,
+                    1461,
+                    664
+                ],
+                "score": 0.994,
+                "text": "Observational Equivalence,\" Logical Methods in Computer Science, vol. 21, no. 2, p. 8:1–"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    284,
+                    668,
+                    882,
+                    702
+                ],
+                "score": 0.999,
+                "text": "8:95, 2025, doi: 10.46298/LMCS-21(2:8)2025."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    726,
+                    1460,
+                    760
+                ],
+                "score": 0.986,
+                "text": "[43] M. Shapiro, N. Preguiça, C. Baquero, and M. Zawirski, \"A Comprehensive Study of"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    763,
+                    1448,
+                    795
+                ],
+                "score": 0.983,
+                "text": "Convergent and Commutative Replicated Data Types,\" technical report RR-7506, 2011."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    195,
+                    820,
+                    1458,
+                    853
+                ],
+                "score": 0.99,
+                "text": "[44] X. Leroy and S. Blazy, \"Formal Verification of a C-like Memory Model and Its Uses for"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    857,
+                    1463,
+                    892
+                ],
+                "score": 0.992,
+                "text": "Verifying Program Transformations,\" Journal of Automated Reasoning, vol. 41, no. 1, pp."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    896,
+                    865,
+                    927
+                ],
+                "score": 0.987,
+                "text": "1–31, 2008, doi: 10.1007/s10817-008-9099-0."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    196,
+                    954,
+                    1459,
+                    986
+                ],
+                "score": 0.996,
+                "text": "[45] A. T. Clements, M. F. Kaashoek, N. Zeldovich, R. T. Morris, and E. Kohler, \"The"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    284,
+                    992,
+                    1458,
+                    1023
+                ],
+                "score": 0.995,
+                "text": "Scalable Commutativity Rule: Designing Scalable Software for Multicore Processors,\""
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1031,
+                    1462,
+                    1062
+                ],
+                "score": 0.99,
+                "text": "in Proceedings of the 24th ACM Symposium on Operating Systems Principles, 2013, pp. 1–17."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1068,
+                    689,
+                    1098
+                ],
+                "score": 0.987,
+                "text": "doi: 10.1145/2517349.2522712."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    196,
+                    1124,
+                    1458,
+                    1157
+                ],
+                "score": 0.985,
+                "text": "[46] A. W. Mazurkiewicz, \"Trace Theory,\" in Petri Nets: Applications and Relationships to Other"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    284,
+                    1162,
+                    1458,
+                    1195
+                ],
+                "score": 0.997,
+                "text": "Models of Concurrency, Advances in Petri Nets 1986, Part II, in Lecture Notes in Computer"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1201,
+                    1318,
+                    1234
+                ],
+                "score": 0.995,
+                "text": "Science, vol. 255. Springer, 1987, pp. 279–324. doi: 10.1007/3-540-17906-2_30."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    192,
+                    1255,
+                    1460,
+                    1292
+                ],
+                "score": 0.983,
+                "text": "[47] U. A. Acar, G. E. Blelloch, and R. Harper, \"Adaptive functional programming,\" ACM"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1296,
+                    1463,
+                    1329
+                ],
+                "score": 0.991,
+                "text": "Transactions on Programming Languages and Systems, vol. 28, no. 6, pp. 990–1034, 2006,"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    288,
+                    1334,
+                    690,
+                    1361
+                ],
+                "score": 0.992,
+                "text": "doi: 10.1145/1186632.1186634."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    193,
+                    1386,
+                    1455,
+                    1426
+                ],
+                "score": 0.991,
+                "text": "[48] webpack, \"Hot Module Replacement.\" [Online]. Available: https://webpack.js.org/api/"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    1429,
+                    637,
+                    1460
+                ],
+                "score": 1.0,
+                "text": "hot-module-replacement/"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    1483,
+                    1245,
+                    1519
+                ],
+                "score": 0.978,
+                "text": "[49] Vite, \"HMR API.\" [Online]. Available: https://vite.dev/guide/api-hmr"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    193,
+                    1540,
+                    1464,
+                    1577
+                ],
+                "score": 0.988,
+                "text": "[50] E. N. (M. Elnozahy, L. Alvisi, Y.-M. Wang, and D. B. Johnson, \"A Survey of Rollback-"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    281,
+                    1578,
+                    1462,
+                    1614
+                ],
+                "score": 0.99,
+                "text": "Recovery Protocols in Message-Passing Systems,\" ACM Computing Surveys, vol. 34, no."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    284,
+                    1618,
+                    941,
+                    1651
+                ],
+                "score": 0.99,
+                "text": "3, pp. 375–408, 2002, doi: 10.1145/568522.568525."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    193,
+                    1673,
+                    1458,
+                    1709
+                ],
+                "score": 0.978,
+                "text": "[51] H. Garcia-Molina and K. Salem, \"Sagas,\" in Proceedings of the 1987 ACM SIGMOD"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    284,
+                    1712,
+                    1461,
+                    1748
+                ],
+                "score": 0.994,
+                "text": "International Conference on Management of Data, in SIGMOD '87. 1987, pp. 249–259. doi:"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    288,
+                    1751,
+                    569,
+                    1779
+                ],
+                "score": 1.0,
+                "text": "10.1145/38713.38742."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    1804,
+                    1456,
+                    1840
+                ],
+                "score": 0.997,
+                "text": "[52] OSGi Alliance, OSGi Core Release 8. OSGi Alliance, 2020. [Online]. Available: https://"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    1843,
+                    874,
+                    1878
+                ],
+                "score": 1.0,
+                "text": "docs.osgi.org/specification/osgi.core/8.0.0/"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    193,
+                    1901,
+                    1465,
+                    1937
+                ],
+                "score": 0.987,
+                "text": "[53] J. Kramer and J. Magee, \"The Evolving Philosophers Problem: Dynamic Change Man-"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    1941,
+                    1463,
+                    1972
+                ],
+                "score": 0.982,
+                "text": "agement,\" IEEE Transactions on Software Engineering, vol. 16, no. 11, pp. 1293–1306, 1990,"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    1979,
+                    584,
+                    2006
+                ],
+                "score": 0.986,
+                "text": "doi: 10.1109/32.60317."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    806,
+                    2169,
+                    847,
+                    2205
+                ],
+                "score": 1.0,
+                "text": "86"
+            }
+        ],
+        "page_info": {
+            "page_no": 1,
+            "width": 1654,
+            "height": 2339
+        }
+    },
+    {
+        "layout_dets": [
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9714,
+                "bbox": [
+                    193,
+                    227,
+                    1463,
+                    346
+                ],
+                "index": 1
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9751,
+                "bbox": [
+                    192,
+                    359,
+                    1465,
+                    513
+                ],
+                "index": 2
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9711,
+                "bbox": [
+                    193,
+                    530,
+                    1464,
+                    645
+                ],
+                "index": 3
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9679,
+                "bbox": [
+                    194,
+                    663,
+                    1463,
+                    744
+                ],
+                "index": 4
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9755,
+                "bbox": [
+                    194,
+                    757,
+                    1467,
+                    912
+                ],
+                "index": 5
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9715,
+                "bbox": [
+                    193,
+                    928,
+                    1463,
+                    1046
+                ],
+                "index": 6
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.976,
+                "bbox": [
+                    192,
+                    1061,
+                    1463,
+                    1218
+                ],
+                "index": 7
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9662,
+                "bbox": [
+                    194,
+                    1232,
+                    1463,
+                    1313
+                ],
+                "index": 8
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9719,
+                "bbox": [
+                    193,
+                    1326,
+                    1462,
+                    1445
+                ],
+                "index": 9
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9679,
+                "bbox": [
+                    194,
+                    1459,
+                    1461,
+                    1540
+                ],
+                "index": 10
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9741,
+                "bbox": [
+                    194,
+                    1554,
+                    1462,
+                    1673
+                ],
+                "index": 11
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9676,
+                "bbox": [
+                    194,
+                    1688,
+                    1466,
+                    1769
+                ],
+                "index": 12
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9746,
+                "bbox": [
+                    194,
+                    1783,
+                    1465,
+                    1899
+                ],
+                "index": 13
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.966,
+                "bbox": [
+                    194,
+                    1914,
+                    1462,
+                    1992
+                ],
+                "index": 14
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.8911,
+                "bbox": [
+                    807,
+                    2168,
+                    846,
+                    2200
+                ],
+                "index": 15
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    193,
+                    232,
+                    1459,
+                    266
+                ],
+                "score": 0.986,
+                "text": "[54] Y. Vandewoude, P. Ebraert, Y. Berbers, and T. D'Hondt, \"Tranquility: A Low Disruptive"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    269,
+                    1459,
+                    303
+                ],
+                "score": 0.989,
+                "text": "Alternative to Quiescence for Ensuring Safe Dynamic Updates,\" IEEE Transactions on"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    308,
+                    1392,
+                    340
+                ],
+                "score": 0.996,
+                "text": "Software Engineering, vol. 33, no. 12, pp. 856–868, 2007, doi: 10.1109/tse.2007.70733."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    195,
+                    366,
+                    1458,
+                    398
+                ],
+                "score": 0.985,
+                "text": "[55] J. S. Rellermeyer, G. Alonso, and T. Roscoe, \"R-OSGi: Distributed Applications"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    404,
+                    1458,
+                    435
+                ],
+                "score": 0.984,
+                "text": "Through Software Modularization,\" in Proceedings of the ACM/IFIP/USENIX 8th"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    284,
+                    439,
+                    1461,
+                    477
+                ],
+                "score": 0.99,
+                "text": "International Middleware Conference, in Middleware '07. 2007, pp. 1–20. doi:"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    478,
+                    678,
+                    509
+                ],
+                "score": 1.0,
+                "text": "10.1007/978-3-540-76778-7_1."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    192,
+                    534,
+                    1460,
+                    571
+                ],
+                "score": 0.989,
+                "text": "[56] J. B. Dennis and E. C. Van Horn, \"Programming Semantics for Multiprogrammed"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    284,
+                    574,
+                    1461,
+                    610
+                ],
+                "score": 0.984,
+                "text": "Computations,\" Communications of the ACM, vol. 9, no. 3, pp. 143–155, 1966, doi:"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    613,
+                    600,
+                    641
+                ],
+                "score": 1.0,
+                "text": "10.1145/365230.365252."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    193,
+                    668,
+                    1459,
+                    704
+                ],
+                "score": 0.975,
+                "text": "[57] M. S. Miller, K.-P. Yee, and J. Shapiro, \"Capability Myths Demolished,\" technical report"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    284,
+                    705,
+                    1312,
+                    742
+                ],
+                "score": 0.99,
+                "text": "SRL2003-2, 2003. [Online]. Available: http://zesty.ca/capmyths/usenix.pdf"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    193,
+                    761,
+                    1464,
+                    799
+                ],
+                "score": 0.99,
+                "text": "[58] R. N. M. Watson, J. Anderson, B. Laurie, and K. Kennaway, \"Capsicum: Practical Capa-"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    280,
+                    797,
+                    1464,
+                    839
+                ],
+                "score": 0.997,
+                "text": "bilities for UNIX,\" in Proceedings of the 19th USENIX Security Symposium, 2010, pp. 29–46."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    284,
+                    837,
+                    1456,
+                    876
+                ],
+                "score": 0.996,
+                "text": "[Online]. Available: https://www.usenix.org/legacy/events/sec10/tech/full_papers/"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    284,
+                    876,
+                    449,
+                    913
+                ],
+                "score": 1.0,
+                "text": "Watson.pdf"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    196,
+                    934,
+                    1459,
+                    967
+                ],
+                "score": 0.995,
+                "text": "[59] R. Wahbe, S. Lucco, T. E. Anderson, and S. L. Graham, \"Efficient Software-Based Fault"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    283,
+                    971,
+                    1459,
+                    1006
+                ],
+                "score": 0.991,
+                "text": "Isolation,\" in Proceedings of the 14th ACM Symposium on Operating Systems Principles, in"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1010,
+                    1053,
+                    1043
+                ],
+                "score": 0.99,
+                "text": "SOSP '93. 1993, pp. 203–216. doi: 10.1145/168619.168635."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    193,
+                    1066,
+                    1460,
+                    1102
+                ],
+                "score": 0.986,
+                "text": "[60] A. Barth, A. P. Felt, P. Saxena, and A. Boodman, \"Protecting Browsers from Extension"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1106,
+                    1457,
+                    1137
+                ],
+                "score": 0.998,
+                "text": "Vulnerabilities,\" in Proceedings of the 17th Annual Network and Distributed System Security"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    1144,
+                    1453,
+                    1177
+                ],
+                "score": 0.986,
+                "text": "Symposium, in NDSS '10. 2010. [Online]. Available: https://www.ndss-symposium.org/"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1182,
+                    1053,
+                    1213
+                ],
+                "score": 1.0,
+                "text": "ndss2010/protecting-browsers-extension-vulnerabilities/"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    1239,
+                    1460,
+                    1272
+                ],
+                "score": 0.983,
+                "text": "[61] W. W. Ho and R. A. Olsson, “An Approach to Genuine Dynamic Linking,\" Software:"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    284,
+                    1275,
+                    1426,
+                    1308
+                ],
+                "score": 0.995,
+                "text": "Practice and Experience, vol. 21, no. 4, pp. 375–390, 1991, doi: 10.1002/SPE.4380210404."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    1331,
+                    1459,
+                    1366
+                ],
+                "score": 0.989,
+                "text": "[62] P. Wadler and S. Blott, \"How to Make Ad-hoc Polymorphism Less Ad Hoc,\" in"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    280,
+                    1366,
+                    1459,
+                    1409
+                ],
+                "score": 0.999,
+                "text": "Proceedings of the 16th ACM SIGPLAN-SIGACT Symposium on Principles of Programming"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    1409,
+                    1178,
+                    1442
+                ],
+                "score": 0.998,
+                "text": "Languages, in POPL '89. 1989, pp. 60–76. doi: 10.1145/75277.75283."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    1466,
+                    1458,
+                    1499
+                ],
+                "score": 0.994,
+                "text": "[63]F. Klock and N. Matsakis, \"The Rust Language and Type System,\" in ACM SIGPLAN ML"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1504,
+                    951,
+                    1538
+                ],
+                "score": 0.996,
+                "text": "Family Workshop, Gothenburg, Sweden, Sep. 2014."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    192,
+                    1560,
+                    1459,
+                    1597
+                ],
+                "score": 0.983,
+                "text": "[64] D. Dreyer, R. Harper, M. M. T. Chakravarty, and G. Keller, \"Modular Type Classes,\" in"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    281,
+                    1596,
+                    1458,
+                    1634
+                ],
+                "score": 0.994,
+                "text": "Proceedings of the 34th ACM SIGPLAN-SIGACT Symposium on Principles of Programming"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1635,
+                    1241,
+                    1672
+                ],
+                "score": 0.997,
+                "text": "Languages, in POPL '07. 2007, pp. 63–70. doi: 10.1145/1190216.1190229."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    193,
+                    1690,
+                    1463,
+                    1730
+                ],
+                "score": 0.983,
+                "text": "[65] Microsoft, \"Declaration Merging.\" [Online]. Available: https://www.typescriptlang."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    284,
+                    1730,
+                    924,
+                    1765
+                ],
+                "score": 1.0,
+                "text": "org/docs/handbook/declaration-merging.html"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    1787,
+                    1459,
+                    1823
+                ],
+                "score": 0.986,
+                "text": "[66] T. Van Cutsem and M. S. Miller, \"Proxies: Design Principles for Robust Object-oriented"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    283,
+                    1825,
+                    1462,
+                    1860
+                ],
+                "score": 0.988,
+                "text": "Intercession APIs,\" in Proceedings of the 6th Symposium on Dynamic Languages, in DLS '10."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    1865,
+                    911,
+                    1896
+                ],
+                "score": 0.989,
+                "text": "2010, pp. 59–72. doi: 10.1145/1869631.1869638."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    193,
+                    1917,
+                    1456,
+                    1957
+                ],
+                "score": 0.993,
+                "text": "[67] R. Hettinger, \"Descriptor HowTo Guide.\" [Online]. Available: https://docs.python.org/"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    1960,
+                    626,
+                    1989
+                ],
+                "score": 1.0,
+                "text": "3/howto/descriptor.html"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    806,
+                    2169,
+                    847,
+                    2205
+                ],
+                "score": 1.0,
+                "text": "87"
+            }
+        ],
+        "page_info": {
+            "page_no": 2,
+            "width": 1654,
+            "height": 2339
+        }
+    },
+    {
+        "layout_dets": [
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9687,
+                "bbox": [
+                    192,
+                    228,
+                    1467,
+                    342
+                ],
+                "index": 1
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9752,
+                "bbox": [
+                    192,
+                    360,
+                    1468,
+                    515
+                ],
+                "index": 2
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9699,
+                "bbox": [
+                    193,
+                    531,
+                    1463,
+                    644
+                ],
+                "index": 3
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9649,
+                "bbox": [
+                    193,
+                    663,
+                    1463,
+                    742
+                ],
+                "index": 4
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9707,
+                "bbox": [
+                    192,
+                    758,
+                    1467,
+                    874
+                ],
+                "index": 5
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9756,
+                "bbox": [
+                    192,
+                    891,
+                    1466,
+                    1044
+                ],
+                "index": 6
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9711,
+                "bbox": [
+                    192,
+                    1062,
+                    1467,
+                    1180
+                ],
+                "index": 7
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9723,
+                "bbox": [
+                    193,
+                    1195,
+                    1464,
+                    1312
+                ],
+                "index": 8
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9665,
+                "bbox": [
+                    193,
+                    1326,
+                    1468,
+                    1404
+                ],
+                "index": 9
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9672,
+                "bbox": [
+                    193,
+                    1421,
+                    1467,
+                    1501
+                ],
+                "index": 10
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9732,
+                "bbox": [
+                    193,
+                    1516,
+                    1466,
+                    1635
+                ],
+                "index": 11
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9742,
+                "bbox": [
+                    193,
+                    1649,
+                    1463,
+                    1768
+                ],
+                "index": 12
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9746,
+                "bbox": [
+                    194,
+                    1783,
+                    1464,
+                    1897
+                ],
+                "index": 13
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9745,
+                "bbox": [
+                    193,
+                    1914,
+                    1463,
+                    2032
+                ],
+                "index": 14
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.8927,
+                "bbox": [
+                    807,
+                    2169,
+                    846,
+                    2199
+                ],
+                "index": 15
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    192,
+                    232,
+                    1460,
+                    268
+                ],
+                "score": 0.99,
+                "text": "[68] P. Maes, \"Concepts and Experiments in Computational Reflection,\" in Conference on"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    272,
+                    1463,
+                    304
+                ],
+                "score": 0.989,
+                "text": "Object-Oriented Programming Systems, Languages, and Applications (OOPSLA), 1987, pp."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    308,
+                    751,
+                    338
+                ],
+                "score": 0.991,
+                "text": "147–155. doi: 10.1145/38765.38821."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    192,
+                    364,
+                    1465,
+                    400
+                ],
+                "score": 0.983,
+                "text": "[69] G. Bracha and D. M. Ungar, \"Mirrors: design principles for meta-level facilities of object-"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    404,
+                    1458,
+                    436
+                ],
+                "score": 0.993,
+                "text": "oriented programming languages,\" in Proceedings of the 19th Annual ACM SIGPLAN"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    443,
+                    1462,
+                    475
+                ],
+                "score": 0.995,
+                "text": "Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOP-"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    480,
+                    1035,
+                    512
+                ],
+                "score": 0.991,
+                "text": "SLA), 2004, pp. 331–344. doi: 10.1145/1028976.1029004."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    190,
+                    532,
+                    1460,
+                    573
+                ],
+                "score": 0.982,
+                "text": "[70] R. Rouvoy and P. Merle, \"Leveraging component-based software engineering with"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    283,
+                    573,
+                    1456,
+                    606
+                ],
+                "score": 0.988,
+                "text": "Fraclet,\" Annals of Telecommunications, vol. 64, no. 1–2, pp. 65–79, 2009, doi: 10.1007/"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    614,
+                    537,
+                    641
+                ],
+                "score": 1.0,
+                "text": "s12243-008-0072-z."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    669,
+                    1456,
+                    703
+                ],
+                "score": 0.985,
+                "text": "[71] E. Burmako, \"Scala Macros: Let Our Powers Combine!,\" in Proceedings of the 4th Workshop"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    707,
+                    1376,
+                    740
+                ],
+                "score": 0.977,
+                "text": "on Scala, in SCALA@ECOOP '13. 2013, p. 3:1–3:10. doi: 10.1145/2489837.2489840."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    195,
+                    763,
+                    1460,
+                    796
+                ],
+                "score": 0.992,
+                "text": "[72] S. Raemaekers, A. van Deursen, and J. Visser, \"Semantic Versioning and Impact of"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    284,
+                    800,
+                    1463,
+                    835
+                ],
+                "score": 0.988,
+                "text": "Breaking Changes in the Maven Repository,\" Journal of Systems and Software, vol. 129, pp."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    838,
+                    877,
+                    871
+                ],
+                "score": 0.997,
+                "text": "140–158, 2017, doi: 10.1016/j.jss.2016.04.008."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    195,
+                    898,
+                    1456,
+                    929
+                ],
+                "score": 0.989,
+                "text": "[73] P. Lam, J. Dietrich, and D. J. Pearce, \"Putting the Semantics into Semantic Versioning,\""
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    281,
+                    932,
+                    1460,
+                    969
+                ],
+                "score": 0.997,
+                "text": "in Proceedings of the 2020 ACM SIGPLAN International Symposium on New Ideas, New"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    284,
+                    970,
+                    1463,
+                    1007
+                ],
+                "score": 0.993,
+                "text": "Paradigms, and Reflections on Programming and Software, in Onward! '20. 2020, pp. 157–"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    288,
+                    1012,
+                    749,
+                    1039
+                ],
+                "score": 0.991,
+                "text": "179. doi: 10.1145/3426428.3426922."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    1068,
+                    1457,
+                    1101
+                ],
+                "score": 0.985,
+                "text": "[74] P. Abate, R. Di Cosmo, R. Treinen, and S. Zacchiroli, \"Dependency Solving: A Separate"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    1106,
+                    1463,
+                    1139
+                ],
+                "score": 0.987,
+                "text": "Concern in Component Evolution Management,\" Journal of Systems and Software, vol. 85,"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    1144,
+                    1053,
+                    1177
+                ],
+                "score": 0.996,
+                "text": "no. 10, pp. 2228–2240, 2012, doi: 10.1016/j.jss.2012.02.018."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    192,
+                    1198,
+                    1460,
+                    1239
+                ],
+                "score": 0.994,
+                "text": "[75] L. Cardelli, \"Structural Subtyping and the Notion of Power Type,\" in Proceedings of the"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    283,
+                    1234,
+                    1460,
+                    1274
+                ],
+                "score": 0.998,
+                "text": "15th ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages, in POPL"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1274,
+                    913,
+                    1315
+                ],
+                "score": 0.992,
+                "text": "'88. 1988, pp. 70–79. doi: 10.1145/73560.73566."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    193,
+                    1330,
+                    1465,
+                    1368
+                ],
+                "score": 0.985,
+                "text": "[76] B. Meyer, “Applying \"Design by Contract\",\" Computer, vol. 25, no. 10, pp. 40–51, 1992,"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1371,
+                    583,
+                    1400
+                ],
+                "score": 0.998,
+                "text": "doi: 10.1109/2.161279."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    195,
+                    1427,
+                    1463,
+                    1460
+                ],
+                "score": 0.986,
+                "text": "[77] B. C. Pierce, “Bounded Quantification is Undecidable,\" Information and Computation, vol."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1465,
+                    1056,
+                    1498
+                ],
+                "score": 0.994,
+                "text": "112, no. 1, pp. 131–165, 1994, doi: 10.1006/inco.1994.1055."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    193,
+                    1519,
+                    1465,
+                    1558
+                ],
+                "score": 0.975,
+                "text": "[78] A. Haas et al., “Bringing the web up to speed with WebAssembly,\" in Proceedings of"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    1559,
+                    1457,
+                    1593
+                ],
+                "score": 1.0,
+                "text": "the 38th ACM SIGPLAN Conference on Programming Language Design and Implementation"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    289,
+                    1599,
+                    1148,
+                    1630
+                ],
+                "score": 0.995,
+                "text": "(PLDI), ACM, 2017, pp. 185–200. doi: 10.1145/3062341.3062363."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    1655,
+                    1457,
+                    1688
+                ],
+                "score": 0.99,
+                "text": "[79] M. M. Swift, B. N. Bershad, and H. M. Levy, \"Improving the reliability of commodity"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1695,
+                    1457,
+                    1726
+                ],
+                "score": 0.983,
+                "text": "operating systems,\" in Proceedings of the 19th ACM Symposium on Operating Systems"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1732,
+                    1259,
+                    1765
+                ],
+                "score": 0.988,
+                "text": "Principles (SOSP), ACM, 2003, pp. 207–222. doi: 10.1145/945445.945466."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    195,
+                    1789,
+                    1458,
+                    1821
+                ],
+                "score": 0.986,
+                "text": "[80] M. M. Swift, M. Annamalai, B. N. Bershad, and H. M. Levy, \"Recovering device"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    284,
+                    1825,
+                    1460,
+                    1859
+                ],
+                "score": 0.985,
+                "text": "drivers,\" ACM Transactions on Computer Systems, vol. 24, no. 4, pp. 333–360, 2006, doi:"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    288,
+                    1865,
+                    632,
+                    1893
+                ],
+                "score": 1.0,
+                "text": "10.1145/1189256.1189257."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    193,
+                    1918,
+                    1460,
+                    1955
+                ],
+                "score": 0.981,
+                "text": "[81] D. E. Porter, O. S. Hofmann, C. J. Rossbach, A. Benn, and E. Witchel, \"Operating System"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1959,
+                    1457,
+                    1992
+                ],
+                "score": 0.996,
+                "text": "Transactions,\" in Proceedings of the 22nd ACM Symposium on Operating Systems Principles"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    1996,
+                    1156,
+                    2027
+                ],
+                "score": 0.981,
+                "text": "(SOSP), ACM, 2009, pp. 161–176. doi: 10.1145/1629575.1629591."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    808,
+                    2171,
+                    845,
+                    2203
+                ],
+                "score": 1.0,
+                "text": "88"
+            }
+        ],
+        "page_info": {
+            "page_no": 3,
+            "width": 1654,
+            "height": 2339
+        }
+    },
+    {
+        "layout_dets": [
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9724,
+                "bbox": [
+                    193,
+                    227,
+                    1468,
+                    344
+                ],
+                "index": 1
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9736,
+                "bbox": [
+                    193,
+                    360,
+                    1468,
+                    476
+                ],
+                "index": 2
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9677,
+                "bbox": [
+                    194,
+                    493,
+                    1464,
+                    572
+                ],
+                "index": 3
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9684,
+                "bbox": [
+                    194,
+                    587,
+                    1467,
+                    666
+                ],
+                "index": 4
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9689,
+                "bbox": [
+                    194,
+                    683,
+                    1463,
+                    764
+                ],
+                "index": 5
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9733,
+                "bbox": [
+                    194,
+                    777,
+                    1467,
+                    891
+                ],
+                "index": 6
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9745,
+                "bbox": [
+                    194,
+                    909,
+                    1466,
+                    1028
+                ],
+                "index": 7
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9768,
+                "bbox": [
+                    194,
+                    1043,
+                    1465,
+                    1198
+                ],
+                "index": 8
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9733,
+                "bbox": [
+                    193,
+                    1214,
+                    1465,
+                    1329
+                ],
+                "index": 9
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.973,
+                "bbox": [
+                    193,
+                    1346,
+                    1465,
+                    1461
+                ],
+                "index": 10
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9739,
+                "bbox": [
+                    193,
+                    1478,
+                    1466,
+                    1595
+                ],
+                "index": 11
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9735,
+                "bbox": [
+                    194,
+                    1611,
+                    1466,
+                    1727
+                ],
+                "index": 12
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9705,
+                "bbox": [
+                    195,
+                    1744,
+                    1463,
+                    1825
+                ],
+                "index": 13
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9749,
+                "bbox": [
+                    194,
+                    1839,
+                    1464,
+                    1956
+                ],
+                "index": 14
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9728,
+                "bbox": [
+                    194,
+                    1972,
+                    1467,
+                    2087
+                ],
+                "index": 15
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.8883,
+                "bbox": [
+                    807,
+                    2169,
+                    846,
+                    2199
+                ],
+                "index": 16
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    195,
+                    231,
+                    1459,
+                    264
+                ],
+                "score": 0.988,
+                "text": "[82] O. Kiselyov and C.-chieh Shan, \"Delimited Continuations in Operating Systems,\" in"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    271,
+                    1464,
+                    303
+                ],
+                "score": 0.988,
+                "text": "Modeling and Using Context (CONTEXT 2007), in Lecture Notes in Computer Science,"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    309,
+                    1276,
+                    340
+                ],
+                "score": 0.987,
+                "text": "vol. 4635. Springer, 2007, pp. 291–302. doi: 10.1007/978-3-540-74255-5_22."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    195,
+                    364,
+                    1461,
+                    396
+                ],
+                "score": 0.983,
+                "text": "[83] E. Dolstra and A. Löh, \"NixOS: a purely functional Linux distribution,\" in Proceedings of"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    283,
+                    402,
+                    1464,
+                    436
+                ],
+                "score": 0.999,
+                "text": "the 13th ACM SIGPLAN International Conference on Functional Programming (ICFP), ACM,"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    441,
+                    944,
+                    477
+                ],
+                "score": 0.988,
+                "text": "2008, pp. 367–378. doi: 10.1145/1411204.1411255."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    495,
+                    1458,
+                    534
+                ],
+                "score": 0.991,
+                "text": "[84] ZIO, “ZIO: Type-safe, composable asynchronous and concurrent programming for"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    284,
+                    537,
+                    879,
+                    569
+                ],
+                "score": 0.99,
+                "text": "Scala.\"[Online]. Available: https://zio.dev/"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    195,
+                    593,
+                    1463,
+                    626
+                ],
+                "score": 0.989,
+                "text": "[85] Effect, \"Effect: A TypeScript library for building robust applications.\" [Online]. Avail-"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    631,
+                    659,
+                    663
+                ],
+                "score": 0.999,
+                "text": "able: https://effect.website/"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    195,
+                    688,
+                    1456,
+                    722
+                ],
+                "score": 0.986,
+                "text": "[86] G. Canti, \"fp-ts: Functional programming in TypeScript.\" [Online]. Available: https://"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    726,
+                    616,
+                    762
+                ],
+                "score": 1.0,
+                "text": "github.com/gcanti/fp-ts"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    195,
+                    783,
+                    1458,
+                    814
+                ],
+                "score": 0.994,
+                "text": "[87]J. I. Brachthäuser, P. Schuster, and K. Ostermann, \"Effects as capabilities: effect handlers"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    822,
+                    1463,
+                    854
+                ],
+                "score": 0.992,
+                "text": "and lightweight effect polymorphism,\" Proc. ACM Program. Lang., vol. 4, no. OOPSLA,"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    858,
+                    650,
+                    889
+                ],
+                "score": 0.989,
+                "text": "2020, doi: 10.1145/3428194."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    195,
+                    915,
+                    1462,
+                    948
+                ],
+                "score": 0.992,
+                "text": "[88] J. I. Brachthäuser, P. Schuster, E. Lee, and A. Boruch-Gruszecki, \"Effects, capabilities,"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    953,
+                    1459,
+                    986
+                ],
+                "score": 0.995,
+                "text": "and boxes: from scope-based reasoning to type-based reasoning and back,\"Proc. ACM"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    992,
+                    1152,
+                    1023
+                ],
+                "score": 0.994,
+                "text": "Program. Lang., vol. 6, no. OOPSLA1, 2022, doi: 10.1145/3527320."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    1047,
+                    1459,
+                    1083
+                ],
+                "score": 0.989,
+                "text": "[89] C. Heunen, R. Kaarsgaard, and M. Karvonen, \"Reversible Effects as Inverse Arrows,\" in"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    1087,
+                    1458,
+                    1119
+                ],
+                "score": 0.994,
+                "text": "Proceedings of the Thirty-Fourth Conference on the Mathematical Foundations of Programming"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    1123,
+                    1462,
+                    1156
+                ],
+                "score": 0.999,
+                "text": "Semantics (MFPS XXXIV), in Electronic Notes in Theoretical Computer Science, vol. 341."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    1162,
+                    967,
+                    1198
+                ],
+                "score": 0.982,
+                "text": "2018, pp. 179–199. doi: 10.1016/j.entcs.2018.11.009."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    196,
+                    1218,
+                    1456,
+                    1250
+                ],
+                "score": 0.989,
+                "text": "[90] D. Orchard, V.-B. Liepelt, and H. Eades III, \"Quantitative program reasoning with"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1257,
+                    1459,
+                    1289
+                ],
+                "score": 0.985,
+                "text": "graded modal types,\" Proc. ACM Program. Lang., vol. 3, no. ICFP, 2019, doi:"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    289,
+                    1296,
+                    516,
+                    1324
+                ],
+                "score": 1.0,
+                "text": "10.1145/3341714."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    193,
+                    1350,
+                    1459,
+                    1386
+                ],
+                "score": 0.99,
+                "text": "[91] R. Bianchini, F. Dagnino, P. Giannini, E. Zucca, and M. Servetto, \"Coeffects for sharing"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1390,
+                    1459,
+                    1421
+                ],
+                "score": 0.995,
+                "text": "and mutation,\" Proc. ACM Program. Lang., vol. 6, no. OOPSLA2, Oct. 2022, doi:"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    1429,
+                    516,
+                    1456
+                ],
+                "score": 1.0,
+                "text": "10.1145/3563319."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    1485,
+                    1465,
+                    1518
+                ],
+                "score": 0.99,
+                "text": "[92] R. Bianchini, F. Dagnino, P. Giannini, and E. Zucca, \"A Java-like calculus with hetero-"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1523,
+                    1456,
+                    1555
+                ],
+                "score": 0.992,
+                "text": "geneous coeffects,\" Theoretical Computer Science, vol. 971, p. 114063, 2023, doi: 10.1016/"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    282,
+                    1560,
+                    516,
+                    1596
+                ],
+                "score": 1.0,
+                "text": "j.tcs.2023.114063."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    195,
+                    1618,
+                    1459,
+                    1650
+                ],
+                "score": 0.982,
+                "text": "[93] C. Torczon, E. Suárez Acevedo, S. Agrawal, J. Velez-Ginorio, and S. Weirich, \"Effects and"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    283,
+                    1653,
+                    1463,
+                    1688
+                ],
+                "score": 0.996,
+                "text": "Coeffects in Call-by-Push-Value,\" Proc. ACM Program. Lang., vol. 8, no. OOPSLA2, Oct."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    1693,
+                    653,
+                    1724
+                ],
+                "score": 0.982,
+                "text": "2024, doi: 10.1145/3689750."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    193,
+                    1749,
+                    1457,
+                    1785
+                ],
+                "score": 0.985,
+                "text": "[94] R. Hirschfeld, P. Costanza, and O. Nierstrasz, “Context-oriented Programming,\" Journal"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    1789,
+                    1345,
+                    1821
+                ],
+                "score": 0.986,
+                "text": "of Object Technology, vol. 7, no. 3, pp. 125–151, 2008, doi: 10.5381/jot.2008.7.3.a4."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    191,
+                    1842,
+                    1461,
+                    1880
+                ],
+                "score": 0.991,
+                "text": "[95] P. Costanza and R. Hirschfeld, “Language constructs for context-oriented programming:"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    282,
+                    1881,
+                    1458,
+                    1917
+                ],
+                "score": 0.992,
+                "text": "an overview of ContextL,\" in Proceedings of the 2005 Symposium on Dynamic Languages"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    288,
+                    1921,
+                    1136,
+                    1953
+                ],
+                "score": 0.981,
+                "text": "(DLS '05), ACM, 2005, pp. 1–10. doi: 10.1145/1146841.1146842."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    1976,
+                    1460,
+                    2012
+                ],
+                "score": 0.989,
+                "text": "[96] G. Salvaneschi, C. Ghezzi, and M. Pradella, \"Context-oriented programming: A software"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    2016,
+                    1463,
+                    2048
+                ],
+                "score": 0.988,
+                "text": "engineering perspective,\" Journal of Systems and Software, vol. 85, no. 8, pp. 1801–1817,"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    284,
+                    2052,
+                    753,
+                    2086
+                ],
+                "score": 0.988,
+                "text": "2012, doi: 10.1016/j.jss.2012.03.024."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    807,
+                    2170,
+                    845,
+                    2202
+                ],
+                "score": 1.0,
+                "text": "89"
+            }
+        ],
+        "page_info": {
+            "page_no": 4,
+            "width": 1654,
+            "height": 2339
+        }
+    },
+    {
+        "layout_dets": [
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9709,
+                "bbox": [
+                    192,
+                    227,
+                    1466,
+                    346
+                ],
+                "index": 1
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9742,
+                "bbox": [
+                    192,
+                    360,
+                    1467,
+                    513
+                ],
+                "index": 2
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9713,
+                "bbox": [
+                    193,
+                    531,
+                    1468,
+                    648
+                ],
+                "index": 3
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9717,
+                "bbox": [
+                    193,
+                    663,
+                    1465,
+                    782
+                ],
+                "index": 4
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9713,
+                "bbox": [
+                    193,
+                    796,
+                    1468,
+                    913
+                ],
+                "index": 5
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9742,
+                "bbox": [
+                    193,
+                    928,
+                    1467,
+                    1082
+                ],
+                "index": 6
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9699,
+                "bbox": [
+                    193,
+                    1099,
+                    1467,
+                    1215
+                ],
+                "index": 7
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9689,
+                "bbox": [
+                    194,
+                    1232,
+                    1464,
+                    1352
+                ],
+                "index": 8
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9668,
+                "bbox": [
+                    194,
+                    1364,
+                    1463,
+                    1445
+                ],
+                "index": 9
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9712,
+                "bbox": [
+                    193,
+                    1459,
+                    1463,
+                    1578
+                ],
+                "index": 10
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9395,
+                "bbox": [
+                    195,
+                    1592,
+                    762,
+                    1636
+                ],
+                "index": 11
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.962,
+                "bbox": [
+                    194,
+                    1649,
+                    1467,
+                    1730
+                ],
+                "index": 12
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9723,
+                "bbox": [
+                    194,
+                    1744,
+                    1469,
+                    1862
+                ],
+                "index": 13
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9734,
+                "bbox": [
+                    193,
+                    1876,
+                    1468,
+                    1994
+                ],
+                "index": 14
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.894,
+                "bbox": [
+                    807,
+                    2168,
+                    847,
+                    2200
+                ],
+                "index": 15
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    232,
+                    1460,
+                    269
+                ],
+                "score": 0.98,
+                "text": "[97] G. Kiczales et al., \"Aspect-Oriented Programming,\" in ECOOP'97 — Object-Oriented"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    271,
+                    1463,
+                    303
+                ],
+                "score": 0.994,
+                "text": "Programming, 11th European Conference, in Lecture Notes in Computer Science, vol. 1241."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    284,
+                    308,
+                    1016,
+                    340
+                ],
+                "score": 0.995,
+                "text": "Springer, 1997, pp. 220–242. doi: 10.1007/BFb0053381."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    364,
+                    1458,
+                    400
+                ],
+                "score": 0.98,
+                "text": "[98] G. Kiczales, E. Hilsdale, J. Hugunin, M. Kersten, J. Palm, and W. G. Griswold, \"An"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    282,
+                    401,
+                    1458,
+                    438
+                ],
+                "score": 0.986,
+                "text": "Overview of AspectJ,\" in ECOOP 2001 — Object-Oriented Programming, 15th European"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    443,
+                    1463,
+                    475
+                ],
+                "score": 0.996,
+                "text": "Conference, in Lecture Notes in Computer Science, vol. 2072. Springer, 2001, pp. 327–353."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    480,
+                    698,
+                    510
+                ],
+                "score": 0.996,
+                "text": "doi: 10.1007/3-540-45337-7_18."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    195,
+                    537,
+                    1464,
+                    569
+                ],
+                "score": 0.989,
+                "text": "[99] A. Popovici, T. Gross, and G. Alonso, \"Dynamic Weaving for Aspect-Oriented Program-"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    575,
+                    1458,
+                    607
+                ],
+                "score": 0.992,
+                "text": "ming,\" in Proceedings of the 1st International Conference on Aspect-Oriented Software"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    288,
+                    613,
+                    1373,
+                    645
+                ],
+                "score": 0.992,
+                "text": "Development (AOSD 2002), ACM, 2002, pp. 141–147. doi: 10.1145/508386.508404."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    196,
+                    669,
+                    1458,
+                    702
+                ],
+                "score": 0.987,
+                "text": "[100] J. Bonér, \"What Are the Key Issues for Commercial AOP Use: How Does AspectWerkz"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    707,
+                    1459,
+                    740
+                ],
+                "score": 0.99,
+                "text": "Address Them?,\" in Proceedings of the 3rd International Conference on Aspect-Oriented"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    746,
+                    1428,
+                    779
+                ],
+                "score": 0.989,
+                "text": "Software Development (AOSD 2004), ACM, 2004, pp. 5–6. doi: 10.1145/976270.976273."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    195,
+                    800,
+                    1461,
+                    833
+                ],
+                "score": 0.99,
+                "text": "[101] M. Hicks, J. T. Moore, and S. Nettles, \"Dynamic Software Updating,\" in Proceedings of"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    838,
+                    1464,
+                    872
+                ],
+                "score": 0.999,
+                "text": "the ACM SIGPLAN 2001 Conference on Programming Language Design and Implementation,"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    878,
+                    1053,
+                    910
+                ],
+                "score": 0.994,
+                "text": "in PLDI '01. 2001, pp. 13–23. doi: 10.1145/378795.378798."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    195,
+                    935,
+                    1458,
+                    967
+                ],
+                "score": 0.979,
+                "text": "[102] G. Stoyle, M. Hicks, G. Bierman, P. Sewell, and I. Neamtiu, \"Mutatis Mutandis: Safe"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    288,
+                    973,
+                    1463,
+                    1005
+                ],
+                "score": 0.985,
+                "text": "and Predictable Dynamic Software Updating,\" in Proceedings of the 32nd ACM SIGPLAN-"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    1010,
+                    1463,
+                    1046
+                ],
+                "score": 0.993,
+                "text": "SIGACT Symposium on Principles of Programming Languages, in POPL '05. 2005, pp. 183–"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1049,
+                    751,
+                    1079
+                ],
+                "score": 0.995,
+                "text": "194. doi: 10.1145/1040305.1040321."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    195,
+                    1106,
+                    1458,
+                    1138
+                ],
+                "score": 0.989,
+                "text": "[103] C. M. Hayden, K. Saur, E. K. Smith, and M. Hicks, \"Kitsune: Efficient, General-Purpose"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1145,
+                    1463,
+                    1176
+                ],
+                "score": 0.989,
+                "text": "Dynamic Software Updating for C,\" ACM Trans. Program. Lang. Syst., vol. 36, no. 4, 2014,"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    288,
+                    1183,
+                    574,
+                    1210
+                ],
+                "score": 0.994,
+                "text": "doi: 10.1145/2629460."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    191,
+                    1236,
+                    1460,
+                    1276
+                ],
+                "score": 0.991,
+                "text": "[104] M. Overeem, M. Spoor, and S. Jansen, \"The Dark Side of Event Sourcing: Managing"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    1277,
+                    1458,
+                    1308
+                ],
+                "score": 0.985,
+                "text": "Data Conversion,\" in IEEE 24th International Conference on Software Analysis, Evolution"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    284,
+                    1313,
+                    1460,
+                    1348
+                ],
+                "score": 0.992,
+                "text": "and Reengineering, in SANER '17. 2017, pp. 193–204. doi: 10.1109/SANER.2017.7884621."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    1371,
+                    1457,
+                    1403
+                ],
+                "score": 0.992,
+                "text": "[105] E. Gamma, R. Helm, R. Johnson, and J. Vlissides, Design Patterns: Elements of Reusable"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    288,
+                    1409,
+                    1097,
+                    1441
+                ],
+                "score": 0.993,
+                "text": "Object-Oriented Software. Boston, MA: Addison-Wesley, 1994."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    196,
+                    1465,
+                    1459,
+                    1498
+                ],
+                "score": 0.986,
+                "text": "[106] D. Leijen, “Algebraic Effect Handlers with Resources and Deep Finalization,\" technical"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1503,
+                    1456,
+                    1536
+                ],
+                "score": 0.995,
+                "text": "report MSR-TR-2018-10, Apr. 2018. [Online]. Available: https://www.microsoft.com/"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1540,
+                    1396,
+                    1575
+                ],
+                "score": 1.0,
+                "text": "en-us/research/publication/algebraic-effect-handlers-resources-deep-finalization/"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    196,
+                    1597,
+                    755,
+                    1631
+                ],
+                "score": 0.983,
+                "text": "[107] M. Fowler, \"Event Sourcing.\" 2005."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    1654,
+                    1456,
+                    1687
+                ],
+                "score": 0.99,
+                "text": "[108] J. Lee, J. Ahn, and K. Yi, \"React-tRace: A Semantics for Understanding React Hooks,\""
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1692,
+                    1461,
+                    1725
+                ],
+                "score": 0.992,
+                "text": "Proc. ACM Program. Lang., vol. 9, no. OOPSLA2, pp. 471–498, 2025, doi: 10.1145/3763067."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    1751,
+                    1463,
+                    1784
+                ],
+                "score": 0.99,
+                "text": "[109] N. Shavit and D. Touitou, \"Software Transactional Memory,\" in Proceedings of the Four-"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1789,
+                    1463,
+                    1821
+                ],
+                "score": 0.99,
+                "text": "teenth Annual ACM Symposium on Principles of Distributed Computing, in PODC '95. 1995,"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    283,
+                    1825,
+                    837,
+                    1860
+                ],
+                "score": 0.997,
+                "text": "pp. 204–213. doi: 10.1145/224964.224987."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    195,
+                    1883,
+                    1464,
+                    1916
+                ],
+                "score": 0.983,
+                "text": "[110] T. Harris, S. Marlow, S. Peyton Jones, and M. Herlihy, \"Composable Memory Transac-"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    1920,
+                    1462,
+                    1957
+                ],
+                "score": 0.996,
+                "text": "tions,\" in Proceedings of the Tenth ACM SIGPLAN Symposium on Principles and Practice of"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    283,
+                    1957,
+                    1390,
+                    1992
+                ],
+                "score": 0.994,
+                "text": "Parallel Programming, in PPoPP '05. 2005, pp. 48–60. doi: 10.1145/1065944.1065952."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    808,
+                    2171,
+                    845,
+                    2206
+                ],
+                "score": 1.0,
+                "text": "90"
+            }
+        ],
+        "page_info": {
+            "page_no": 5,
+            "width": 1654,
+            "height": 2339
+        }
+    },
+    {
+        "layout_dets": [
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9714,
+                "bbox": [
+                    193,
+                    228,
+                    1466,
+                    344
+                ],
+                "index": 1
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9646,
+                "bbox": [
+                    193,
+                    360,
+                    1467,
+                    439
+                ],
+                "index": 2
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9685,
+                "bbox": [
+                    194,
+                    455,
+                    1467,
+                    534
+                ],
+                "index": 3
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9757,
+                "bbox": [
+                    193,
+                    550,
+                    1467,
+                    701
+                ],
+                "index": 4
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9706,
+                "bbox": [
+                    193,
+                    721,
+                    1469,
+                    837
+                ],
+                "index": 5
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9748,
+                "bbox": [
+                    193,
+                    852,
+                    1467,
+                    1006
+                ],
+                "index": 6
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9737,
+                "bbox": [
+                    193,
+                    1023,
+                    1466,
+                    1179
+                ],
+                "index": 7
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.975,
+                "bbox": [
+                    193,
+                    1195,
+                    1464,
+                    1348
+                ],
+                "index": 8
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9755,
+                "bbox": [
+                    193,
+                    1365,
+                    1466,
+                    1519
+                ],
+                "index": 9
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9678,
+                "bbox": [
+                    194,
+                    1536,
+                    1464,
+                    1617
+                ],
+                "index": 10
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9731,
+                "bbox": [
+                    194,
+                    1630,
+                    1467,
+                    1745
+                ],
+                "index": 11
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9732,
+                "bbox": [
+                    194,
+                    1764,
+                    1465,
+                    1882
+                ],
+                "index": 12
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9714,
+                "bbox": [
+                    193,
+                    1896,
+                    1467,
+                    2009
+                ],
+                "index": 13
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.8874,
+                "bbox": [
+                    807,
+                    2169,
+                    844,
+                    2199
+                ],
+                "index": 14
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    192,
+                    229,
+                    1462,
+                    268
+                ],
+                "score": 0.995,
+                "text": "[111] M. Herlihy and J. E. B. Moss, \"Transactional Memory: Architectural Support for Lock-"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    283,
+                    268,
+                    1457,
+                    304
+                ],
+                "score": 0.989,
+                "text": "Free Data Structures,\" in Proceedings of the 20th Annual International Symposium on"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    308,
+                    1384,
+                    344
+                ],
+                "score": 0.998,
+                "text": "Computer Architecture, in ISCA '93. 1993, pp. 289–300. doi: 10.1145/165123.165164."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    195,
+                    366,
+                    1463,
+                    398
+                ],
+                "score": 0.987,
+                "text": "[112] R. Landauer, \"Irreversibility and Heat Generation in the Computing Process,\" IBM Jour-"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    402,
+                    1447,
+                    434
+                ],
+                "score": 0.982,
+                "text": "nal of Research and Development, vol. 5, no. 3, pp. 183–191, 1961, doi: 10.1147/rd.53.0183."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    460,
+                    1461,
+                    492
+                ],
+                "score": 0.988,
+                "text": "[113]C. H. Bennett, “Logical Reversibility of Computation,\" IBM Journal of Research and Devel-"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    284,
+                    497,
+                    1164,
+                    529
+                ],
+                "score": 0.99,
+                "text": "opment, vol. 17, no. 6, pp. 525–532, 1973, doi: 10.1147/rd.176.0525."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    195,
+                    552,
+                    1458,
+                    589
+                ],
+                "score": 0.993,
+                "text": "[114] T. Yokoyama and R. Glück, \"A Reversible Programming Language and its Invertible"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    594,
+                    1463,
+                    626
+                ],
+                "score": 0.986,
+                "text": "Self-Interpreter,\" in Proceedings of the 2007 ACM SIGPLAN Workshop on Partial Evalua-"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    630,
+                    1461,
+                    666
+                ],
+                "score": 0.994,
+                "text": "tion and Semantics-Based Program Manipulation, in PEPM '07. 2007, pp. 144–153. doi:"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    289,
+                    671,
+                    630,
+                    698
+                ],
+                "score": 1.0,
+                "text": "10.1145/1244381.1244404."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    192,
+                    724,
+                    1466,
+                    761
+                ],
+                "score": 0.975,
+                "text": "[115] V. Danos and J. Krivine, “Reversible Communicating Systems,\" in CONCUR 2004 —"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    764,
+                    1463,
+                    797
+                ],
+                "score": 0.989,
+                "text": "Concurrency Theory, 15th International Conference, in Lecture Notes in Computer Science,"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    288,
+                    802,
+                    1274,
+                    834
+                ],
+                "score": 0.995,
+                "text": "vol. 3170. Springer, 2004, pp. 292–307. doi: 10.1007/978-3-540-28644-8_19."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    195,
+                    859,
+                    1463,
+                    891
+                ],
+                "score": 0.981,
+                "text": "[116] I. Phillips and I. Ulidowski, \"Reversing Algebraic Process Calculi,\" in Foundations of"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    896,
+                    1461,
+                    928
+                ],
+                "score": 0.992,
+                "text": "Software Science and Computation Structures, 9th International Conference (FOSSACS 2006),"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    282,
+                    930,
+                    1461,
+                    971
+                ],
+                "score": 0.989,
+                "text": "in Lecture Notes in Computer Science, vol. 3921. Springer, 2006, pp. 246–260. doi:"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    288,
+                    974,
+                    578,
+                    1002
+                ],
+                "score": 1.0,
+                "text": "10.1007/11690634_17."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    1030,
+                    1460,
+                    1062
+                ],
+                "score": 0.984,
+                "text": "[117] P. Wadler, \"Linear Types Can Change the World!,\" in Programming Concepts and Methods:"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    283,
+                    1065,
+                    1465,
+                    1102
+                ],
+                "score": 0.993,
+                "text": "Proceedings of the IFIP Working Group 2.2/2.3 Working Conference, North-Holland, 1990,"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    1105,
+                    1453,
+                    1141
+                ],
+                "score": 0.99,
+                "text": "pp. 561-581. [Online]. Available: https://homepages.inf.ed.ac.uk/wadler/papers/"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1145,
+                    496,
+                    1177
+                ],
+                "score": 1.0,
+                "text": "linear/linear.ps"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    196,
+                    1200,
+                    1458,
+                    1232
+                ],
+                "score": 0.996,
+                "text": "[118] D. Kim and M. C. Rinard, \"Verification of Semantic Commutativity Conditions and"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    284,
+                    1237,
+                    1458,
+                    1273
+                ],
+                "score": 0.999,
+                "text": "Inverse Operations on Linked Data Structures,\" in Proceedings of the 32nd ACM SIGPLAN"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    1278,
+                    1460,
+                    1310
+                ],
+                "score": 0.998,
+                "text": "Conference on Programming Language Design and Implementation, 2011, pp. 528–541. doi:"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    289,
+                    1316,
+                    631,
+                    1343
+                ],
+                "score": 1.0,
+                "text": "10.1145/1993498.1993561."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    192,
+                    1368,
+                    1459,
+                    1406
+                ],
+                "score": 0.983,
+                "text": "[119] A. Lenharth, V. S. Adve, and S. T. King, \"Recovery domains: an organizing principle"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    283,
+                    1406,
+                    1460,
+                    1443
+                ],
+                "score": 0.996,
+                "text": "for recoverable operating systems,\" in Proceedings of the 14th International Conference on"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1447,
+                    1462,
+                    1479
+                ],
+                "score": 0.992,
+                "text": "Architectural Support for Programming Languages and Operating Systems (ASPLOS), ACM,"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1486,
+                    911,
+                    1517
+                ],
+                "score": 0.989,
+                "text": "2009, pp. 49–60. doi: 10.1145/1508244.1508251."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    1541,
+                    1460,
+                    1575
+                ],
+                "score": 0.984,
+                "text": "[120] C. Walls, Spring in Action, 6th ed. Manning Publications, 2022. [Online]. Available:"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    284,
+                    1579,
+                    1169,
+                    1612
+                ],
+                "score": 0.999,
+                "text": "https://www.manning.com/books/spring-in-action-sixth-edition"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    193,
+                    1635,
+                    1464,
+                    1670
+                ],
+                "score": 0.993,
+                "text": "[121] C. Escoffier, R. S. Hall, and P. Lalanda, \"iPOJO: an Extensible Service-Oriented Compo-"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    283,
+                    1674,
+                    1463,
+                    1710
+                ],
+                "score": 0.99,
+                "text": "nent Framework,\" in IEEE International Conference on Services Computing, 2007, pp. 474–"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    1713,
+                    696,
+                    1744
+                ],
+                "score": 0.997,
+                "text": "481. doi: 10.1109/SCC.2007.74."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    191,
+                    1767,
+                    1459,
+                    1805
+                ],
+                "score": 0.991,
+                "text": "[122] H. Cervantes and R. S. Hall, “Autonomous Adaptation to Dynamic Availability Using a"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    1808,
+                    1458,
+                    1841
+                ],
+                "score": 0.989,
+                "text": "Service-Oriented Component Model,\" in Proceedings of the 26th International Conference"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    287,
+                    1846,
+                    1461,
+                    1879
+                ],
+                "score": 0.992,
+                "text": "on Software Engineering, in ICSE '04. 2004, pp. 614–623. doi: 10.1109/ICSE.2004.1317483."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    195,
+                    1902,
+                    1458,
+                    1934
+                ],
+                "score": 0.982,
+                "text": "[123] C. Elliott and P. Hudak, \"Functional Reactive Animation,\" in Proceedings of the Second"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    282,
+                    1932,
+                    1464,
+                    1978
+                ],
+                "score": 0.994,
+                "text": "ACM SIGPLAN International Conference on Functional Programming, in ICFP '97. 1997, pp."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    1978,
+                    783,
+                    2008
+                ],
+                "score": 0.994,
+                "text": "263–273. doi: 10.1145/258948.258973."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    807,
+                    2171,
+                    845,
+                    2203
+                ],
+                "score": 1.0,
+                "text": "91"
+            }
+        ],
+        "page_info": {
+            "page_no": 6,
+            "width": 1654,
+            "height": 2339
+        }
+    },
+    {
+        "layout_dets": [
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9705,
+                "bbox": [
+                    196,
+                    228,
+                    1461,
+                    343
+                ],
+                "index": 1
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9665,
+                "bbox": [
+                    197,
+                    361,
+                    1459,
+                    472
+                ],
+                "index": 2
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9659,
+                "bbox": [
+                    197,
+                    494,
+                    1462,
+                    606
+                ],
+                "index": 3
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9672,
+                "bbox": [
+                    196,
+                    626,
+                    1467,
+                    737
+                ],
+                "index": 4
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.8793,
+                "bbox": [
+                    808,
+                    2168,
+                    846,
+                    2200
+                ],
+                "index": 5
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    233,
+                    1458,
+                    265
+                ],
+                "score": 0.993,
+                "text": "[124]G. H. Cooper and S. Krishnamurthi, \"Embedding Dynamic Dataflow in a Call-by-Value"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    271,
+                    1458,
+                    303
+                ],
+                "score": 0.994,
+                "text": "Language,\" in Programming Languages and Systems (ESOP 2006), in Lecture Notes in"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    307,
+                    1420,
+                    343
+                ],
+                "score": 0.995,
+                "text": "Computer Science, vol. 3924. Springer, 2006, pp. 294–308. doi: 10.1007/11693024_20."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    365,
+                    1461,
+                    401
+                ],
+                "score": 0.992,
+                "text": "[125] I. Maier and M. Odersky, \"Deprecating the Observer Pattern with Scala.React,\" technical"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    282,
+                    402,
+                    1456,
+                    438
+                ],
+                "score": 0.993,
+                "text": "report EPFL-REPORT-176887, 2012. [Online]. Available: https://infoscience.epfl.ch/"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    443,
+                    482,
+                    471
+                ],
+                "score": 1.0,
+                "text": "record/176887"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    194,
+                    500,
+                    1456,
+                    529
+                ],
+                "score": 0.987,
+                "text": "[126] E. Bainomugisha, A. L. Carreton, T. Van Cutsem, W. De Meuter, and others, \"A"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    285,
+                    537,
+                    1461,
+                    569
+                ],
+                "score": 0.992,
+                "text": "Survey on Reactive Programming,\" ACM Comput. Surv., vol. 45, no. 4, 2013, doi:"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    288,
+                    575,
+                    630,
+                    603
+                ],
+                "score": 1.0,
+                "text": "10.1145/2501654.2501666."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    195,
+                    630,
+                    1466,
+                    666
+                ],
+                "score": 0.987,
+                "text": "[127] A. Margara and G. Salvaneschi, “On the Semantics of Distributed Reactive Program-"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    671,
+                    1463,
+                    703
+                ],
+                "score": 0.995,
+                "text": "ming: The Cost of Consistency,\" IEEE Trans. Software Eng., vol. 44, no. 7, pp. 689–711,"
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    286,
+                    708,
+                    783,
+                    738
+                ],
+                "score": 0.999,
+                "text": "2018, doi: 10.1109/TSE.2018.2833109."
+            },
+            {
+                "label": "ocr_text",
+                "bbox": [
+                    808,
+                    2171,
+                    845,
+                    2204
+                ],
+                "score": 1.0,
+                "text": "92"
+            }
+        ],
+        "page_info": {
+            "page_no": 7,
+            "width": 1654,
+            "height": 2339
+        }
+    }
+]
